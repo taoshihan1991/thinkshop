@@ -1,0 +1,12 @@
+[ 2015-05-09T10:04:02+08:00 ] 127.0.0.1 /thinkshop/index.php/__WEB__
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001850s ]
+ERR: 无法加载模块:__WEB__
+
+[ 2015-05-09T17:42:30+08:00 ] 127.0.0.1 /thinkshop/index.php/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.083205s ]
+ERR: 无法加载模块:Index
+

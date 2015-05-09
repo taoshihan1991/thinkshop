@@ -1,0 +1,443 @@
+[ 2015-05-09T10:02:51+08:00 ] 127.0.0.1 /thinkshop/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029803s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006639s ]
+
+[ 2015-05-09T10:02:52+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 91 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 91 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 106 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006179s ]
+
+[ 2015-05-09T10:24:11+08:00 ] 127.0.0.1 /thinkshop/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005531s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005552s ]
+
+[ 2015-05-09T10:24:11+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006896s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 91 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 91 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 106 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008419s ]
+
+[ 2015-05-09T10:24:56+08:00 ] 127.0.0.1 /thinkshop/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005295s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007216s ]
+
+[ 2015-05-09T10:24:57+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011578s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 91 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 91 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 106 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008379s ]
+
+[ 2015-05-09T10:25:44+08:00 ] 127.0.0.1 /thinkshop/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005364s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005521s ]
+
+[ 2015-05-09T10:25:45+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010585s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 91 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 91 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 106 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008166s ]
+
+[ 2015-05-09T10:26:18+08:00 ] 127.0.0.1 /thinkshop/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005363s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005946s ]
+
+[ 2015-05-09T10:26:18+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 91 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 91 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 106 行.
+NOTIC: [8] Undefined variable: hd G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008887s ]
+
+[ 2015-05-09T10:27:11+08:00 ] 127.0.0.1 /thinkshop/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005432s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007956s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011692s ]
+
+[ 2015-05-09T10:27:11+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000402s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006786s ]
+
+[ 2015-05-09T10:27:50+08:00 ] 127.0.0.1 /thinkshop/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005301s ]
+
+[ 2015-05-09T10:27:50+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007995s ]
+
+[ 2015-05-09T10:29:09+08:00 ] 127.0.0.1 /thinkshop/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005378s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005975s ]
+
+[ 2015-05-09T10:29:10+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008415s ]
+
+[ 2015-05-09T10:31:01+08:00 ] 127.0.0.1 /thinkshop/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005536s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 154 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005369s ]
+
+[ 2015-05-09T10:31:01+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010826s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006539s ]
+
