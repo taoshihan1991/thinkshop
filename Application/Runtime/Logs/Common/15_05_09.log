@@ -10,3 +10,21 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
 INFO: [ app_init ] --END-- [ RunTime:0.083205s ]
 ERR: 无法加载模块:Index
 
+[ 2015-05-09T19:02:41+08:00 ] 127.0.0.1 /thinkshop/Application/Admin/View/Static/js/js.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002312s ]
+ERR: 无法加载模块:Application
+
+[ 2015-05-09T19:04:19+08:00 ] 127.0.0.1 /thinkshop/Application/Admin/View/Static/js/js.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003614s ]
+ERR: 无法加载模块:Application
+
+[ 2015-05-09T19:04:26+08:00 ] 127.0.0.1 /thinkshop/Application/Admin/View/Static/js/js.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002143s ]
+ERR: 无法加载模块:Application
+

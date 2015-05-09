@@ -67,7 +67,7 @@
 			<!--头部右侧导航-->
 			<div class="r_menu">
 				管理员 : admin
-				<a href="{|U:'Login/out'}" target="_self">
+				<a href="<?php echo U('Admin/Login/logout');?>" target="_self">
 					[退出]
 				</a>
 				<span>|</span>

@@ -4,17 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
     <title>ThinkShop后台登录</title>
     <link href='__PUBLIC__login/css/css.css' rel='stylesheet' media='screen'>
-    <script>
-        $(function () {
-            var error = '{$error}';
-            if (error) {
-                $("div#error_tips").show();
-                $(".err_m").html(error);
-                setTimeout(function(){ $("div#error_tips").hide()},5000);
-            }
-        })
-    </script>
-    <script type="text/javascript" src="__PUBLIC__js/js.js"></script>
+    <include file="Common:js"/>
 </head>
 <body>
 <div class="header">
@@ -58,9 +48,9 @@
                     </div>
 
                     <div class="verifyimgArea">
-                        <img src="{|U:'code'}" class="code" style="cursor: pointer;float:left;"
-                             onclick="this.src='{|U:'code'}&'+Math.random()"/>
-                        <a href="javascript:void(0);" onclick="$('.code').trigger('click')">看不清，换一张</a>
+                        <img src="{:U('Login/code')}" class="code" id="verify" style="cursor: pointer;float:left;"
+                             onclick="this.src='{:U('Login/code')}&'+Math.random()"/>
+                        <a href="javascript:void(0);" onclick="$('#verify').trigger('click')">看不清，换一张</a>
                     </div>
                     <div class="send">
                         <input type="submit" class="btn2" value="登录"/>
@@ -70,6 +60,5 @@
         </div>
     </div>
 </div>
-<iframe name="checkLogin" style="display:none;"></iframe>
 </body>
 </html>
