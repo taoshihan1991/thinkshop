@@ -6,6 +6,7 @@
 		<title>ThinkShop电子商务系统</title>
 		<script type='text/javascript' src='/thinkshop/Application/Admin/View/Static/js/jquery-1.8.2.min.js'></script>
 <link href='/thinkshop/Application/Admin/View/Static/hdjs/css/hdjs.css' rel='stylesheet' media='screen'>
+<link href='/thinkshop/Application/Admin/View/Static/css/extend.css' rel='stylesheet' media='screen'>
 <script src='/thinkshop/Application/Admin/View/Static/hdjs/js/hdjs.js'></script>
 <script src='/thinkshop/Application/Admin/View/Static/hdjs/js/slide.js'></script>
 <script src='/thinkshop/Application/Admin/View/Static/hdjs/org/cal/lhgcalendar.min.js'></script>
@@ -66,8 +67,8 @@
 			<!--头部左侧导航-->
 			<!--头部右侧导航-->
 			<div class="r_menu">
-				管理员 : admin
-				<a href="<?php echo U('Admin/Login/logout');?>" target="_self">
+				管理员 : <?php echo ($_SESSION['admin']['username']); ?>
+				<a href="<?php echo U('Login/logout');?>" target="_self">
 					[退出]
 				</a>
 				<span>|</span>
@@ -91,8 +92,10 @@
 			<div class="left_menu">
 				<div class="nid_1">
 					<dl>
-						<dt>商品管理</dt>
-						<dd><a nid="17" href="javascript:;" onclick="get_content(this,17)" url="http://localhost/hdcms/index.php?g=Hdcms&amp;a=Admin&amp;c=Administrator&amp;m=index" class="">管理员管理</a></dd>
+						<dt>品牌管理</dt>
+						<dd><a nid="8" href="javascript:;" onclick="get_content(this,8)" url="<?php echo U('Brand/index');?>" class="">品牌列表</a></dd>
+						<dt>分类管理</dt>
+						<dd><a nid="9" href="javascript:;" onclick="get_content(this,9)" url="<?php echo U('Category/index');?>" class="">分类列表</a></dd>
 					</dl>
 				</div>
 				<div class="nid_2">

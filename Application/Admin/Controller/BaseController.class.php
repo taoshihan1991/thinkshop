@@ -10,7 +10,7 @@ class BaseController extends Controller {
     // 验证是否登陆
     public function checkLogin(){
     	if(!$_SESSION['admin']){
-    		$this->error('请先登录吧',U('Login/index'));
+    		//$this->error('请先登录吧',U('Login/index'));
     	}
     }
 

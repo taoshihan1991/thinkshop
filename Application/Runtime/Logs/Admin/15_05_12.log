@@ -1,0 +1,93 @@
+[ 2015-05-12T17:15:56+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Brand&a=delete&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005259s ]
+SQL: SHOW COLUMNS FROM `ts_brand` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `ts_brand` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] unlink(./Uploads/2015-05-12/555171a332f86.jpg) [<a href='function.unlink'>function.unlink</a>]: No such file or directory G:\php\htdocs\thinkshop\Application\Admin\Controller\BrandController.class.php 第 46 行.
+SQL: DELETE FROM `ts_brand` WHERE `id` = 1 [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005309s ]
+
+[ 2015-05-12T17:15:58+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Brand&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006102s ]
+SQL: SHOW COLUMNS FROM `ts_brand` [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_brand` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ts_brand` ORDER BY sort asc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005308s ]
+
+[ 2015-05-12T17:15:59+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Brand&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005656s ]
+SQL: SHOW COLUMNS FROM `ts_brand` [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_brand` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ts_brand` ORDER BY sort asc LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005534s ]
+
+[ 2015-05-12T17:16:11+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Category&a=index&_=0.3013524846173823
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005419s ]
+SQL: SHOW COLUMNS FROM `ts_category` [ RunTime:0.0158s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_category` LIMIT 1   [ RunTime:0.0055s ]
+SQL: SELECT * FROM `ts_category` ORDER BY sort asc LIMIT 0,100   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004877s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005263s ]
+

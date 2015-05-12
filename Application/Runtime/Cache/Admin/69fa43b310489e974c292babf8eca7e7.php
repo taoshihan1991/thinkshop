@@ -6,6 +6,7 @@
 		<title>ThinkShop电子商务系统</title>
 		<script type='text/javascript' src='/thinkshop/Application/Admin/View/Static/js/jquery-1.8.2.min.js'></script>
 <link href='/thinkshop/Application/Admin/View/Static/hdjs/css/hdjs.css' rel='stylesheet' media='screen'>
+<link href='/thinkshop/Application/Admin/View/Static/css/extend.css' rel='stylesheet' media='screen'>
 <script src='/thinkshop/Application/Admin/View/Static/hdjs/js/hdjs.js'></script>
 <script src='/thinkshop/Application/Admin/View/Static/hdjs/js/slide.js'></script>
 <script src='/thinkshop/Application/Admin/View/Static/hdjs/org/cal/lhgcalendar.min.js'></script>

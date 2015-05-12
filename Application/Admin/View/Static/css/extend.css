@@ -1,0 +1,16 @@
+/*扩展样式*/
+div.page1 .current{
+    display: block;
+    padding: 3px 10px;
+    font-size: 12px;
+    float: left;
+    background:#488FCF;
+    border: 1px solid #dcdcdc;
+    color: #FFFFFF !important;
+}
+.thumbShow{
+    border: 1px solid #ccc;
+    padding: 2px;
+    display: block;
+    max-width: 200px;
+}
