@@ -14,3 +14,16 @@ div.page1 .current{
     display: block;
     max-width: 200px;
 }
+
+
+/*搜索框*/
+div.search {
+    border: 1px solid #FFBE7A;
+    background: none repeat scroll 0 0 #FFFCED;
+    line-height: 20px;
+    padding: 8px 10px;
+}
+
+table tr td p {
+    line-height: 1.5em !important;
+}
