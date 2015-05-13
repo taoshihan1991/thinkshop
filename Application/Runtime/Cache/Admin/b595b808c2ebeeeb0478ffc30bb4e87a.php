@@ -99,6 +99,8 @@
 						<dt>属性管理</dt>
 						<dd><a nid="10" href="javascript:;" onclick="get_content(this,10)" url="<?php echo U('Type/index');?>" class="">类型列表</a></dd>
 						<dd><a nid="11" href="javascript:;" onclick="get_content(this,11)" url="<?php echo U('Attribute/index');?>" class="">属性列表</a></dd>
+						<dt>商品管理</dt>
+						<dd><a nid="12" href="javascript:;" onclick="get_content(this,12)" url="<?php echo U('Goods/index');?>" class="">商品列表</a></dd>
 					</dl>
 				</div>
 				<div class="nid_2">

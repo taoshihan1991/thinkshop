@@ -35,10 +35,20 @@
 	<body>
 
 <div class="wrap">
+    <div class="search">
+
+        <form class="hd-form">
+        商品类型 :
+        <select name="flag" class="w100 searchAttr">
+            <option value="<?php echo U('Attribute/index');?>">全部</option>
+            <?php if(is_array($types)): foreach($types as $key=>$v): ?><option value="<?php echo U('Attribute/index',array('type_id'=>$v['id']));?>" <?php if($_GET['type_id']==$v['id']): ?>selected="selected"<?php endif; ?>><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
+        </select>
+        </form>
+    </div>
     <div class="menu_list">
         <ul>
-            <li><a href="<?php echo U('Type/index');?>" class="action">类型列表</a></li>
-            <li><a href="<?php echo U('Type/add');?>">添加类型</a></li>
+            <li><a href="<?php echo U('Goods/index');?>" class="action">商品列表</a></li>
+            <li><a href="<?php echo U('Goods/add');?>">添加商品</a></li>
         </ul>
     </div>
     <table class="table2 hd-form">
@@ -46,18 +56,18 @@
         <tr>
             <td class="w30">编号</td>
             <td class="w200">名称</td>
+            <td class="w200">所属类型</td>
             <td class="w150">操作</td>
         </tr>
         </thead>
             <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
                 <td><?php echo ($v["id"]); ?></td>
                 <td><?php echo ($v["name"]); ?></td>
+                <td><?php echo ($v["type_name"]); ?></td>
                 <td>
-                    <a href="<?php echo U('Attribute/index',array('type_id'=>$v['id']));?>">属性列表</a> 
+                    <a href="<?php echo U('Attribute/update',array('id'=>$v['id']));?>">修改</a> 
                     <span class="line">|</span> 
-                    <a href="<?php echo U('Type/update',array('id'=>$v['id']));?>">修改</a> 
-                    <span class="line">|</span> 
-                    <a href="<?php echo U('Type/delete',array('id'=>$v['id']));?>">删除</a>
+                    <a href="<?php echo U('Attribute/delete',array('id'=>$v['id']));?>">删除</a>
                 </td>
             </tr><?php endforeach; endif; ?>
             </table>
@@ -66,3 +76,8 @@
 </div>
 	</body>
 </html>
+<script>
+    $('.searchAttr').change(function(){
+        window.location.href=$(this).val();
+    });
+</script>

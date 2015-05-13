@@ -9,10 +9,22 @@
 	<body>
 
 <div class="wrap">
+    <div class="search">
+
+        <form class="hd-form">
+        商品类型 :
+        <select name="flag" class="w100 searchAttr">
+            <option value="{:U('Attribute/index')}">全部</option>
+            <foreach name="types" item="v">
+            <option value="{:U('Attribute/index',array('type_id'=>$v['id']))}" <if condition="$_GET['type_id']==$v['id']">selected="selected"</if>>{$v.name}</option>
+            </foreach>
+        </select>
+        </form>
+    </div>
     <div class="menu_list">
         <ul>
-            <li><a href="{:U('Type/index')}" class="action">类型列表</a></li>
-            <li><a href="{:U('Type/add')}">添加类型</a></li>
+            <li><a href="{:U('Goods/index')}" class="action">商品列表</a></li>
+            <li><a href="{:U('Goods/add')}">添加商品</a></li>
         </ul>
     </div>
     <table class="table2 hd-form">
@@ -20,6 +32,7 @@
         <tr>
             <td class="w30">编号</td>
             <td class="w200">名称</td>
+            <td class="w200">所属类型</td>
             <td class="w150">操作</td>
         </tr>
         </thead>
@@ -27,12 +40,11 @@
             <tr>
                 <td>{$v.id}</td>
                 <td>{$v.name}</td>
+                <td>{$v.type_name}</td>
                 <td>
-                    <a href="{:U('Attribute/index',array('type_id'=>$v['id']))}">属性列表</a> 
+                    <a href="{:U('Attribute/update',array('id'=>$v['id']))}">修改</a> 
                     <span class="line">|</span> 
-                    <a href="{:U('Type/update',array('id'=>$v['id']))}">修改</a> 
-                    <span class="line">|</span> 
-                    <a href="{:U('Type/delete',array('id'=>$v['id']))}">删除</a>
+                    <a href="{:U('Attribute/delete',array('id'=>$v['id']))}">删除</a>
                 </td>
             </tr>
             </foreach>
@@ -42,3 +54,8 @@
 </div>
 	</body>
 </html>
+<script>
+    $('.searchAttr').change(function(){
+        window.location.href=$(this).val();
+    });
+</script>

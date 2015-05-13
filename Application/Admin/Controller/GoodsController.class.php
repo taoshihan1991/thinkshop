@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class AttributeController extends BaseController {
+class GoodsController extends BaseController {
     public function index(){
         $attribute_model=D('attribute');
         $condition=isset($_GET['type_id']) ? array('a.type_id'=>I('get.type_id','intval')) : array();
@@ -14,7 +14,7 @@ class AttributeController extends BaseController {
         $this->assign('types',$types);
     	$this->display();
     }
-    //添加分类
+    //添加
     public function add(){
         $attribute_model=D('attribute');
         if(IS_POST){
@@ -38,8 +38,19 @@ class AttributeController extends BaseController {
                 $this->error('添加失败');
             }
         }else{
-            $types=M('type')->select();
-            $this->assign('types',$types);
+            // 分类
+            $category_model=D('category');
+            $cate=$category_model->getAll();
+            $cateTree=$category_model->getTree($cate);
+            $this->assign('cate',$cateTree);
+            // 品牌
+            $brand_model=D('brand');
+            $brand=$brand_model->getAll();
+            $this->assign('brand',$brand);
+            // 类型
+            $type=M('type')->select();
+            $this->assign('types',$type);
+
             $this->display(); 
         }
         
@@ -94,40 +105,5 @@ class AttributeController extends BaseController {
         $this->assign('types',$types);
 
         $this->display();
-    }
-    public function ajaxType(){
-        $type_id=I('get.type_id','intval');
-        $attribute_model=D('attribute');
-
-        $condition=array('type_id'=>$type_id);
-        $list=$attribute_model->getAll($condition);
-
-        $str="";
-        foreach($list as $v){
-            $str.="<tr><th class='w100'>{$v['name']}</th><td>";
-            $str.="<input type='hidden' name='attr_id_list[]' value='{$v['id']}' />";
-            switch ($v['input_type']) {
-                case 0:
-                    $inputTypeStr="<input type='text' name='attr_value_list[]' value='' />";
-                    break;
-                case 1:
-                    $inputTypeStr="<select name='attr_value_list[]'>";
-                    $temp=explode('|',$v['value']);
-                    foreach($temp as $r){
-                         $inputTypeStr.="<option value=''>{$r}</option>";
-                    }
-                    $inputTypeStr.="<select>";
-                    break;
-                case 2:
-                    $inputTypeStr="<textarea name='attr_value_list[]' class='w400 h100'></textarea>";
-                    break;
-                default:
-                    # code...
-                    break;
-            }
-            $str.=$inputTypeStr;
-            $str.="</td></tr>";
-        }
-        exit($str);
     }
 }

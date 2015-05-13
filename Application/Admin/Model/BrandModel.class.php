@@ -22,6 +22,11 @@ class BrandModel extends Model {
     	$data['page']=$show;
     	return $data;
     }
+    // 获取全部
+    public function getAll($condition){
+        $info=$this->where($condition)->select();
+        return $info;
+    }
     // 获取单条
     public function getInfo($condition){
         $info=$this->where($condition)->find();

@@ -21,7 +21,6 @@ class AttributeModel extends Model {
                    ->field("a.*,b.name type_name")
                    ->where($condition)
                    ->limit($page->firstRow.','.$page->listRows)->select();
-        $list=$this->getTree($list);
     	$data['list']=$list;
     	$data['page']=$show;
     	return $data;
@@ -32,8 +31,8 @@ class AttributeModel extends Model {
         return $info;
     }
     // 获取全部
-    public function getAll(){
-        $data=$this->select();
+    public function getAll($condition){
+        $data=$this->where($condition)->select();
         return $data;
     }
     // 修改
@@ -44,26 +43,5 @@ class AttributeModel extends Model {
         $res=$this->where($condition)->save($data);
         return $res;
     }
-    // 获取树形
-    public function getTree($arr,$pid=0,$level=0){
-        static $result=array();
-        foreach($arr as $v){
-            if($v['parent_id']==$pid){
-                $v['level']=$level;
-                $result[]=$v;
-                $this->getTree($arr,$v['id'],$level+1);
-            }
-        }
-        return $result;
-    }
-    // 获取子孙类
-    public function getSonCate($arr,$id){
-        $data=$this->getTree($arr,$id);
-        $result=array();
-        foreach($data as $v){
-            $result[]=$v['id'];
-        }
-        $result[]=$id;
-        return $result;
-    }
+
 }
