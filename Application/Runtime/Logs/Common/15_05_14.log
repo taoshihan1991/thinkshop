@@ -1,0 +1,24 @@
+[ 2015-05-14T20:20:20+08:00 ] 127.0.0.1 /thinkshop/index.php/undefined&_=0.4082744629122317
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004471s ]
+ERR: 无法加载模块:Undefined&_=0
+
+[ 2015-05-14T20:20:29+08:00 ] 127.0.0.1 /thinkshop/index.php/undefined&_=0.49382174643687904
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001793s ]
+ERR: 无法加载模块:Undefined&_=0
+
+[ 2015-05-14T20:24:17+08:00 ] 127.0.0.1 /thinkshop/index.php/undefined&_=0.83014891971834
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+ERR: 无法加载模块:Undefined&_=0
+
+[ 2015-05-14T21:19:15+08:00 ] 127.0.0.1 /thinkshop/index.php/%7B%7CU:'setFavorite'%7D&_=0.07924987794831395
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001757s ]
+ERR: 无法加载模块:{|U:'setFavorite'}&_=0
+

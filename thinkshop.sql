@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50150
 File Encoding         : 65001
 
-Date: 2015-05-12 17:20:05
+Date: 2015-05-14 21:59:47
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -32,11 +32,48 @@ CREATE TABLE `ts_admin` (
 INSERT INTO `ts_admin` VALUES ('1', 'admin', '21232f297a57a5a743894a0e4a801fc3');
 
 -- ----------------------------
+-- Table structure for `ts_article`
+-- ----------------------------
+DROP TABLE IF EXISTS `ts_article`;
+CREATE TABLE `ts_article` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '自动编号',
+  `title` varchar(255) NOT NULL DEFAULT '' COMMENT '标题',
+  `content` text NOT NULL COMMENT '主要内容',
+  `thumb` varchar(255) NOT NULL DEFAULT '' COMMENT '缩略图',
+  `category_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '分类编号',
+  `addtime` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '添加时间',
+  `sort` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ts_article
+-- ----------------------------
+INSERT INTO `ts_article` VALUES ('1', '测试第一篇1', '测试第一篇测试第一篇', './Uploads/2015-05-14/5554a280bc67e.jpg', '11', '0', '12');
+
+-- ----------------------------
+-- Table structure for `ts_articleclass`
+-- ----------------------------
+DROP TABLE IF EXISTS `ts_articleclass`;
+CREATE TABLE `ts_articleclass` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增编号',
+  `name` varchar(200) NOT NULL DEFAULT '' COMMENT '分类名称',
+  `parent_id` int(11) NOT NULL DEFAULT '0' COMMENT '父级分类',
+  `sort` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ts_articleclass
+-- ----------------------------
+INSERT INTO `ts_articleclass` VALUES ('11', '系统文章', '0', '1');
+
+-- ----------------------------
 -- Table structure for `ts_attribute`
 -- ----------------------------
 DROP TABLE IF EXISTS `ts_attribute`;
 CREATE TABLE `ts_attribute` (
-  `id` int(11) NOT NULL,
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(125) NOT NULL DEFAULT '' COMMENT '属性名称',
   `type` varchar(125) NOT NULL DEFAULT '',
   `input_type` varchar(45) NOT NULL DEFAULT '',
@@ -44,11 +81,15 @@ CREATE TABLE `ts_attribute` (
   `type_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '类型id',
   PRIMARY KEY (`id`),
   KEY `fk_ts_attribute_ts_type1_idx` (`type_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_attribute
 -- ----------------------------
+INSERT INTO `ts_attribute` VALUES ('1', '颜色', '2', '1', '44', '3');
+INSERT INTO `ts_attribute` VALUES ('2', '型号', '1', '0', '', '2');
+INSERT INTO `ts_attribute` VALUES ('3', '尺寸', '1', '1', '一寸|二寸|三寸', '2');
+INSERT INTO `ts_attribute` VALUES ('4', '售后保障', '0', '2', '', '2');
 
 -- ----------------------------
 -- Table structure for `ts_brand`
@@ -60,13 +101,13 @@ CREATE TABLE `ts_brand` (
   `logo` varchar(255) NOT NULL DEFAULT '' COMMENT '品牌logo',
   `sort` varchar(255) NOT NULL DEFAULT '' COMMENT '品牌排序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_brand
 -- ----------------------------
-INSERT INTO `ts_brand` VALUES ('7', '12', './Uploads/2015-05-12/555170fbd21bd.jpg', '12');
-INSERT INTO `ts_brand` VALUES ('5', 'aa', '', '1');
+INSERT INTO `ts_brand` VALUES ('9', '小米', '', '2');
+INSERT INTO `ts_brand` VALUES ('8', '苹果', '', '1');
 
 -- ----------------------------
 -- Table structure for `ts_category`
@@ -78,7 +119,7 @@ CREATE TABLE `ts_category` (
   `parent_id` int(11) NOT NULL DEFAULT '0' COMMENT '父级分类',
   `sort` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_category
@@ -127,7 +168,7 @@ CREATE TABLE `ts_goods` (
 -- ----------------------------
 DROP TABLE IF EXISTS `ts_goods_attr`;
 CREATE TABLE `ts_goods_attr` (
-  `goods_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '商品id',
+  `goods_id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '商品id',
   `attribute_id` int(11) NOT NULL DEFAULT '0' COMMENT '属性id',
   KEY `fk_table1_ts_goods1_idx` (`goods_id`),
   KEY `fk_goods_attr_ts_attribute1_idx` (`attribute_id`)
@@ -142,11 +183,13 @@ CREATE TABLE `ts_goods_attr` (
 -- ----------------------------
 DROP TABLE IF EXISTS `ts_type`;
 CREATE TABLE `ts_type` (
-  `id` int(10) unsigned NOT NULL COMMENT '类型编号',
-  `type_name` varchar(125) NOT NULL DEFAULT '' COMMENT '类型名称',
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '类型编号',
+  `name` varchar(125) NOT NULL DEFAULT '' COMMENT '类型名称',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_type
 -- ----------------------------
+INSERT INTO `ts_type` VALUES ('2', '手机');
+INSERT INTO `ts_type` VALUES ('3', '衣服');

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+		<title>ThinkShop电子商务系统</title>
+		<include file="Common:js"/>
+	</head>
+	<body>
+
+<div class="wrap">
+    <div class="menu_list">
+        <ul>
+            <li><a href="{:U('Article/index')}" class="action">文章列表</a></li>
+            <li><a href="{:U('Article/add')}">添加文章</a></li>
+        </ul>
+    </div>
+    <table class="table2 hd-form">
+        <thead>
+        <tr>
+            <td class="w30">编号</td>
+            <td class="w200">标题</td>
+            <td class="w200">分类</td>
+            <td class="w150">操作</td>
+        </tr>
+        </thead>
+            <foreach name="list" item="v">
+            <tr>
+                <td>{$v.id}</td>
+                <td>{$v.title}</td>
+                <td>{$v.cate_name}</td>
+                <td>
+                    <a href="{:U('Article/update',array('id'=>$v['id']))}">修改</a> 
+                    <span class="line">|</span> 
+                    <a href="{:U('Article/delete',array('id'=>$v['id']))}">删除</a>
+                </td>
+            </tr>
+            </foreach>
+            </table>
+    <div class="page1">{$page}</div>
+    <div class="h60"></div>
+</div>
+	</body>
+</html>

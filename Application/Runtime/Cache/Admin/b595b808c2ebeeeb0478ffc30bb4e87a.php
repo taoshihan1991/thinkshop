@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-		<title>ThinkShop电子商务系统</title>
+		<title>PerfectSystem管理系统</title>
 		<script type='text/javascript' src='/thinkshop/Application/Admin/View/Static/js/jquery-1.8.2.min.js'></script>
 <link href='/thinkshop/Application/Admin/View/Static/hdjs/css/hdjs.css' rel='stylesheet' media='screen'>
 <link href='/thinkshop/Application/Admin/View/Static/css/extend.css' rel='stylesheet' media='screen'>
@@ -35,32 +35,27 @@
 		<script type="text/javascript" src="/thinkshop/Application/Admin/View/Static/index/js/quick_menu.js"></script>
 		<link href='/thinkshop/Application/Admin/View/Static/index/css/css.css' rel='stylesheet' media='screen'>
 		<link href='/thinkshop/Application/Admin/View/Static/index/css/quick_menu.css' rel='stylesheet' media='screen'>
+		<link href='/thinkshop/Application/Admin/View/Static/css/extend.css' rel='stylesheet' media='screen'>
 	</head>
 	<body>
 		<div class="nav">
 			<!--头部左侧导航-->
 			<div class="top_menu">
-				
+				<h1 class="main_logo">Perfect<i>System</i></h1>
 					<a href="javascript:" nid="1" onclick="get_left_menu('1');" class="top_menu">
-						商品中心
+						博客中心
 					</a>
+				
 					<a href="javascript:" nid="2" onclick="get_left_menu('2');" class="top_menu">
-						订单中心
+						商城中心
 					</a>
-					<a href="javascript:" nid="3" onclick="get_left_menu('3');" class="top_menu">
-						客户中心
+
+					<a href="javascript:" nid="" class="top_menu">
+						问答中心
 					</a>
-					<a href="javascript:" nid="4" onclick="get_left_menu('4');" class="top_menu">
-						营销中心
-					</a>
-					<a href="javascript:" nid="5" onclick="get_left_menu('5');" class="top_menu">
-						统计中心
-					</a>
-					<a href="javascript:" nid="6" onclick="get_left_menu('6');" class="top_menu">
-						内容中心
-					</a>
-					<a href="javascript:" nid="7" onclick="get_left_menu('7');" class="top_menu">
-						系统中心
+
+					<a href="javascript:" nid="" class="top_menu">
+						微博中心
 					</a>
 			
 			</div>
@@ -92,6 +87,15 @@
 			<div class="left_menu">
 				<div class="nid_1">
 					<dl>
+
+						<dt>分类管理</dt>
+						<dd><a nid="3" href="javascript:;" onclick="get_content(this,3)" url="<?php echo U('Articleclass/index');?>" class="">分类列表</a></dd>
+						<dt>文章管理</dt>
+						<dd><a nid="4" href="javascript:;" onclick="get_content(this,4)" url="<?php echo U('Article/index');?>" class="">文章列表</a></dd>
+					</dl>
+				</div>
+				<div class="nid_2">
+					<dl>
 						<dt>品牌管理</dt>
 						<dd><a nid="8" href="javascript:;" onclick="get_content(this,8)" url="<?php echo U('Brand/index');?>" class="">品牌列表</a></dd>
 						<dt>分类管理</dt>
@@ -103,24 +107,7 @@
 						<dd><a nid="12" href="javascript:;" onclick="get_content(this,12)" url="<?php echo U('Goods/index');?>" class="">商品列表</a></dd>
 					</dl>
 				</div>
-				<div class="nid_2">
-					<dl>
-						<dt>管理员设置2</dt>
-						<dd><a nid="17" href="javascript:;" onclick="get_content(this,17)" url="http://localhost/hdcms/index.php?g=Hdcms&amp;a=Admin&amp;c=Administrator&amp;m=index" class="">管理员管理</a></dd>
-					</dl>
-				</div>
-				<div class="nid_3">
-					<dl>
-						<dt>管理员设置3</dt>
-						<dd><a nid="17" href="javascript:;" onclick="get_content(this,17)" url="http://localhost/hdcms/index.php?g=Hdcms&amp;a=Admin&amp;c=Administrator&amp;m=index" class="">管理员管理</a></dd>
-					</dl>
-				</div>
-				<div class="nid_4">
-					<dl>
-						<dt>管理员设置4</dt>
-						<dd><a nid="17" href="javascript:;" onclick="get_content(this,17)" url="http://localhost/hdcms/index.php?g=Hdcms&amp;a=Admin&amp;c=Administrator&amp;m=index" class="">管理员管理</a></dd>
-					</dl>
-				</div>
+				
 			</div>
 			<!--主体左侧导航-->
 			<!--内容显示区域-->

@@ -27,3 +27,21 @@ div.search {
 table tr td p {
     line-height: 1.5em !important;
 }
+
+/*logo文字*/
+div.nav div.top_menu{
+    background: none;
+    padding-left: 0;
+}
+div.nav div.top_menu .main_logo{
+    display: block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    float: left;
+    text-align: center;
+    font-family: "Microsoft Yahei";
+    font-size: 20px;
+    font-weight: normal;
+}
