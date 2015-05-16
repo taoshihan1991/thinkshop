@@ -45,3 +45,61 @@ div.nav div.top_menu .main_logo{
     font-size: 20px;
     font-weight: normal;
 }
+
+/*按钮zindex*/
+.position-bottom{
+    z-index: 999;
+}
+/*上传框确定按钮看不见*/
+.edui-container .edui-modal{
+    top:0;
+}
+/*登陆页*/
+.loginContainer{
+    background-color: #30333F;
+}
+.loginContainer .loginForm{
+    background: #fff;
+    width: 385px;
+    margin: 0 auto;
+    padding: 5px;
+    border-top:6px solid #0088cc;
+    margin-top: 50px;
+}
+.loginContainer .loginForm .title{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #8D9CAA;
+    font-size: 30px;
+    font-family: "Microsoft Yahei";
+    margin: 10px 0;
+}
+.loginContainer .loginForm .inp{
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px auto;
+    display: block;
+}
+.loginContainer .loginForm .btnBox{
+    width: 300px;
+    margin: 5px auto;
+}
+.loginContainer .loginForm .btnBox a{
+    color: #0088cc;
+}
+.loginContainer .loginForm .btnBox a:hover{
+    color: #005580;
+    text-decoration: underline;
+}
+.loginContainer .loginForm .sub{
+    display: block;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    line-height:40px;
+    font-family: "Microsoft Yahei";
+    font-size: 20px;
+    margin: 20px 0;
+}

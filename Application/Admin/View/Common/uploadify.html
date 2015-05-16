@@ -1,0 +1,48 @@
+<!--图片上传插件uploadify-->
+<input type="file" id="goods_img" class="form-control"/>
+    <input type="hidden" name="imgs" id="manyImages" value="{$info.imgs}" />
+    <input type="hidden" name="img" id="defaultImg" value="{$info.img}"/>
+    <div id="thumb">
+    	<if condition="$info['imgs']">
+    	<?php $imgs=explode('|', $info['imgs'])?>
+    	<foreach name="imgs" item="v">
+			<img src="{$v}" class="thumbShow"/>
+    	</foreach>
+    	</if>
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Uploadify/uploadify.css"/>
+    <script type="text/javascript" src='__PUBLIC__/Uploadify/jquery.uploadify.min.js'></script>
+    <script type="text/javascript">
+     
+     $('#goods_img').uploadify({
+      swf : '__PUBLIC__/Uploadify/uploadify.swf',//载入swf
+      uploader : "<?php echo U('Base/uploadify');?>",//php处理脚本
+      fileObjName: 'Filedata',//上传附件$_FILE标识
+      width : 120,//按钮的宽度
+      height : 30,//按钮的高度
+      buttonImage: "__PUBLIC__/Uploadify/browse-btn.png",//按钮背景图
+      fileTypeDesc : 'Image File',//windows保存类型那里
+      fileTypeExts : '*.jpeg;*.jpg;*.png;*.gif',//允许选择的文件类型
+      //formData : {<?php echo session_name();?>:'<?php echo session_id();?>'},//解决session丢失问题
+      auto:true,
+      multi : true, //开启,多选文件
+      uploadLimit: 10, //允许上传文件个数
+
+      //上传成功后的回调函数
+      onUploadSuccess : function(file,data,res){
+      	alert(data);
+       	data=JSON.parse(data);
+        if(data.status){
+        	var manyImages=$('#manyImages').val();
+        	manyImages+="|"+data.path.origin;
+        	
+        	$('#manyImages').val(manyImages);
+        	$('#defaultImg').val(data.path.origin);
+        	var html='<img src="'+data.path.mini+'" class="thumbShow"/>';
+       		$('#thumb').append(html);
+        }
+      }
+     });
+    </script>
+    <!--//图片上传插件-->

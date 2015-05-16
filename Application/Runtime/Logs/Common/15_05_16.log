@@ -1,0 +1,42 @@
+[ 2015-05-16T11:35:10+08:00 ] 127.0.0.1 /thinkshop/null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002116s ]
+ERR: 无法加载模块:Null
+
+[ 2015-05-16T11:38:11+08:00 ] 127.0.0.1 /thinkshop/null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001919s ]
+ERR: 无法加载模块:Null
+
+[ 2015-05-16T11:39:02+08:00 ] 127.0.0.1 /thinkshop/5556bbd620bfe.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001961s ]
+ERR: 无法加载模块:5556bbd620bfe
+
+[ 2015-05-16T11:40:04+08:00 ] 127.0.0.1 /thinkshop/5556bc14a03c7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001923s ]
+ERR: 无法加载模块:5556bc14a03c7
+
+[ 2015-05-16T11:53:07+08:00 ] 127.0.0.1 /thinkshop/Uploads/2015-05-14/5554a280bc67e.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004212s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-05-16T11:53:25+08:00 ] 127.0.0.1 /thinkshop/Uploads/2015-05-14/5554a280bc67e.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002135s ]
+ERR: 无法加载模块:Uploads
+
+[ 2015-05-16T11:53:36+08:00 ] 127.0.0.1 /thinkshop/Uploads/2015-05-14/5554a280bc67e.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001958s ]
+ERR: 无法加载模块:Uploads
+

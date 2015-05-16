@@ -74,7 +74,7 @@
             <tr>
                 <th class="w100">内容</th>
                 <td>
-                    <textarea name="content" class="w400 h100"></textarea>
+                    <textarea name="content" id="content" class="w650 h450"></textarea>
                 </td>
             </tr>
         </table>
@@ -87,3 +87,27 @@
 
 	</body>
 </html>
+
+<!-- 实例化编辑器代码 -->
+<!--Umeditor编辑器-->
+<script id="detail" name="detail" type="text/plain" style="width:600px;height:200px;"></script>
+<!-- 样式文件 -->
+<link rel="stylesheet" href="/thinkshop/Application/Admin/View/Static//Umeditor/themes/default/css/umeditor.css">
+<!-- 配置文件 -->
+<script type="text/javascript" src="/thinkshop/Application/Admin/View/Static//Umeditor/umeditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/thinkshop/Application/Admin/View/Static//Umeditor/umeditor.js"></script>
+
+<script type="text/javascript">
+         $(function(){
+             window.um = UM.getEditor('content', {
+                 /* 传入配置参数,可配参数列表看umeditor.config.js */
+                 toolbar: ['undo redo | bold italic underline | emotion image'],
+                 imageUrl:"<?php echo U('Base/uploadDetailImg');?>",//php处理脚本
+                 imagePath:'/thinkshop/',
+                 focus: true,
+                 enterTag:'br'
+             });
+         });
+</script>
+<!--//Umeditor编辑器-->

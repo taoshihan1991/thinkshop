@@ -50,7 +50,7 @@
             <tr>
                 <th class="w100">内容</th>
                 <td>
-                    <textarea name="content" class="w400 h100"></textarea>
+                    <textarea name="content" id="content" class="w650 h450"></textarea>
                 </td>
             </tr>
         </table>
@@ -63,3 +63,19 @@
 
 	</body>
 </html>
+
+<!-- 实例化编辑器代码 -->
+<include file="Common:umeditor" />
+<script type="text/javascript">
+         $(function(){
+             window.um = UM.getEditor('content', {
+                 /* 传入配置参数,可配参数列表看umeditor.config.js */
+                 toolbar: ['undo redo | bold italic underline | emotion image'],
+                 imageUrl:"<?php echo U('Base/uploadDetailImg');?>",//php处理脚本
+                 imagePath:'__ROOT__/',
+                 focus: true,
+                 enterTag:'br'
+             });
+         });
+</script>
+<!--//Umeditor编辑器-->

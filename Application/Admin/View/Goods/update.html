@@ -8,65 +8,218 @@
 	</head>
 	<body>
 
-<div class="wrap">
-    <div class="menu_list">
-        <ul>
-            <li><a href="{:U('Attribute/index')}" >属性列表</a></li>
-            <li><a href="" class="action">修改属性</a></li>
-        </ul>
-    </div>
-    <div class="title-header">修改属性</div>
-    <form method="post" class="hd-form" action="{:U('Attribute/update')}">
-    <input type="hidden" name="id" value="{$info.id}" />
-        <table class="table1">
-            <tr>
-                <th class="w100">所属类型</th>
-                <td>
-                      <select name="type_id" class="w200">
-                                <option value="0">请选择</option>
-                                    <foreach name="types" item="v">
-                                    <option value="{$v.id}" <if condition="$info['type_id']==$v['id']">selected="selected"</if>>{$v.name}</option>
-                                    </foreach>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <th class="w100">名称</th>
-                <td>
-                    <input type="text" name="name" class="w300" value="{$info.name}" />
-                </td>
-            </tr>
- 
-            <tr>
-                <th class="w100">属性类型</th>
-                <td>
-                    <label><input type="radio" name="type" value="0" <if condition="$info['type']==0">checked="checked"</if>/> 唯一属性</label>&nbsp;
-                    <label><input type="radio" name="type" value="1" <if condition="$info['type']==1">checked="checked"</if>/> 单选属性</label>&nbsp;
-                    <label><input type="radio" name="type" value="2" <if condition="$info['type']==2">checked="checked"</if>/> 复选属性</label>&nbsp;
-                </td>
-            </tr>
-            <tr>
-                <th class="w100">输入方式</th>
-                <td>
-                    <label><input type="radio" name="input_type" value="0" <if condition="$info['input_type']==0">checked="checked"</if>/> 文本框</label>&nbsp;
-                    <label><input type="radio" name="input_type" value="1" <if condition="$info['input_type']==1">checked="checked"</if>/> 下拉列表</label>&nbsp;
-                    <label><input type="radio" name="input_type" value="2" <if condition="$info['input_type']==2">checked="checked"</if>/> 文本域</label>&nbsp;
-                </td>
-            </tr>
-            <tr>
-                <th class="w100">属性值</th>
-                <td>
-                    <textarea name="value" class="w350 h100">{$info.value}</textarea>
-                </td>
-            </tr>
-        </table>
-        <div class="position-bottom">
-            <input type="submit" value="确定" class="hd-success"/>
+<form action="{:U('Goods/update')}" method="post" class="hd-form" >
+    <input type="hidden" name="id" value="{$info.id}"/>
+    <div class="wrap">
+        <div class="menu_list">
+            <ul>
+               <li><a href="{:U('Goods/index')}">商品列表</a></li>
+                <li><a href="" class="action">修改商品</a></li>
+            </ul>
         </div>
-    </form>
-</div>
+        <div class="title-header">温馨提示</div>
+        <div class="tab">
+            <ul class="tab_menu">
+                <li lab="web"><a href="#">通用信息</a></li>
+                <li><li lab="rewrite"><a href="#">详细描述</a></li></li>
+                <li lab="upload"><a href="#">seo信息</a></li>
+                <li lab="member"><a href="#">商品属性</a></li>
+                <li lab="content"><a href="#">商品相册</a></li>
+            </ul>
+            <div class="tab_content">
+                <div id="web">
+                    <table class="table1">
+                        
+                                <tr>
+                                    <th class="w100">商品名称</th>
+                                    <td class="w250">
+                                        <input type="text" name="name" value="{$info.name}" class="w400"/>
+                                    </td>
+                                </tr>                        
+                                <tr>
+                                    <th class="w100">商品广告语</th>
+                                    <td class="w250">
+                                        <input type="text" name="goods_ad" value="{$info.goods_ad}" class="w400"/>
+                                    </td>
+                                </tr>                         
+                         
+                                <tr>
+                                    <th class="w100">商品分类</th>
+                                    <td>
+                                        <select name="category_id" class="w200">
+                                                    <option value="0">请选择</option>
+                                                        <foreach name="cate" item="v">
+                                                        <option value="{$v.id}"
+                                                        <if condition="$info['category_id']==$v['id']">selected="selected"</if>
+                                                        >{:str_repeat("&nbsp;",$v['level'])}<if condition="$v['level']">├─ </if>{$v.name}</option>
+                                                        </foreach>
+                                        </select>
+                                    </td>
+                                </tr>  
+                               <tr>
+                                    <th class="w100">商品品牌</th>
+                                    <td>
+                                        <select name="brand_id" class="w200">
+                                                    <option value="0">请选择</option>
+                                                        <foreach name="brand" item="v">
+                                                        <option value="{$v.id}" <if condition="$info['brand_id']==$v['id']">selected="selected"</if>>{$v.name}</option>
+                                                        </foreach>
+                                        </select>
+                                    </td>
+                                </tr>  
+                                <tr>
+                                    <th class="w100">商品货号</th>
+                                    <td class="w250">
+                                        <input type="text" name="pro_no" value="{$info.pro_no}" class="w400"/>
+                                    </td>
+                                </tr>  
+                                <tr>
+                                    <th class="w100">重量</th>
+                                    <td class="w250">
+                                        <input type="text" name="weight" value="{$info.weight}" class="w400"/>
+                                    </td>
+                                </tr>    
+                                <tr>
+                                    <th class="w100">商城价</th>
+                                    <td class="w250">
+                                        <input type="text" name="sell_price" value="{$info.sell_price}" class="w400"/>
+                                    </td>
+                                </tr>  
+                                <tr>
+                                    <th class="w100">市场价</th>
+                                    <td class="w250">
+                                        <input type="text" name="market_price" value="{$info.market_price}" class="w400"/>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <th class="w100">仓库量</th>
+                                    <td class="w250">
+                                        <input type="text" name="store_nums" value="{$info.store_nums}" class="w400"/>
+                                    </td>
+                                </tr>                  
+                        </table>
+                </div>
+                <div id="rewrite">
+                    <table class="table1"> 
+                    <tr>
+                                    <th class="w100">详细内容</th>
+                                    <td>
+                        <textarea name='content' id="content" class='w650 h400'>{$info.content}</textarea>
+                        </td>
+                    </tr>
+                    </table>
+                </div>
+                <div id="upload">
+                    <table class="table1">
+                        <tr>
+                                    <th class="w100">seo标题</th>
+                                    <td class="w250">
+                                        <input type="text" name="seo_title" value="{$info.seo_title}" class="w400"/>
+                                    </td>
+                        </tr> 
+                        <tr>
+                                    <th class="w100">seo关键字</th>
+                                    <td class="w250">
+                                        <input type="text" name="seo_keywords" value="{$info.seo_keywords}" class="w400"/>
+                                    </td>
+                        </tr>  
+                        <tr>
+                                    <th class="w100">seo描述</th>
+                                    <td>
+                        <textarea name='seo_description' class='w400 h100'>{$info.seo_description}</textarea>
+                        </td>
+                    </tr>   
+                    </table>
+                </div>
+                <div id="member">
+                    <table class="table1">
+                                <tr>
+                                    <th class="w100">商品类型</th>
+                                    <td>
+                                        <select name="type_id" class="w200 goodsType" data-typeid="{$info.type_id}" data-goodsid="{$info.id}">
+                                                    <option value="0">请选择</option>
+                                                        <foreach name="types" item="v">
+                                                        <option value="{$v.id}"
+                                                        <if condition="$info['type_id']==$v['id']">selected="selected"</if>
+                                                        >{$v.name}</option>
+                                                        </foreach>
+                                        </select>
+                                    </td>
+                                </tr>  
+                                <tbody id="extendType"></tbody> 
+                    </table>
+                </div>
+                <div id="content">
+                    <table class="table1">
+                        <tr>
+                                    <th class="w100">缩略图</th>
+                                    <td class="w250">
+                                        <include file="Common:uploadify"/>
+                                    </td>
+                        </tr>  
+                    </table>
+                </div>
+            
+             
+             
+            
 
 
+            </div>
+        </div>
+    </div>
+    <div class="position-bottom">
+        <input type="submit" class="hd-success" value="确定"/>
+    </div>
+</form>
 	</body>
 </html>
+<script type="text/javascript">
+$(function(){
+    // 扩展属性部分
+    $('.goodsType').change(function(){
+        var type_id=$(this).val();
+        var url="{:U('Attribute/ajaxType')}";
+        $.ajax({
+            type:'GET',
+            url:url,
+            data:{type_id:type_id},
+            success:function(res){
+                $('#extendType').html(res);
+            }
+
+        });
+       
+    });    
+    var type_id=$('.goodsType').attr('data-typeid'); 
+    var goods_id=$('.goodsType').attr('data-goodsid'); 
+    if(type_id){
+        var url="{:U('Attribute/ajaxType')}";
+        $.ajax({
+            type:'GET',
+            url:url,
+            data:{type_id:type_id,goods_id:goods_id},
+            success:function(res){
+                $('#extendType').html(res);
+            }
+
+        });
+    } 
+})
+
+</script>
+<!-- 实例化编辑器代码 -->
+<include file="Common:umeditor" />
+<script type="text/javascript">
+         $(function(){
+             window.um = UM.getEditor('content', {
+                 /* 传入配置参数,可配参数列表看umeditor.config.js */
+                 toolbar: ['undo redo | bold italic underline | emotion image'],
+                 imageUrl:"<?php echo U('Base/uploadDetailImg');?>",//php处理脚本
+                 imagePath:'__ROOT__/',
+                 focus: true,
+                 enterTag:'br'
+             });
+         });
+</script>
+<!--//Umeditor编辑器-->

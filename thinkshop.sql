@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50150
 File Encoding         : 65001
 
-Date: 2015-05-14 21:59:47
+Date: 2015-05-16 21:54:15
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -49,7 +49,7 @@ CREATE TABLE `ts_article` (
 -- ----------------------------
 -- Records of ts_article
 -- ----------------------------
-INSERT INTO `ts_article` VALUES ('1', '测试第一篇1', '测试第一篇测试第一篇', './Uploads/2015-05-14/5554a280bc67e.jpg', '11', '0', '12');
+INSERT INTO `ts_article` VALUES ('1', '测试第一篇1', '测试第一篇测试第一篇<img src=\\\"http://img.baidu.com/hi/jx2/j_0013.gif\\\" _src=\\\"http://img.baidu.com/hi/jx2/j_0013.gif\\\"/>', './Uploads/2015-05-14/5554a280bc67e.jpg', '11', '0', '12');
 
 -- ----------------------------
 -- Table structure for `ts_articleclass`
@@ -119,11 +119,12 @@ CREATE TABLE `ts_category` (
   `parent_id` int(11) NOT NULL DEFAULT '0' COMMENT '父级分类',
   `sort` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_category
 -- ----------------------------
+INSERT INTO `ts_category` VALUES ('10', '精品图书', '0', '0');
 INSERT INTO `ts_category` VALUES ('6', '数码产品', '0', '1');
 
 -- ----------------------------
@@ -157,11 +158,17 @@ CREATE TABLE `ts_goods` (
   PRIMARY KEY (`id`),
   KEY `fk_ts_goods_ts_category_idx` (`category_id`),
   KEY `fk_ts_goods_ts_brand1_idx` (`brand_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_goods
 -- ----------------------------
+INSERT INTO `ts_goods` VALUES ('3', '2', '', '', '', '0', '2', '', '', '0.00', '0.00', '1431741702', '0', '', '', '', '0', '0', '0', '0', '', '6', '2');
+INSERT INTO `ts_goods` VALUES ('4', '3', '', '', '', '0', '3', '', '', '0.00', '0.00', '1431741786', '0', '', '', '', '0', '0', '0', '0', '', '6', '2');
+INSERT INTO `ts_goods` VALUES ('5', '3', '', '', '', '0', '3', '', '', '0.00', '0.00', '1431741798', '0', '', '', '', '0', '0', '0', '0', '', '6', '2');
+INSERT INTO `ts_goods` VALUES ('6', '3', '', '', '', '0', '3', '', '', '0.00', '0.00', '1431741842', '0', '', '', '', '0', '0', '0', '0', '', '6', '2');
+INSERT INTO `ts_goods` VALUES ('7', '明朝那些事(精装本)', '明朝那些事(精装本)', '', '22', '2', '明朝那些事(精装本)<div><br/></div><div><img src=\"http://localhost/thinkshop/Uploads/2015-05-16/5556e4895d420.jpg\" _src=\"http://localhost/thinkshop/Uploads/2015-05-16/5556e4895d420.jpg\"/></div>', 'Uploads/2015-05-16/55574aac9ee41.jpg', 'Uploads/2015-05-16/55574aa92603b.jpg|Uploads/', '20.00', '99.00', '1431784114', '0', '明朝那些事(精装本)', '明朝那些事(精装本)', '明朝那些事(精装本)', '23', '0', '0', '0', '', '10', '0');
+INSERT INTO `ts_goods` VALUES ('8', '狼图腾(精装本)', '狼图腾(精装本)', '', '22', '2', '狼图腾(精装本)狼图腾(精装本)', '狼图腾(精装本)', '', '50.00', '100.00', '1431743701', '99', '狼图腾(精装本)', '狼图腾(精装本)', '狼图腾(精装本)', '22', '0', '0', '0', '', '10', '8');
 
 -- ----------------------------
 -- Table structure for `ts_goods_attr`
@@ -170,13 +177,21 @@ DROP TABLE IF EXISTS `ts_goods_attr`;
 CREATE TABLE `ts_goods_attr` (
   `goods_id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '商品id',
   `attribute_id` int(11) NOT NULL DEFAULT '0' COMMENT '属性id',
+  `attr_value` varchar(1024) NOT NULL DEFAULT '' COMMENT '属性值',
+  `attr_price` varchar(255) NOT NULL DEFAULT '' COMMENT '属性价格',
   KEY `fk_table1_ts_goods1_idx` (`goods_id`),
   KEY `fk_goods_attr_ts_attribute1_idx` (`attribute_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_goods_attr
 -- ----------------------------
+INSERT INTO `ts_goods_attr` VALUES ('8', '3', '二寸', '0');
+INSERT INTO `ts_goods_attr` VALUES ('8', '2', '33', '0');
+INSERT INTO `ts_goods_attr` VALUES ('7', '4', '7777', '');
+INSERT INTO `ts_goods_attr` VALUES ('8', '4', '狼图腾(精装本)狼图腾(精装本)', '0');
+INSERT INTO `ts_goods_attr` VALUES ('7', '3', '三寸', '');
+INSERT INTO `ts_goods_attr` VALUES ('7', '2', '77', '');
 
 -- ----------------------------
 -- Table structure for `ts_type`

@@ -8,7 +8,7 @@
 	</head>
 	<body>
 
-<form action="http://localhost/hdcms/index.php?a=Admin&c=Config&m=edit" method="post" class="hd-form" onsubmit="return hd_submit(this)">
+<form action="{:U('Goods/add')}" method="post" class="hd-form" >
     <div class="wrap">
         <div class="menu_list">
             <ul>
@@ -21,7 +21,7 @@
             <ul class="tab_menu">
                 <li lab="web"><a href="#">通用信息</a></li>
                 <li><li lab="rewrite"><a href="#">详细描述</a></li></li>
-                <li lab="upload"><a href="#">其他信息</a></li>
+                <li lab="upload"><a href="#">seo信息</a></li>
                 <li lab="member"><a href="#">商品属性</a></li>
                 <li lab="content"><a href="#">商品相册</a></li>
             </ul>
@@ -41,12 +41,7 @@
                                         <input type="text" name="goods_ad" value="" class="w400"/>
                                     </td>
                                 </tr>                         
-                                <tr>
-                                    <th class="w100">商品货号</th>
-                                    <td class="w250">
-                                        <input type="text" name="pro_no" value="" class="w400"/>
-                                    </td>
-                                </tr>   
+                         
                                 <tr>
                                     <th class="w100">商品分类</th>
                                     <td>
@@ -68,7 +63,19 @@
                                                         </foreach>
                                         </select>
                                     </td>
-                                </tr>      
+                                </tr>  
+                                <tr>
+                                    <th class="w100">商品货号</th>
+                                    <td class="w250">
+                                        <input type="text" name="pro_no" value="" class="w400"/>
+                                    </td>
+                                </tr>  
+                                <tr>
+                                    <th class="w100">重量</th>
+                                    <td class="w250">
+                                        <input type="text" name="weight" value="" class="w400"/>
+                                    </td>
+                                </tr>    
                                 <tr>
                                     <th class="w100">商城价</th>
                                     <td class="w250">
@@ -84,7 +91,7 @@
                                 <tr>
                                     <th class="w100">仓库量</th>
                                     <td class="w250">
-                                        <input type="text" name="market_price" value="" class="w400"/>
+                                        <input type="text" name="store_nums" value="" class="w400"/>
                                     </td>
                                 </tr>                  
                         </table>
@@ -94,25 +101,31 @@
                     <tr>
                                     <th class="w100">详细内容</th>
                                     <td>
-                        <textarea name='content' class='w400 h100'></textarea>
+                        <textarea name='content' id="content" class='w650 h400'></textarea>
                         </td>
                     </tr>
                     </table>
                 </div>
                 <div id="upload">
                     <table class="table1">
-                                <tr>
-                                    <th class="w100">商品类型</th>
-                                    <td>
-                                        <select name="brand_id" class="w200">
-                                                    <option value="0">请选择</option>
-                                                        <foreach name="types" item="v">
-                                                        <option value="{$v.id}">{$v.name}</option>
-                                                        </foreach>
-                                        </select>
+                        <tr>
+                                    <th class="w100">seo标题</th>
+                                    <td class="w250">
+                                        <input type="text" name="seo_title" value="" class="w400"/>
                                     </td>
-                                </tr> 
-                                
+                        </tr> 
+                        <tr>
+                                    <th class="w100">seo关键字</th>
+                                    <td class="w250">
+                                        <input type="text" name="seo_keywords" value="" class="w400"/>
+                                    </td>
+                        </tr>  
+                        <tr>
+                                    <th class="w100">seo描述</th>
+                                    <td>
+                        <textarea name='seo_description' class='w400 h100'></textarea>
+                        </td>
+                    </tr>   
                     </table>
                 </div>
                 <div id="member">
@@ -120,7 +133,7 @@
                                 <tr>
                                     <th class="w100">商品类型</th>
                                     <td>
-                                        <select name="brand_id" class="w200 goodsType">
+                                        <select name="type_id" class="w200 goodsType">
                                                     <option value="0">请选择</option>
                                                         <foreach name="types" item="v">
                                                         <option value="{$v.id}">{$v.name}</option>
@@ -133,7 +146,12 @@
                 </div>
                 <div id="content">
                     <table class="table1">
-                        
+                        <tr>
+                                    <th class="w100">缩略图</th>
+                                    <td class="w250">
+                                        <include file="Common:uploadify"/>
+                                    </td>
+                        </tr>  
                     </table>
                 </div>
             
@@ -167,7 +185,24 @@ $(function(){
 
         });
        
-    });    
+    });  
+  
 })
 
 </script>
+
+<!-- 实例化编辑器代码 -->
+<include file="Common:umeditor" />
+<script type="text/javascript">
+         $(function(){
+             window.um = UM.getEditor('content', {
+                 /* 传入配置参数,可配参数列表看umeditor.config.js */
+                 toolbar: ['undo redo | bold italic underline | emotion image'],
+                 imageUrl:"<?php echo U('Base/uploadDetailImg');?>",//php处理脚本
+                 imagePath:'__ROOT__/',
+                 focus: true,
+                 enterTag:'br'
+             });
+         });
+</script>
+<!--//Umeditor编辑器-->

@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 		<title>ThinkShop电子商务系统</title>
-		<script type='text/javascript' src='/thinkshop/Application/Admin/View/Static/js/jquery-1.8.2.min.js'></script>
+		<script type='text/javascript' src='/thinkshop/Application/Admin/View/Static/js/jquery.min.js'></script>
 <link href='/thinkshop/Application/Admin/View/Static/hdjs/css/hdjs.css' rel='stylesheet' media='screen'>
 <link href='/thinkshop/Application/Admin/View/Static/css/extend.css' rel='stylesheet' media='screen'>
 <script src='/thinkshop/Application/Admin/View/Static/hdjs/js/hdjs.js'></script>
@@ -15,21 +15,6 @@
 		ROOT = '/thinkshop/';
 		WEB = '/thinkshop/';
 		URL = 'http://localhost/hdcms/index.php?a=Admin';
-		HDPHP = 'http://localhost/hdcms/hd/HDPHP/hdphp';
-		HDPHPDATA = 'http://localhost/hdcms/hd/HDPHP/hdphp/Data';
-		HDPHPTPL = 'http://localhost/hdcms/hd/HDPHP/hdphp/Lib/Tpl';
-		HDPHPEXTEND = 'http://localhost/hdcms/hd/HDPHP/hdphp/Extend';
-		APP = 'http://localhost/hdcms/index.php?a=Admin';
-		CONTROL = '/thinkshop/'+'index.php?m=Admin&c=Index';
-		METH = 'http://localhost/hdcms/index.php?a=Admin&c=Index&m=index';
-		GROUP = 'http://localhost/hdcms/hd';
-		TPL = 'http://localhost/hdcms/hd/Hdcms/Admin/Tpl';
-		CONTROLTPL = 'http://localhost/hdcms/hd/Hdcms/Admin/Tpl/Index';
-		STATIC = 'http://localhost/hdcms/Static';
-		PUBLIC = 'http://localhost/hdcms/hd/Hdcms/Admin/Tpl/Public';
-		HISTORY = 'http://localhost/hdcms/index.php?a=Admin&c=Login&m=login';
-		HTTPREFERER = 'http://localhost/hdcms/index.php?a=Admin&c=Login&m=login';
-		TEMPLATE = 'http://localhost/hdcms/template/default';
 </script>
 	</head>
 	<body>
@@ -38,10 +23,10 @@
     <div class="search">
 
         <form class="hd-form">
-        商品类型 :
-        <select name="flag" class="w100 searchAttr">
-            <option value="<?php echo U('Attribute/index');?>">全部</option>
-            <?php if(is_array($types)): foreach($types as $key=>$v): ?><option value="<?php echo U('Attribute/index',array('type_id'=>$v['id']));?>" <?php if($_GET['type_id']==$v['id']): ?>selected="selected"<?php endif; ?>><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
+        商品分类 :
+        <select name="category_id" class="w100 searchAttr">
+            <option value="<?php echo U('Goods/index');?>">全部</option>
+            <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><option value="<?php echo U('Goods/index',array('category_id'=>$v['id']));?>" <?php if($_GET['category_id']==$v['id']): ?>selected="selected"<?php endif; ?>><?php echo str_repeat("&nbsp;",$v['level']); if($v['level']): ?>├─<?php endif; echo ($v["name"]); ?></option><?php endforeach; endif; ?>
         </select>
         </form>
     </div>
@@ -56,18 +41,18 @@
         <tr>
             <td class="w30">编号</td>
             <td class="w200">名称</td>
-            <td class="w200">所属类型</td>
+            <td class="w200">所属分类</td>
             <td class="w150">操作</td>
         </tr>
         </thead>
             <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
                 <td><?php echo ($v["id"]); ?></td>
                 <td><?php echo ($v["name"]); ?></td>
-                <td><?php echo ($v["type_name"]); ?></td>
+                <td><?php echo ($v["cate_name"]); ?></td>
                 <td>
-                    <a href="<?php echo U('Attribute/update',array('id'=>$v['id']));?>">修改</a> 
+                    <a href="<?php echo U('Goods/update',array('id'=>$v['id']));?>">修改</a> 
                     <span class="line">|</span> 
-                    <a href="<?php echo U('Attribute/delete',array('id'=>$v['id']));?>">删除</a>
+                    <a href="<?php echo U('Goods/delete',array('id'=>$v['id']));?>">删除</a>
                 </td>
             </tr><?php endforeach; endif; ?>
             </table>

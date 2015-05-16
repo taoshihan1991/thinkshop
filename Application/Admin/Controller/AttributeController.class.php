@@ -97,6 +97,7 @@ class AttributeController extends BaseController {
     }
     public function ajaxType(){
         $type_id=I('get.type_id','intval');
+        $goods_id=I('get.goods_id','intval');
         $attribute_model=D('attribute');
 
         $condition=array('type_id'=>$type_id);
@@ -104,22 +105,37 @@ class AttributeController extends BaseController {
 
         $str="";
         foreach($list as $v){
+            if($goods_id){
+                $condition=array(
+                    'goods_id'=>$goods_id,
+                    'attribute_id'=>$v['id'],
+                );
+                $attrValues=M('goods_attr')->where($condition)->find();
+            }
+
             $str.="<tr><th class='w100'>{$v['name']}</th><td>";
             $str.="<input type='hidden' name='attr_id_list[]' value='{$v['id']}' />";
+            $str.="<input type='hidden' name='attr_price_list[]' value='{$attrValues['attr_price']}' />";
             switch ($v['input_type']) {
                 case 0:
-                    $inputTypeStr="<input type='text' name='attr_value_list[]' value='' />";
+                    $inputTypeStr="<input type='text' name='attr_value_list[]' value='{$attrValues['attr_value']}' />";
                     break;
                 case 1:
                     $inputTypeStr="<select name='attr_value_list[]'>";
                     $temp=explode('|',$v['value']);
                     foreach($temp as $r){
-                         $inputTypeStr.="<option value=''>{$r}</option>";
+                        if($attrValues['attr_value']==$r){
+                           $inputTypeStr.="<option value='{$r}' selected='selected'>{$r}</option>"; 
+                        }else{
+                            $inputTypeStr.="<option value='{$r}'>{$r}</option>";
+                        }
+                        
                     }
                     $inputTypeStr.="<select>";
                     break;
+                        
                 case 2:
-                    $inputTypeStr="<textarea name='attr_value_list[]' class='w400 h100'></textarea>";
+                    $inputTypeStr="<textarea name='attr_value_list[]' class='w400 h100'>{$attrValues['attr_value']}</textarea>";
                     break;
                 default:
                     # code...

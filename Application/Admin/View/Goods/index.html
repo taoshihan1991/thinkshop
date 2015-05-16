@@ -12,11 +12,11 @@
     <div class="search">
 
         <form class="hd-form">
-        商品类型 :
-        <select name="flag" class="w100 searchAttr">
-            <option value="{:U('Attribute/index')}">全部</option>
-            <foreach name="types" item="v">
-            <option value="{:U('Attribute/index',array('type_id'=>$v['id']))}" <if condition="$_GET['type_id']==$v['id']">selected="selected"</if>>{$v.name}</option>
+        商品分类 :
+        <select name="category_id" class="w100 searchAttr">
+            <option value="{:U('Goods/index')}">全部</option>
+            <foreach name="cate" item="v">
+            <option value="{:U('Goods/index',array('category_id'=>$v['id']))}" <if condition="$_GET['category_id']==$v['id']">selected="selected"</if>>{:str_repeat("&nbsp;",$v['level'])}<if condition="$v['level']">├─ </if>{$v.name}</option>
             </foreach>
         </select>
         </form>
@@ -32,7 +32,7 @@
         <tr>
             <td class="w30">编号</td>
             <td class="w200">名称</td>
-            <td class="w200">所属类型</td>
+            <td class="w200">所属分类</td>
             <td class="w150">操作</td>
         </tr>
         </thead>
@@ -40,11 +40,11 @@
             <tr>
                 <td>{$v.id}</td>
                 <td>{$v.name}</td>
-                <td>{$v.type_name}</td>
+                <td>{$v.cate_name}</td>
                 <td>
-                    <a href="{:U('Attribute/update',array('id'=>$v['id']))}">修改</a> 
+                    <a href="{:U('Goods/update',array('id'=>$v['id']))}">修改</a> 
                     <span class="line">|</span> 
-                    <a href="{:U('Attribute/delete',array('id'=>$v['id']))}">删除</a>
+                    <a href="{:U('Goods/delete',array('id'=>$v['id']))}">删除</a>
                 </td>
             </tr>
             </foreach>

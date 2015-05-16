@@ -15,7 +15,7 @@ class ArticleController extends BaseController {
             $data=array(
                 'title'=>I('post.title'),
                 'category_id'=>I('post.category_id','intval'),
-                'content'=>$_POST['content'],
+                'content'=>stripslashes($_POST['content']),
                 'sort'=>I('post.sort','intval'),
                 'addtime'=>time(),
             );
@@ -69,7 +69,7 @@ class ArticleController extends BaseController {
                 'id'=>I('post.id','intval'),
                 'title'=>I('post.title'),
                 'category_id'=>I('post.category_id','intval'),
-                'content'=>$_POST['content'],
+                'content'=>stripslashes($_POST['content']),
                 'sort'=>I('post.sort','intval'),
             );
 
