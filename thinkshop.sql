@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50150
 File Encoding         : 65001
 
-Date: 2015-05-16 21:54:15
+Date: 2015-05-17 16:37:05
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -44,12 +44,16 @@ CREATE TABLE `ts_article` (
   `addtime` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '添加时间',
   `sort` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_article
 -- ----------------------------
-INSERT INTO `ts_article` VALUES ('1', '测试第一篇1', '测试第一篇测试第一篇<img src=\\\"http://img.baidu.com/hi/jx2/j_0013.gif\\\" _src=\\\"http://img.baidu.com/hi/jx2/j_0013.gif\\\"/>', './Uploads/2015-05-14/5554a280bc67e.jpg', '11', '0', '12');
+INSERT INTO `ts_article` VALUES ('1', '关于奇点，我用感觉描绘过它', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">关于奇点，我用感觉描绘过它，那是从一个被无限压缩的单元向四周拉伸，形成一个球体。在这里除了最基本的三维构造，还有以实体的形式存在的时间。因此，你从任意一个点，向任何一个方向出发，最终都可以回到那个点。星际穿越，仿佛就是梦的轮回。平行世界里没有他们，全是我们。</span></p>', './Uploads/2015-05-17/55584d0be191f.jpg', '11', '0', '12');
+INSERT INTO `ts_article` VALUES ('2', '生活中遇到许多似曾相识的过客', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">生活中遇到许多似曾相识的过客，让你怦然心动，深觉这么近，却又那么远。就像是一束暖阳，你看到了，感觉到了，但却无法捕捉。而这些，往往在心底慢慢消散，直到下一个循环。</span></p>', '', '12', '1431843102', '0');
+INSERT INTO `ts_article` VALUES ('3', '心愿未了有牵绊。生命不息，折腾未止。', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">心愿未了有牵绊。生命不息，折腾未止。</span></p>', './Uploads/2015-05-17/555851a91651b.jpg', '11', '1431851433', '0');
+INSERT INTO `ts_article` VALUES ('4', '轻博客折腾不止', '<p>轻博客折腾不止</p>', './Uploads/2015-05-17/555852a16a37b.jpg', '11', '1431851499', '0');
+INSERT INTO `ts_article` VALUES ('5', '不行了,不能再研究代码了,必须出去走走', '<p>不行了,不能再研究代码了,必须出去走走</p>', '', '11', '1431851562', '0');
 
 -- ----------------------------
 -- Table structure for `ts_articleclass`
@@ -61,11 +65,12 @@ CREATE TABLE `ts_articleclass` (
   `parent_id` int(11) NOT NULL DEFAULT '0' COMMENT '父级分类',
   `sort` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_articleclass
 -- ----------------------------
+INSERT INTO `ts_articleclass` VALUES ('12', '旅游分享', '0', '0');
 INSERT INTO `ts_articleclass` VALUES ('11', '系统文章', '0', '1');
 
 -- ----------------------------
@@ -140,7 +145,7 @@ CREATE TABLE `ts_goods` (
   `type_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '类型编号',
   `content` text NOT NULL COMMENT '详细内容',
   `img` varchar(255) NOT NULL DEFAULT '' COMMENT '默认图片',
-  `imgs` varchar(45) NOT NULL DEFAULT '' COMMENT '产品相册',
+  `imgs` varchar(2048) NOT NULL DEFAULT '' COMMENT '产品相册',
   `sell_price` float(10,2) NOT NULL DEFAULT '0.00' COMMENT '商城价',
   `market_price` float(10,2) NOT NULL DEFAULT '0.00' COMMENT '市场价',
   `create_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '上架时间',
@@ -167,7 +172,7 @@ INSERT INTO `ts_goods` VALUES ('3', '2', '', '', '', '0', '2', '', '', '0.00', '
 INSERT INTO `ts_goods` VALUES ('4', '3', '', '', '', '0', '3', '', '', '0.00', '0.00', '1431741786', '0', '', '', '', '0', '0', '0', '0', '', '6', '2');
 INSERT INTO `ts_goods` VALUES ('5', '3', '', '', '', '0', '3', '', '', '0.00', '0.00', '1431741798', '0', '', '', '', '0', '0', '0', '0', '', '6', '2');
 INSERT INTO `ts_goods` VALUES ('6', '3', '', '', '', '0', '3', '', '', '0.00', '0.00', '1431741842', '0', '', '', '', '0', '0', '0', '0', '', '6', '2');
-INSERT INTO `ts_goods` VALUES ('7', '明朝那些事(精装本)', '明朝那些事(精装本)', '', '22', '2', '明朝那些事(精装本)<div><br/></div><div><img src=\"http://localhost/thinkshop/Uploads/2015-05-16/5556e4895d420.jpg\" _src=\"http://localhost/thinkshop/Uploads/2015-05-16/5556e4895d420.jpg\"/></div>', 'Uploads/2015-05-16/55574aac9ee41.jpg', 'Uploads/2015-05-16/55574aa92603b.jpg|Uploads/', '20.00', '99.00', '1431784114', '0', '明朝那些事(精装本)', '明朝那些事(精装本)', '明朝那些事(精装本)', '23', '0', '0', '0', '', '10', '0');
+INSERT INTO `ts_goods` VALUES ('7', '明朝那些事(精装本)', '明朝那些事(精装本)', '', '22', '2', '明朝那些事(精装本)<div><br/></div><div><img src=\"http://localhost/thinkshop/Uploads/2015-05-16/5556e4895d420.jpg\" _src=\"http://localhost/thinkshop/Uploads/2015-05-16/5556e4895d420.jpg\"/></div>', 'Uploads/2015-05-17/5557e79010a13.jpg', 'Uploads/2015-05-16/55574aa92603b.jpg|Uploads/|Uploads/2015-05-17/5557e684c9ef5.jpg|Uploads/2015-05-17/5557e6c624ca3.jpg|Uploads/2015-05-17/5557e79010a13.jpg', '20.00', '99.00', '1431824283', '0', '明朝那些事(精装本)', '明朝那些事(精装本)', '明朝那些事(精装本)', '23', '0', '0', '0', '', '10', '0');
 INSERT INTO `ts_goods` VALUES ('8', '狼图腾(精装本)', '狼图腾(精装本)', '', '22', '2', '狼图腾(精装本)狼图腾(精装本)', '狼图腾(精装本)', '', '50.00', '100.00', '1431743701', '99', '狼图腾(精装本)', '狼图腾(精装本)', '狼图腾(精装本)', '22', '0', '0', '0', '', '10', '8');
 
 -- ----------------------------

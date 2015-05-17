@@ -30,7 +30,7 @@ class ArticleController extends BaseController {
             );
 
             // 验证
-            if($this->checkData($data)){
+            if(!$this->checkData($data)){
                 $this->error($this->errorMsg);
             }
 

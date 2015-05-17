@@ -22,7 +22,7 @@ class ArticleModel extends Model {
                    ->join(C('DB_PREFIX')."articleclass b on a.category_id=b.id")
                    ->field("a.*,b.name cate_name")
                    ->where($condition)
-                   ->limit($page->firstRow.','.$page->listRows)->select();
+                   ->limit($page->firstRow.','.$page->listRows)->order('a.id desc')->select();
     	$data['list']=$list;
     	$data['page']=$show;
     	return $data;

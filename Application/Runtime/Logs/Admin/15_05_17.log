@@ -3031,3 +3031,1178 @@ SQL: SELECT * FROM `ts_goods_attr` WHERE `goods_id` = 7 AND `attribute_id` = 2 L
 SQL: SELECT * FROM `ts_goods_attr` WHERE `goods_id` = 7 AND `attribute_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
 SQL: SELECT * FROM `ts_goods_attr` WHERE `goods_id` = 7 AND `attribute_id` = 4 LIMIT 1   [ RunTime:0.0010s ]
 
+[ 2015-05-17T13:11:06+08:00 ] 127.0.0.1 /thinkshop/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006986s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 135 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 135 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.264915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.265024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.040867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.040970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006110s ]
+
+[ 2015-05-17T13:11:06+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005814s ]
+
+[ 2015-05-17T13:52:43+08:00 ] 127.0.0.1 /thinkshop/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 135 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 135 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005895s ]
+
+[ 2015-05-17T13:52:44+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011960s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007614s ]
+
+[ 2015-05-17T14:07:36+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=index&_=0.005089465994387865
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005561s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0123s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005775s ]
+
+[ 2015-05-17T14:07:39+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005492s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0297s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005445s ]
+
+[ 2015-05-17T14:07:59+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005722s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008233s ]
+
+[ 2015-05-17T14:08:03+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005396s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005601s ]
+
+[ 2015-05-17T14:09:36+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005576s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004962s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005039s ]
+
+[ 2015-05-17T14:09:41+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005356s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0301s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005482s ]
+
+[ 2015-05-17T14:11:43+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005837s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0269s ]
+SQL: INSERT INTO `ts_article` (`title`,`category_id`,`content`,`sort`,`addtime`) VALUES ('生活中遇到许多似曾相识的过客','12','<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">生活中遇到许多似曾相识的过客，让你怦然心动，深觉这么近，却又那么远。就像是一束暖阳，你看到了，感觉到了，但却无法捕捉。而这些，往往在心底慢慢消散，直到下一个循环。</span></p>','0','1431843102') [ RunTime:0.1146s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005914s ]
+
+[ 2015-05-17T14:11:46+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005449s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005439s ]
+
+[ 2015-05-17T14:12:27+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005424s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0228s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0167s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005807s ]
+
+[ 2015-05-17T14:19:05+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006008s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0308s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0122s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.id desc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005587s ]
+
+[ 2015-05-17T15:26:03+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Goods&a=index&_=0.634879790013656
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005600s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.1646s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_goods` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0144s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_goods a INNER JOIN ts_category b on a.category_id=b.id  ORDER BY a.id desc LIMIT 0,10   [ RunTime:0.0919s ]
+SQL: SHOW COLUMNS FROM `ts_category` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `ts_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 29 行.
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005416s ]
+
+[ 2015-05-17T15:26:08+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Goods&a=update&id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005729s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `ts_goods` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `ts_category` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `ts_category`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ts_brand` [ RunTime:0.0328s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\BrandModel::getAll(), called in G:\php\htdocs\thinkshop\Application\Admin\Controller\GoodsController.class.php on line 155 and defined G:\php\htdocs\thinkshop\Application\Admin\Model\BrandModel.class.php 第 26 行.
+NOTIC: [8] Undefined variable: condition G:\php\htdocs\thinkshop\Application\Admin\Model\BrandModel.class.php 第 27 行.
+SQL: SELECT * FROM `ts_brand`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ts_type` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `ts_type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007462s ]
+
+[ 2015-05-17T15:26:11+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Attribute&a=ajaxType&type_id=2&goods_id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007639s ]
+SQL: SHOW COLUMNS FROM `ts_attribute` [ RunTime:0.0721s ]
+SQL: SELECT * FROM `ts_attribute` WHERE `type_id` = 2  [ RunTime:0.0275s ]
+SQL: SHOW COLUMNS FROM `ts_goods_attr` [ RunTime:0.0565s ]
+SQL: SELECT * FROM `ts_goods_attr` WHERE `goods_id` = 7 AND `attribute_id` = 2 LIMIT 1   [ RunTime:0.0296s ]
+SQL: SELECT * FROM `ts_goods_attr` WHERE `goods_id` = 7 AND `attribute_id` = 3 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `ts_goods_attr` WHERE `goods_id` = 7 AND `attribute_id` = 4 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2015-05-17T15:26:23+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005847s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009124s ]
+
+[ 2015-05-17T15:26:28+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007575s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0236s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0152s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.id desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005942s ]
+
+[ 2015-05-17T15:26:30+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006961s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005463s ]
+
+[ 2015-05-17T15:27:15+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Login&a=logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005479s ]
+
+[ 2015-05-17T15:27:15+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007559s ]
+
+[ 2015-05-17T15:27:16+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Login&a=code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019236s ]
+
+[ 2015-05-17T16:07:50+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Login&a=code&0.738899752497673
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009143s ]
+
+[ 2015-05-17T16:08:00+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006254s ]
+SQL: SHOW COLUMNS FROM `ts_admin` [ RunTime:0.0318s ]
+SQL: SELECT * FROM `ts_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005728s ]
+
+[ 2015-05-17T16:08:01+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006382s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 135 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 135 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005391s ]
+
+[ 2015-05-17T16:08:01+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008204s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005973s ]
+
+[ 2015-05-17T16:08:04+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=index&_=0.6175025091506541
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005384s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0323s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0152s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.id desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005518s ]
+
+[ 2015-05-17T16:08:09+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005387s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0309s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005387s ]
+
+[ 2015-05-17T16:09:19+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005340s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0315s ]
+SQL: UPDATE `ts_article` SET `id`='1',`title`='关于奇点，我用感觉描绘过它',`category_id`='11',`content`='<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">关于奇点，我用感觉描绘过它，那是从一个被无限压缩的单元向四周拉伸，形成一个球体。在这里除了最基本的三维构造，还有以实体的形式存在的时间。因此，你从任意一个点，向任何一个方向出发，最终都可以回到那个点。星际穿越，仿佛就是梦的轮回。平行世界里没有他们，全是我们。</span></p>',`sort`='12' WHERE `id` = 1 [ RunTime:0.0304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005428s ]
+
+[ 2015-05-17T16:09:21+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005326s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0286s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005770s ]
+
+[ 2015-05-17T16:10:09+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005457s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0256s ]
+SQL: UPDATE `ts_article` SET `id`='1',`title`='关于奇点，我用感觉描绘过它',`category_id`='11',`content`='<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">关于奇点，我用感觉描绘过它，那是从一个被无限压缩的单元向四周拉伸，形成一个球体。在这里除了最基本的三维构造，还有以实体的形式存在的时间。因此，你从任意一个点，向任何一个方向出发，最终都可以回到那个点。星际穿越，仿佛就是梦的轮回。平行世界里没有他们，全是我们。</span></p>',`sort`='12' WHERE `id` = 1 [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005231s ]
+
+[ 2015-05-17T16:10:44+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005688s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005560s ]
+
+[ 2015-05-17T16:10:52+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005432s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0304s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given G:\php\htdocs\thinkshop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `ts_article` SET `id`='1',`title`='关于奇点，我用感觉描绘过它',`category_id`='11',`content`='<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">关于奇点，我用感觉描绘过它，那是从一个被无限压缩的单元向四周拉伸，形成一个球体。在这里除了最基本的三维构造，还有以实体的形式存在的时间。因此，你从任意一个点，向任何一个方向出发，最终都可以回到那个点。星际穿越，仿佛就是梦的轮回。平行世界里没有他们，全是我们。</span></p>',`sort`='12',`thumb`='./Uploads/2015-05-17/55584d0be191f.jpg' WHERE `id` = 1 [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004963s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005038s ]
+
+[ 2015-05-17T16:10:54+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005408s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005435s ]
+
+[ 2015-05-17T16:28:39+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 135 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 135 行.
+NOTIC: [8] Undefined variable: f G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005764s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006499s ]
+
+[ 2015-05-17T16:28:40+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013405s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000551s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000782s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013470s ]
+
+[ 2015-05-17T16:29:41+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=index&_=0.6192637777421623
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007475s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0326s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0142s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005397s ]
+
+[ 2015-05-17T16:29:44+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005552s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0303s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004955s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005767s ]
+
+[ 2015-05-17T16:30:34+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006724s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given G:\php\htdocs\thinkshop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0219s ]
+SQL: INSERT INTO `ts_article` (`title`,`category_id`,`content`,`sort`,`addtime`,`thumb`) VALUES ('心愿未了有牵绊。生命不息，折腾未止。','11','<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">心愿未了有牵绊。生命不息，折腾未止。</span></p>','0','1431851433','./Uploads/2015-05-17/555851a91651b.jpg') [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005607s ]
+
+[ 2015-05-17T16:30:36+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005451s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005685s ]
+
+[ 2015-05-17T16:30:39+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007723s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0153s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.id desc LIMIT 0,10   [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006005s ]
+
+[ 2015-05-17T16:31:12+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005651s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0284s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006594s ]
+
+[ 2015-05-17T16:31:41+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005458s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0287s ]
+SQL: INSERT INTO `ts_article` (`title`,`category_id`,`content`,`sort`,`addtime`) VALUES ('轻博客折腾不止','11','<p>轻博客折腾不止</p>','0','1431851499') [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005552s ]
+
+[ 2015-05-17T16:31:43+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007753s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007641s ]
+
+[ 2015-05-17T16:32:43+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005746s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0220s ]
+SQL: INSERT INTO `ts_article` (`title`,`category_id`,`content`,`sort`,`addtime`) VALUES ('不行了,不能再研究代码了,必须出去走走','11','<p>不行了,不能再研究代码了,必须出去走走</p>','0','1431851562') [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005805s ]
+
+[ 2015-05-17T16:32:47+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013923s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007548s ]
+
+[ 2015-05-17T16:34:30+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008025s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0334s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0133s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.id desc LIMIT 0,10   [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006778s ]
+
+[ 2015-05-17T16:34:34+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005384s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0325s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005884s ]
+
+[ 2015-05-17T16:34:41+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006095s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0250s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given G:\php\htdocs\thinkshop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `ts_article` SET `id`='4',`title`='轻博客折腾不止',`category_id`='11',`content`='<p>轻博客折腾不止</p>',`sort`='0',`thumb`='./Uploads/2015-05-17/555852a16a37b.jpg' WHERE `id` = 4 [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005073s ]
+
+[ 2015-05-17T16:34:43+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=update&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006492s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0248s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005647s ]
+
+[ 2015-05-17T16:36:16+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007067s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0293s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0141s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.id desc LIMIT 0,10   [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+NOTIC: [8] Undefined index: category_id G:\php\htdocs\thinkshop\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005356s ]
+

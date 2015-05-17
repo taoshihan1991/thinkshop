@@ -27,7 +27,7 @@
         </ul>
     </div>
     <div class="title-header">修改类型</div>
-    <form method="post" class="hd-form" action="<?php echo U('Article/update');?>" >
+    <form method="post" class="hd-form" action="<?php echo U('Article/update');?>" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?php echo ($info["id"]); ?>" />
         <table class="table1">
             <tr>
