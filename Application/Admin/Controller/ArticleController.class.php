@@ -5,9 +5,18 @@ class ArticleController extends BaseController {
     public $errorMsg;//错误信息
     public function index(){
         $article_model=D('article');
-        $data=$article_model->getList(10);
+        $condition=isset($_GET['category_id']) ? array('a.category_id'=>I('get.category_id','intval')) : array();
+
+        $data=$article_model->getList(10,$condition);
         $this->assign('list',$data['list']);
         $this->assign('page',$data['page']);
+
+        // 分类
+        $articleclass_model=D('Articleclass');
+        $cate=$articleclass_model->getAll();
+        $cateTree=$articleclass_model->getTree($cate);
+        $this->assign('cate',$cateTree);
+
     	$this->display();
     }
     public function add(){

@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 		<title>ThinkShop电子商务系统</title>
-		<script type='text/javascript' src='/thinkshop/Application/Admin/View/Static/js/jquery-1.8.2.min.js'></script>
+		<script type='text/javascript' src='/thinkshop/Application/Admin/View/Static/js/jquery.min.js'></script>
 <link href='/thinkshop/Application/Admin/View/Static/hdjs/css/hdjs.css' rel='stylesheet' media='screen'>
 <link href='/thinkshop/Application/Admin/View/Static/css/extend.css' rel='stylesheet' media='screen'>
 <script src='/thinkshop/Application/Admin/View/Static/hdjs/js/hdjs.js'></script>
@@ -15,26 +15,21 @@
 		ROOT = '/thinkshop/';
 		WEB = '/thinkshop/';
 		URL = 'http://localhost/hdcms/index.php?a=Admin';
-		HDPHP = 'http://localhost/hdcms/hd/HDPHP/hdphp';
-		HDPHPDATA = 'http://localhost/hdcms/hd/HDPHP/hdphp/Data';
-		HDPHPTPL = 'http://localhost/hdcms/hd/HDPHP/hdphp/Lib/Tpl';
-		HDPHPEXTEND = 'http://localhost/hdcms/hd/HDPHP/hdphp/Extend';
-		APP = 'http://localhost/hdcms/index.php?a=Admin';
-		CONTROL = '/thinkshop/'+'index.php?m=Admin&c=Index';
-		METH = 'http://localhost/hdcms/index.php?a=Admin&c=Index&m=index';
-		GROUP = 'http://localhost/hdcms/hd';
-		TPL = 'http://localhost/hdcms/hd/Hdcms/Admin/Tpl';
-		CONTROLTPL = 'http://localhost/hdcms/hd/Hdcms/Admin/Tpl/Index';
-		STATIC = 'http://localhost/hdcms/Static';
-		PUBLIC = 'http://localhost/hdcms/hd/Hdcms/Admin/Tpl/Public';
-		HISTORY = 'http://localhost/hdcms/index.php?a=Admin&c=Login&m=login';
-		HTTPREFERER = 'http://localhost/hdcms/index.php?a=Admin&c=Login&m=login';
-		TEMPLATE = 'http://localhost/hdcms/template/default';
 </script>
 	</head>
 	<body>
 
 <div class="wrap">
+    <div class="search">
+
+        <form class="hd-form">
+        文章分类 :
+        <select name="category_id" class="w100 searchAttr">
+            <option value="<?php echo U('Article/index');?>">全部</option>
+            <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><option value="<?php echo U('Article/index',array('category_id'=>$v['id']));?>" <?php if($_GET['category_id']==$v['id']): ?>selected="selected"<?php endif; ?>><?php echo str_repeat("&nbsp;",$v['level']); if($v['level']): ?>├─<?php endif; echo ($v["name"]); ?></option><?php endforeach; endif; ?>
+        </select>
+        </form>
+    </div>
     <div class="menu_list">
         <ul>
             <li><a href="<?php echo U('Article/index');?>" class="action">文章列表</a></li>
@@ -66,3 +61,9 @@
 </div>
 	</body>
 </html>
+
+<script>
+    $('.searchAttr').change(function(){
+        window.location.href=$(this).val();
+    });
+</script>

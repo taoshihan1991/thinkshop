@@ -156,9 +156,12 @@
                                     <td class="w250">
                                         <!--图片上传插件uploadify-->
 <input type="file" id="goods_img" class="form-control"/>
-    <input type="hidden" name="imgs" id="manyImages" />
-    <input type="hidden" name="img" id="defaultImg" />
-    <div id="thumb"></div>
+    <input type="hidden" name="imgs" id="manyImages" value="<?php echo ($info["imgs"]); ?>" />
+    <input type="hidden" name="img" id="defaultImg" value="<?php echo ($info["img"]); ?>"/>
+    <div id="thumb">
+    	<?php if($info['imgs']): $imgs=explode('|', $info['imgs'])?>
+    	<?php if(is_array($imgs)): foreach($imgs as $key=>$v): ?><img src="<?php echo ($v); ?>" class="thumbShow"/><?php endforeach; endif; endif; ?>
+    </div>
 
     <link rel="stylesheet" type="text/css" href="/thinkshop/Application/Admin/View/Static//Uploadify/uploadify.css"/>
     <script type="text/javascript" src='/thinkshop/Application/Admin/View/Static//Uploadify/jquery.uploadify.min.js'></script>
@@ -184,11 +187,8 @@
        	data=JSON.parse(data);
         if(data.status){
         	var manyImages=$('#manyImages').val();
-        	if(manyImages!=''){
-        		manyImages+="|"+data.path.origin;
-        	}else{
-        		manyImages=data.path.origin;
-        	}
+        	manyImages+="|"+data.path.origin;
+        	
         	$('#manyImages').val(manyImages);
         	$('#defaultImg').val(data.path.origin);
         	var html='<img src="'+data.path.mini+'" class="thumbShow"/>';

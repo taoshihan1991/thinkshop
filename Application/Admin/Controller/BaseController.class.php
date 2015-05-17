@@ -9,9 +9,16 @@ class BaseController extends Controller {
     }
     // 验证是否登陆
     public function checkLogin(){
-    	if(!$_SESSION['admin']){
-    		//$this->error('请先登录吧',U('Login/index'));
-    	}
+        $session_name = session_name();
+        if(isset($_POST[$session_name])){
+
+        }else{
+            if(!($_SESSION['admin'])){
+                $this->error('请先登录吧',U('Login/index')); 
+            }
+        }
+        
+    	
     }
     /**
     * 编辑器内图片上传

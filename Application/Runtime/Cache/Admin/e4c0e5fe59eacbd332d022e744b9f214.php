@@ -181,14 +181,13 @@
       buttonImage: "/thinkshop/Application/Admin/View/Static//Uploadify/browse-btn.png",//按钮背景图
       fileTypeDesc : 'Image File',//windows保存类型那里
       fileTypeExts : '*.jpeg;*.jpg;*.png;*.gif',//允许选择的文件类型
-      //formData : {<?php echo session_name();?>:'<?php echo session_id();?>'},//解决session丢失问题
+      formData : {<?php echo session_name();?>:'<?php echo session_id();?>'},//解决session丢失问题
       auto:true,
       multi : true, //开启,多选文件
       uploadLimit: 10, //允许上传文件个数
 
       //上传成功后的回调函数
       onUploadSuccess : function(file,data,res){
-      	alert(data);
        	data=JSON.parse(data);
         if(data.status){
         	var manyImages=$('#manyImages').val();

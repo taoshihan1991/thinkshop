@@ -9,6 +9,18 @@
 	<body>
 
 <div class="wrap">
+    <div class="search">
+
+        <form class="hd-form">
+        文章分类 :
+        <select name="category_id" class="w100 searchAttr">
+            <option value="{:U('Article/index')}">全部</option>
+            <foreach name="cate" item="v">
+            <option value="{:U('Article/index',array('category_id'=>$v['id']))}" <if condition="$_GET['category_id']==$v['id']">selected="selected"</if>>{:str_repeat("&nbsp;",$v['level'])}<if condition="$v['level']">├─ </if>{$v.name}</option>
+            </foreach>
+        </select>
+        </form>
+    </div>
     <div class="menu_list">
         <ul>
             <li><a href="{:U('Article/index')}" class="action">文章列表</a></li>
@@ -42,3 +54,9 @@
 </div>
 	</body>
 </html>
+
+<script>
+    $('.searchAttr').change(function(){
+        window.location.href=$(this).val();
+    });
+</script>

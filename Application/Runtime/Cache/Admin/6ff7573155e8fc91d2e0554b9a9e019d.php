@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 		<title>ThinkShop电子商务系统</title>
-		<script type='text/javascript' src='/thinkshop/Application/Admin/View/Static/js/jquery-1.8.2.min.js'></script>
+		<script type='text/javascript' src='/thinkshop/Application/Admin/View/Static/js/jquery.min.js'></script>
 <link href='/thinkshop/Application/Admin/View/Static/hdjs/css/hdjs.css' rel='stylesheet' media='screen'>
 <link href='/thinkshop/Application/Admin/View/Static/css/extend.css' rel='stylesheet' media='screen'>
 <script src='/thinkshop/Application/Admin/View/Static/hdjs/js/hdjs.js'></script>
@@ -15,21 +15,6 @@
 		ROOT = '/thinkshop/';
 		WEB = '/thinkshop/';
 		URL = 'http://localhost/hdcms/index.php?a=Admin';
-		HDPHP = 'http://localhost/hdcms/hd/HDPHP/hdphp';
-		HDPHPDATA = 'http://localhost/hdcms/hd/HDPHP/hdphp/Data';
-		HDPHPTPL = 'http://localhost/hdcms/hd/HDPHP/hdphp/Lib/Tpl';
-		HDPHPEXTEND = 'http://localhost/hdcms/hd/HDPHP/hdphp/Extend';
-		APP = 'http://localhost/hdcms/index.php?a=Admin';
-		CONTROL = '/thinkshop/'+'index.php?m=Admin&c=Index';
-		METH = 'http://localhost/hdcms/index.php?a=Admin&c=Index&m=index';
-		GROUP = 'http://localhost/hdcms/hd';
-		TPL = 'http://localhost/hdcms/hd/Hdcms/Admin/Tpl';
-		CONTROLTPL = 'http://localhost/hdcms/hd/Hdcms/Admin/Tpl/Index';
-		STATIC = 'http://localhost/hdcms/Static';
-		PUBLIC = 'http://localhost/hdcms/hd/Hdcms/Admin/Tpl/Public';
-		HISTORY = 'http://localhost/hdcms/index.php?a=Admin&c=Login&m=login';
-		HTTPREFERER = 'http://localhost/hdcms/index.php?a=Admin&c=Login&m=login';
-		TEMPLATE = 'http://localhost/hdcms/template/default';
 </script>
 	</head>
 	<body>
