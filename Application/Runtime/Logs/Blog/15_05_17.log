@@ -4783,3 +4783,33 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025330s ]
 INFO: [ app_end ] --END-- [ RunTime:0.025539s ]
 
+[ 2015-05-17T17:01:23+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008935s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0584s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0566s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0268s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.sort asc,a.id desc LIMIT 0,20   [ RunTime:0.0163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.019364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014808s ]
+

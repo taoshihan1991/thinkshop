@@ -4206,3 +4206,55 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005278s ]
 INFO: [ app_end ] --END-- [ RunTime:0.005356s ]
 
+[ 2015-05-17T16:39:36+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=index&category_id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005440s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0239s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0130s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  WHERE a.category_id = '11' ORDER BY a.id desc LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005520s ]
+
+[ 2015-05-17T16:39:39+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Article&a=index&category_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005425s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0232s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0134s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  WHERE a.category_id = '12' ORDER BY a.id desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004996s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005386s ]
+
