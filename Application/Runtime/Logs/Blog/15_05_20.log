@@ -1,0 +1,687 @@
+[ 2015-05-20T20:07:49+08:00 ] 127.0.0.1 /thinkshop/index.php/blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008003s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0235s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0106s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.sort asc,a.id desc LIMIT 0,20   [ RunTime:0.0054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004944s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005520s ]
+
+[ 2015-05-20T20:14:43+08:00 ] 127.0.0.1 /thinkshop/index.php/blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005429s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0109s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.sort asc,a.id desc LIMIT 0,20   [ RunTime:0.0061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010307s ]
+
+[ 2015-05-20T20:14:53+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005314s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0297s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0639s ]
+ERR: 模板不存在:./Application/Blog/View/Index/detail.html
+
+[ 2015-05-20T20:36:48+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005583s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0283s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: cate G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 20 行.
+NOTIC: [8] Undefined variable: articleLeft G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 35 行.
+NOTIC: [8] Undefined variable: articleRight G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005912s ]
+
+[ 2015-05-20T20:37:56+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005403s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined variable: cate G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 20 行.
+NOTIC: [8] Undefined variable: articleLeft G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 35 行.
+NOTIC: [8] Undefined variable: articleRight G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005275s ]
+
+[ 2015-05-20T20:38:04+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005326s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0318s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0128s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0111s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.sort asc,a.id desc LIMIT 0,20   [ RunTime:0.0064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.042800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.042911s ]
+
+[ 2015-05-20T20:38:52+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005561s ]
+ERR: Think\Controller:construct方法不存在！
+
+[ 2015-05-20T20:39:05+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005380s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: articleLeft G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 35 行.
+NOTIC: [8] Undefined variable: articleRight G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005304s ]
+
+[ 2015-05-20T20:39:32+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006100s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0298s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: articleLeft G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 35 行.
+NOTIC: [8] Undefined variable: articleRight G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005418s ]
+
+[ 2015-05-20T20:39:41+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005275s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0279s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0110s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.sort asc,a.id desc LIMIT 0,20   [ RunTime:0.0063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011026s ]
+
+[ 2015-05-20T20:39:45+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005281s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0258s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: articleLeft G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 35 行.
+NOTIC: [8] Undefined variable: articleRight G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004856s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005287s ]
+
+[ 2015-05-20T20:47:53+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006118s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0269s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined index: thumb G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 40 行.
+NOTIC: [8] Undefined variable: articleRight G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007580s ]
+
+[ 2015-05-20T20:48:44+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005442s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0233s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined index: thumb G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 40 行.
+NOTIC: [8] Undefined variable: articleRight G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005313s ]
+
+[ 2015-05-20T20:49:15+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/index/category_id/12.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005752s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0109s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  WHERE a.category_id = '12' ORDER BY a.sort asc,a.id desc LIMIT 0,20   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005285s ]
+
+[ 2015-05-20T20:49:19+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/index/category_id/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005312s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0115s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0110s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  WHERE a.category_id = '11' ORDER BY a.sort asc,a.id desc LIMIT 0,20   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004923s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005262s ]
+
+[ 2015-05-20T20:49:22+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005307s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0242s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: thumb G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 40 行.
+NOTIC: [8] Undefined variable: articleRight G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005279s ]
+
+[ 2015-05-20T20:49:55+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005569s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: articleRight G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005268s ]
+
+[ 2015-05-20T21:00:27+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005345s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: articleRight G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006185s ]
+
+[ 2015-05-20T21:00:54+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005352s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined variable: articleRight G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004843s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005348s ]
+
+[ 2015-05-20T21:01:23+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005522s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0283s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005289s ]
+
+[ 2015-05-20T21:03:53+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005282s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005381s ]
+
+[ 2015-05-20T21:04:27+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006188s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007408s ]
+
+[ 2015-05-20T21:06:36+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005776s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005259s ]
+
+[ 2015-05-20T22:19:31+08:00 ] 127.0.0.1 /thinkshop/index.php/blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006576s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0112s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.sort asc,a.id desc LIMIT 0,20   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006873s ]
+
+[ 2015-05-20T22:19:37+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006549s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0359s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005702s ]
+

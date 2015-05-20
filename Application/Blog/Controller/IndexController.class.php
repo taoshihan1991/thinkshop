@@ -2,9 +2,11 @@
 namespace Blog\Controller;
 use Think\Controller;
 class IndexController extends Controller {
+	public function __construct(){
+		parent::__construct();
+		$this->getCategory();
+	}
     public function index(){
-    	$this->getCategory();
-
     	$condition=isset($_GET['category_id']) ? array('a.category_id'=>I('get.category_id','intval')) : array();
     	$article_model=D('article');
     	$articleData=$article_model->getList(20,$condition);
@@ -27,5 +29,15 @@ class IndexController extends Controller {
     	$articleclass_model=D('Articleclass');
     	$data=$articleclass_model->getTree();
     	$this->assign('cate',$data);
+    }
+    public function detail(){
+    	$article_model=D('article');
+    	$condition=array(
+    		'id'=>I('get.id','intval')
+    	);
+    	$info=$article_model->getInfo($condition);
+
+    	$this->assign('info',$info);
+    	$this->display();
     }
 }

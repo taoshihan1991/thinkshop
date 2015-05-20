@@ -7,7 +7,7 @@ header("Content-type: text/html; charset=utf-8");
 $dbserver = "127.0.0.1";
 $dbusername = "taoshihan";
 $dbpassword = "taoshihan1";
-$database = "tinyshop";
+$database = "thinkshop";
  
 //其他配置
 $mysql_conn = @mysql_connect("$dbserver", "$dbusername", "$dbpassword") or die("Mysql connect is error.");

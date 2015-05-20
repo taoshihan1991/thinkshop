@@ -32,35 +32,52 @@
     <div class="box_index timeline clearfix">
         <ul class="clearfix timeline_left">
 
-        <?php if(is_array($articleLeft)): foreach($articleLeft as $key=>$v): ?><li class="shadow timeline_content">
+    
+    <li class="shadow timeline_content">
         <div class="timeline_text">
             <div class="timeline_desc">
-            	<p><?php echo ($v['content']); ?></p>
-                <?php if($v['thumb']): ?><p style="text-align:center"><a href=""><img alt="<?php echo ($v["title"]); ?>" src="/thinkshop<?php echo str_replace('./','/',$v['thumb']);?>"></a></p><?php endif; ?>
+            	<p><?php echo ($info['content']); ?></p>
+                <?php if($info['thumb']): ?><p style="text-align:center"><a href=""><img alt="<?php echo ($info["title"]); ?>" src="/thinkshop<?php echo str_replace('./','/',$info['thumb']);?>"></a></p><?php endif; ?>
                 <div class="line"></div>
-                <div class="timeline_tips"><span class="timeline_time"><?php echo date('Y年m月d日',$v['addtime']);?> 来自轻博客(SoftBlog)</span><span class="timeline_comment"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="评论"></i>评论</a></span><span class="timeline_ready"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="查看"></i>查看</a></span></div>
+                <div class="timeline_tips"><span class="timeline_time"><?php echo date('Y年m月d日',$info['addtime']);?> 来自轻博客(SoftBlog)</span><span class="timeline_ready"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="关注"></i>113次关注</a></span></div>
             </div>
         </div>
         <span class="arrow_bg"></span>
         <span class="icon_timeline arrow_dot"></span>
-    </li><?php endforeach; endif; ?>
+    </li>
+    
 
   
 </ul>
 <ul class="timeline_right timeline_weibo">
 
-	<?php if(is_array($articleRight)): foreach($articleRight as $key=>$v): ?><li class="shadow timeline_content">
-        <div class="timeline_text">
-            <div class="timeline_desc"> 
-                <p><?php echo ($v['content']); ?></p>
-                <?php if($v['thumb']): ?><p style="text-align:center"><a href=""><img alt="<?php echo ($v["title"]); ?>" src="/thinkshop<?php echo str_replace('./','/',$v['thumb']);?>"></a></p><?php endif; ?>
-                <div class="line"></div>
-                <div class="timeline_tips"><span class="timeline_time"><?php echo date('Y年m月d日',$v['addtime']);?> 来自轻博客(SoftBlog)</span><span class="timeline_comment"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="评论"></i>评论</a></span><span class="timeline_ready"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="查看"></i>查看</a></span></div>
+	
+    <li class="shadow timeline_content">
+       <h3 class="main_title"><i class="i"></i>一些读后感<i class="switch" title="收缩"></i></h3>
+            <div class="timeline_text xu">
+                <div class="timeline_desc" id="thirdComment">
+                    <!-- 多说评论框 start -->
+                    <div class="ds-thread" data-thread-key="112-220" data-title="<?php echo ($info["title"]); ?>" data-url=""></div>
+                    <!-- 多说评论框 end -->
+                    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                    <script type="text/javascript">
+                    var duoshuoQuery = {short_name:"SoftBlog"};
+                    (function() {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';ds.async = true;
+                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0] 
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                    </script>
+                </div>
             </div>
-        </div>
-        <span class="arrow_bg"></span>
-        <span class="icon_timeline arrow_dot"></span>
-    </li><?php endforeach; endif; ?>
+            <span class="arrow_bg"></span>
+            <span class="icon_timeline arrow_dot"></span>
+
+    </li>  
+
 
     
 </ul>
@@ -75,9 +92,7 @@
 
 
 <div class="box_index shadow xufooter">
-	<div class="pages">
-	<?php echo ($page); ?>
-	</div>
+
 
         <div class="bottomMsg">
        

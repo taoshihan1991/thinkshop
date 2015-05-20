@@ -16,4 +16,8 @@ class ArticleModel extends Model {
     	$data['page']=$show;
     	return $data;
     }
+    // 获取详情
+    public function getInfo($condition){
+      return $this->where($condition)->find();
+    }
 }

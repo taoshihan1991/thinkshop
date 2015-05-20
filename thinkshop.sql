@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50150
 File Encoding         : 65001
 
-Date: 2015-05-17 16:37:05
+Date: 2015-05-20 22:50:07
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -197,6 +197,23 @@ INSERT INTO `ts_goods_attr` VALUES ('7', '4', '7777', '');
 INSERT INTO `ts_goods_attr` VALUES ('8', '4', '狼图腾(精装本)狼图腾(精装本)', '0');
 INSERT INTO `ts_goods_attr` VALUES ('7', '3', '三寸', '');
 INSERT INTO `ts_goods_attr` VALUES ('7', '2', '77', '');
+
+-- ----------------------------
+-- Table structure for `ts_message`
+-- ----------------------------
+DROP TABLE IF EXISTS `ts_message`;
+CREATE TABLE `ts_message` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增编号',
+  `name` varchar(255) NOT NULL DEFAULT '' COMMENT '姓名',
+  `email` varchar(255) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `content` varchar(10000) NOT NULL DEFAULT '' COMMENT '信息内容',
+  `article_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '文章id',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ts_message
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for `ts_type`

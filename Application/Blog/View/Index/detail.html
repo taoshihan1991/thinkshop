@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gbk">
+<title>青果轻博客</title>
+<include file="Common:header"/>
+</head>
+<body>
+<div class="xutop"><i class="iconfont iconf_caidan">&#xe601;</i></div>
+<div class="box_index xunav">
+    <a href="{:U('index')}" >首页</a>
+    <foreach name="cate" item="v">
+    <a href="{:U('Index/index',array('category_id'=>$v['id']))}">{$v.name}</a>
+    </foreach>
+</div>
+<div class="box_index xuheader">
+    <div class="shadow xuheader_Bg"></div>
+    <a href="" title="轻博客" class="xulogo" target="_self">轻博客<em>SoftBlog</em></a>
+    <div class="xucard">
+        <p>你瞧那远古的光 裸露空荡</p>
+        <p>无穷无尽是你深邃的眼 传递遐想 </p>
+        <p style="margin-top: 8px;">——《远与暗》 写于2015·夏·济南</p>
+    </div>
+    <div class="icon_layer xuheader_yuan"></div>
+</div>
+    <div class="box_index timeline clearfix">
+        <ul class="clearfix timeline_left">
+
+    
+    <li class="shadow timeline_content">
+        <div class="timeline_text">
+            <div class="timeline_desc">
+            	<p>{$info['content']}</p>
+                <if condition="$info['thumb']">
+                <p style="text-align:center"><a href=""><img alt="{$info.title}" src="__ROOT__{:str_replace('./','/',$info['thumb'])}"></a></p>
+                </if>
+                <div class="line"></div>
+                <div class="timeline_tips"><span class="timeline_time">{:date('Y年m月d日',$info['addtime'])} 来自轻博客(SoftBlog)</span><span class="timeline_ready"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="关注"></i>113次关注</a></span></div>
+            </div>
+        </div>
+        <span class="arrow_bg"></span>
+        <span class="icon_timeline arrow_dot"></span>
+    </li>
+    
+
+  
+</ul>
+<ul class="timeline_right timeline_weibo">
+
+	
+    <li class="shadow timeline_content">
+       <h3 class="main_title"><i class="i"></i>一些读后感<i class="switch" title="收缩"></i></h3>
+            <div class="timeline_text xu">
+                <div class="timeline_desc" id="thirdComment">
+                    <!-- 多说评论框 start -->
+                    <div class="ds-thread" data-thread-key="112-220" data-title="{$info.title}" data-url=""></div>
+                    <!-- 多说评论框 end -->
+                    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                    <script type="text/javascript">
+                    var duoshuoQuery = {short_name:"SoftBlog"};
+                    (function() {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';ds.async = true;
+                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0] 
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                    </script>
+                </div>
+            </div>
+            <span class="arrow_bg"></span>
+            <span class="icon_timeline arrow_dot"></span>
+
+    </li>  
+
+
+    
+</ul>
+
+
+
+        <div class="c"></div>
+    	<span class="arrow_line"><i id="add_event_plus" class="icon_timeline spine_plus"></i></span>
+
+</div>
+
+
+
+<div class="box_index shadow xufooter">
+
+
+    <include file="Common:footer"/>
+</div>
+
+</body>
+</html>
+
+
+
+
