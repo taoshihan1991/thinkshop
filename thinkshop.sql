@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50150
 File Encoding         : 65001
 
-Date: 2015-05-23 11:53:33
+Date: 2015-05-23 18:25:09
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -44,16 +44,18 @@ CREATE TABLE `ts_article` (
   `addtime` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '添加时间',
   `sort` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_article
 -- ----------------------------
-INSERT INTO `ts_article` VALUES ('1', '关于奇点，我用感觉描绘过它', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">关于奇点，我用感觉描绘过它，那是从一个被无限压缩的单元向四周拉伸，形成一个球体。在这里除了最基本的三维构造，还有以实体的形式存在的时间。因此，你从任意一个点，向任何一个方向出发，最终都可以回到那个点。星际穿越，仿佛就是梦的轮回。平行世界里没有他们，全是我们。</span></p>', './Uploads/2015-05-17/55584d0be191f.jpg', '11', '0', '12');
-INSERT INTO `ts_article` VALUES ('2', '生活中遇到许多似曾相识的过客', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">生活中遇到许多似曾相识的过客，让你怦然心动，深觉这么近，却又那么远。就像是一束暖阳，你看到了，感觉到了，但却无法捕捉。而这些，往往在心底慢慢消散，直到下一个循环。</span></p>', '', '12', '1431843102', '0');
+INSERT INTO `ts_article` VALUES ('1', '关于奇点，我用感觉描绘过它', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">关于奇点，我用感觉描绘过它，那是从一个被无限压缩的单元向四周拉伸，形成一个球体。在这里除了最基本的三维构造，还有以实体的形式存在的时间。因此，你从任意一个点，向任何一个方向出发，最终都可以回到那个点。星际穿越，仿佛就是梦的轮回。平行世界里没有他们，全是我们。</span></p>', './Uploads/2015-05-17/55584d0be191f.jpg', '11', '1431843102', '12');
+INSERT INTO `ts_article` VALUES ('2', '生活中遇到许多似曾相识的过客', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">生活中遇到许多似曾相识的过客，让你怦然心动，深觉这么近，却又那么远。就像是一束暖阳，你看到了，感觉到了，但却无法捕捉。而这些，往往在心底慢慢消散，直到下一个循环。</span></p>', '', '11', '1431843102', '0');
 INSERT INTO `ts_article` VALUES ('3', '心愿未了有牵绊。生命不息，折腾未止。', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">心愿未了有牵绊。生命不息，折腾未止。</span></p>', './Uploads/2015-05-17/555851a91651b.jpg', '11', '1431851433', '0');
-INSERT INTO `ts_article` VALUES ('4', '轻博客折腾不止', '<p>轻博客折腾不止</p>', './Uploads/2015-05-17/555852a16a37b.jpg', '11', '1431851499', '0');
-INSERT INTO `ts_article` VALUES ('5', '不行了,不能再研究代码了,必须出去走走', '<p>不行了,不能再研究代码了,必须出去走走</p>', '', '11', '1431851562', '0');
+INSERT INTO `ts_article` VALUES ('4', '年轻人，请不要局限于小小的胜利', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">年轻人，请不要局限于小小的胜利，不要局限于追求安全与稳定的生活。请不断地挑战人生吧！在成百上千次的挑战中，将书写属于你的人生。即使失败很多，也不要气馁。满载着成功与失败的人生，正是你生命不息的证明。你毫不退缩、勇敢挑战的人生，也为旁人增加了生命的勇气。——尼采</span></p>', './Uploads/2015-05-17/555852a16a37b.jpg', '11', '1431851499', '0');
+INSERT INTO `ts_article` VALUES ('5', '未出生时，人被束缚在母体里', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">未出生时，人被束缚在母体里；上学时，人被束缚在教室里；工作时，人被束缚在生存的无形枷锁里。死时，又把人束缚在棺木或者盒子里。人的一生，无论过程怎样，始终都抵不过这束缚的魔力。这就是人作为一个有思想意识的生命体，所无法挣脱的宿命。</span></p>', '', '11', '1431851562', '0');
+INSERT INTO `ts_article` VALUES ('6', '青果轻博客系统', '<p>青果轻博客框架,最精简的bolg,适合PHP初学者研究练手</p><p>https://github.com/taoshihan1991/thinkshop</p>', './Uploads/2015-05-23/55604bb025ea0.jpg', '12', '1432374192', '0');
+INSERT INTO `ts_article` VALUES ('7', 'fileReader文件管理器', '<p>基于php面向过程的方式实现的web在线文件管理器,前端使用bootstrap框架和Cikonss图标样式库,适合初学者研究练手</p><p>git地址:&nbsp;https://github.com/taoshihan1991/fileReader</p>', './Uploads/2015-05-23/5560524a39708.jpg', '12', '1432374572', '0');
 
 -- ----------------------------
 -- Table structure for `ts_articleclass`
@@ -70,8 +72,8 @@ CREATE TABLE `ts_articleclass` (
 -- ----------------------------
 -- Records of ts_articleclass
 -- ----------------------------
-INSERT INTO `ts_articleclass` VALUES ('12', '旅游分享', '0', '0');
-INSERT INTO `ts_articleclass` VALUES ('11', '系统文章', '0', '1');
+INSERT INTO `ts_articleclass` VALUES ('12', '开源作品', '0', '0');
+INSERT INTO `ts_articleclass` VALUES ('11', '时光印记', '0', '1');
 
 -- ----------------------------
 -- Table structure for `ts_attribute`
@@ -210,17 +212,18 @@ CREATE TABLE `ts_message` (
   `article_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '文章id',
   `addtime` int(10) unsigned NOT NULL DEFAULT '0',
   `parent_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `reply` varchar(10000) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_message
 -- ----------------------------
-INSERT INTO `ts_message` VALUES ('1', '雪狼骑兵', '630892807@qq.com', '哈哈哈哈哈哈', '0', '1432346234', '0');
-INSERT INTO `ts_message` VALUES ('3', '迅雷', '630892807@qq.com', '不知道', '0', '1432346516', '0');
-INSERT INTO `ts_message` VALUES ('4', '你好', '630892807@qq.com', '你我都是神火', '2', '1432346617', '0');
-INSERT INTO `ts_message` VALUES ('5', '雪狼骑兵', '630892807@qq.com', '你这个太高深了', '1', '1432349507', '0');
-INSERT INTO `ts_message` VALUES ('6', '雪狼骑兵', '630892807@qq.com', '牛逼的人不需要解释', '3', '1432352140', '0');
+INSERT INTO `ts_message` VALUES ('1', '雪狼骑兵', '630892807@qq.com', '哈哈哈哈哈哈', '0', '1432346234', '0', '');
+INSERT INTO `ts_message` VALUES ('3', '迅雷', '630892807@qq.com', '不知道', '0', '1432346516', '0', '');
+INSERT INTO `ts_message` VALUES ('4', '你好', '630892807@qq.com', '你我都是神火', '2', '1432346617', '0', '');
+INSERT INTO `ts_message` VALUES ('5', '雪狼骑兵', '630892807@qq.com', '你这个太高深了', '1', '1432349507', '0', '');
+INSERT INTO `ts_message` VALUES ('6', '雪狼骑兵', '630892807@qq.com', '牛逼的人不需要解释', '3', '1432352140', '0', '牛逼的人不需要解释牛逼的人不需要解释牛逼的人不需要解释牛逼的人不需要解释牛逼的人不需要解释牛逼的人不需要解释牛逼的人不需要解释牛逼的人不需要解释牛逼的人不需要解释');
 
 -- ----------------------------
 -- Table structure for `ts_type`

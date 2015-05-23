@@ -84,4 +84,22 @@ class IndexController extends Controller {
              $this->error('评论失败');
         }
     }
+    public function allMessage(){
+        $comment=$this->getComment(0,20);
+
+        $commentLeft=array();
+        $commentRight=array();
+        foreach($comment['list'] as $k=>$v){
+            if($k%2==0){
+                $commentLeft[]=$v;
+            }else{
+                $commentRight[]=$v;
+            }
+        }
+        $this->assign('commentLeft',$commentLeft);
+        $this->assign('commentRight',$commentRight);
+
+        $this->assign('page',$comment['page']);
+        $this->display();
+    }
 }

@@ -18,6 +18,7 @@
 <div class="box_index xunav">
     <a href="<?php echo U('index');?>" >首页</a>
     <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><a href="<?php echo U('Index/index',array('category_id'=>$v['id']));?>"><?php echo ($v["name"]); ?></a><?php endforeach; endif; ?>
+    <a href="<?php echo U('Index/allMessage');?>" >雁过留痕</a>
 </div>
 <div class="box_index xuheader">
     <div class="shadow xuheader_Bg"></div>
@@ -36,7 +37,7 @@
         <div class="timeline_text">
             <div class="timeline_desc">
             	<p><?php echo ($v['content']); ?></p>
-                <?php if($v['thumb']): ?><p style="text-align:center"><a href=""><img alt="<?php echo ($v["title"]); ?>" src="/thinkshop<?php echo str_replace('./','/',$v['thumb']);?>"></a></p><?php endif; ?>
+                <?php if($v['thumb']): ?><p style="text-align:center"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><img alt="<?php echo ($v["title"]); ?>" src="/thinkshop<?php echo str_replace('./','/',$v['thumb']);?>"></a></p><?php endif; ?>
                 <div class="line"></div>
                 <div class="timeline_tips"><span class="timeline_time"><?php echo timeFormat($v['addtime']);?> 来自轻博客(SoftBlog)</span><span class="timeline_comment"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="评论"></i>评论</a></span><span class="timeline_ready"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="查看"></i>查看</a></span></div>
             </div>
@@ -53,7 +54,7 @@
         <div class="timeline_text">
             <div class="timeline_desc"> 
                 <p><?php echo ($v['content']); ?></p>
-                <?php if($v['thumb']): ?><p style="text-align:center"><a href=""><img alt="<?php echo ($v["title"]); ?>" src="/thinkshop<?php echo str_replace('./','/',$v['thumb']);?>"></a></p><?php endif; ?>
+                <?php if($v['thumb']): ?><p style="text-align:center"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><img alt="<?php echo ($v["title"]); ?>" src="/thinkshop<?php echo str_replace('./','/',$v['thumb']);?>"></a></p><?php endif; ?>
                 <div class="line"></div>
                 <div class="timeline_tips"><span class="timeline_time"><?php echo timeFormat($v['addtime']);?> 来自轻博客(SoftBlog)</span><span class="timeline_comment"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="评论"></i>评论</a></span><span class="timeline_ready"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="查看"></i>查看</a></span></div>
             </div>
@@ -92,7 +93,7 @@ target="_blank"></a>
                 <a href="">php开发</a> 
                 <a href="">轻博客</a>
             </li>
-            <li>2011-3011  &copy; qingguow.cn <a href="javascript:;" onclick="paysentsin()">友情赞助</a></li>
+            <li>2011-2046  &copy; qingguow.cn <a href="javascript:;">友情赞助</a></li>
         </ul>
         <ul class="ul footerLiuyan" id="liuyan"></ul>
         <em id="eig_top"><i class="icon_old"></i>TOP</em>

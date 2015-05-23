@@ -1,0 +1,7 @@
+<div class="box_index xunav">
+    <a href="{:U('index')}" >首页</a>
+    <foreach name="cate" item="v">
+    <a href="{:U('Index/index',array('category_id'=>$v['id']))}">{$v.name}</a>
+    </foreach>
+    <a href="{:U('Index/allMessage')}" >雁过留痕</a>
+</div>

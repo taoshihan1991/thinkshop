@@ -7,12 +7,7 @@
 </head>
 <body>
 <div class="xutop"><i class="iconfont iconf_caidan">&#xe601;</i></div>
-<div class="box_index xunav">
-    <a href="{:U('index')}" >首页</a>
-    <foreach name="cate" item="v">
-    <a href="{:U('Index/index',array('category_id'=>$v['id']))}">{$v.name}</a>
-    </foreach>
-</div>
+<include file="Common:nav"/>
 <div class="box_index xuheader">
     <div class="shadow xuheader_Bg"></div>
     <a href="" title="轻博客" class="xulogo" target="_self">轻博客<em>SoftBlog</em></a>
@@ -70,9 +65,12 @@
                             <div class="avator"><img src="__PUBLIC__images/avatar-default.png"/></div>
                             <div class="content">
                                 <p class="message">{$v.content}</p>
-                                <p class="info">{$v.name}&nbsp;&nbsp;{$v.formatTime}&nbsp;&nbsp;<a href="" class="reply">回复</a></p>
+                                <p class="info">{$v.name}&nbsp;&nbsp;{$v.formatTime}&nbsp;&nbsp;</p>
                             </div>
                             <div class="floor">#{$k+1}</div><div class="clear"></div>
+                            <if condition="$v[reply]">
+                            <div class="reply">管理员: <span class="red">{$v.reply}</span></div>
+                            </if>
                         </div>
                         </foreach>
                         <if condition="$comment['page']">

@@ -83,6 +83,9 @@ content: '轻博客';
 .timeline_desc div a, .timeline_desc p a{
 	text-decoration: none;
 }
+.timeline_desc p.reply{
+	color: #737373;
+}
 /*评论框*/
 .commentBox{
 
@@ -160,13 +163,14 @@ content: '轻博客';
 	font-size: 12px;
 	color: #bbb;
 }
-.commentBox .item .content .info .reply{
-	color: #bbb;
-	text-decoration: none;
+.commentBox .item .reply{
+	color: #888;
+	padding-left: 46px;
 }
-.commentBox .item .content .info .reply:hover{
-	color: #376A77;
+.commentBox .item .reply .red{
+	color: #080;
 }
+
 .commentBox .item .floor{
 	width: 20px;
 	float: right;

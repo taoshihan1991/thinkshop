@@ -33,64 +33,37 @@
     <div class="box_index timeline clearfix">
         <ul class="clearfix timeline_left">
 
-    
-    <li class="shadow timeline_content">
+        <?php if(is_array($commentLeft)): foreach($commentLeft as $key=>$v): ?><li class="shadow timeline_content">
         <div class="timeline_text">
             <div class="timeline_desc">
-            	<p><?php echo ($info['content']); ?></p>
-                <?php if($info['thumb']): ?><p style="text-align:center"><a href=""><img alt="<?php echo ($info["title"]); ?>" src="/thinkshop<?php echo str_replace('./','/',$info['thumb']);?>"></a></p><?php endif; ?>
+            	<p><?php echo ($v['content']); ?></p>
                 <div class="line"></div>
-                <div class="timeline_tips"><span class="timeline_time"><?php echo date('Y年m月d日',$info['addtime']);?> 来自轻博客(SoftBlog)</span><span class="timeline_ready"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="关注"></i><?php echo rand(20,1000);?>次关注</a></span></div>
+                <p class="reply">管理员: <?php if($v['reply']): echo ($v['reply']); else: ?>未回复<?php endif; ?></p>
+
+                <div class="timeline_tips"><span class="timeline_time"><?php echo timeFormat($v['addtime']);?> 来自轻博客(SoftBlog)</span><span class="timeline_ready"><a href="<?php echo U('Index/detail',array('id'=>$v['article_id']));?>"><i class="icon_timeline" title="查看"></i>查看文章</a></span></div>
             </div>
         </div>
         <span class="arrow_bg"></span>
         <span class="icon_timeline arrow_dot"></span>
-    </li>
-    
+    </li><?php endforeach; endif; ?>
 
   
 </ul>
 <ul class="timeline_right timeline_weibo">
 
-	
-    <li class="shadow timeline_content">
-       <h3 class="main_title"><i class="i"></i>一些读后感<i class="switch" title="收缩"></i></h3>
-            <div class="timeline_text xu">
-                <div class="timeline_desc" id="thirdComment">
-                    <!-- 评论 -->
-                    <div class="commentBox">
-                        <div class="write">
-                            <img src="/thinkshop/Application/Blog/View/Static/images/avatar-default.png" class="avator"/>
-                            <form action="<?php echo U('index/addComment');?>" method="post">
-                                <input type="hidden" name="article_id" value="<?php echo ($info["id"]); ?>" />
-                                <textarea placeholder="您不想评论一下吗?" name="message"></textarea>
-                                <div class="label"><input type="text" class="inp" placeholder="昵称?" name="name"/>昵称(必填)</div>
-                                <div class="label"><input type="text" class="inp" placeholder="邮箱?" name="email"/>邮箱(必填)</div>
-                                <div class="label"><input type="submit" value="提交评论" class="sub" /></div>
-                            </form>
-                        </div>
-
-                        <?php if(is_array($comment['list'])): foreach($comment['list'] as $k=>$v): ?><div class="item">
-                            <div class="avator"><img src="/thinkshop/Application/Blog/View/Static/images/avatar-default.png"/></div>
-                            <div class="content">
-                                <p class="message"><?php echo ($v["content"]); ?></p>
-                                <p class="info"><?php echo ($v["name"]); ?>&nbsp;&nbsp;<?php echo ($v["formatTime"]); ?>&nbsp;&nbsp;</p>
-                            </div>
-                            <div class="floor">#<?php echo ($k+1); ?></div><div class="clear"></div>
-                            <?php if($v[reply]): ?><div class="reply">管理员: <span class="red"><?php echo ($v["reply"]); ?></span></div><?php endif; ?>
-                        </div><?php endforeach; endif; ?>
-                        <?php if($comment['page']): ?><div class="pages"><?php echo ($comment["page"]); ?></div><?php endif; ?>
-                    </div>
-
-                    <!-- //评论 -->
-                    
-                </div>
+	<?php if(is_array($commentRight)): foreach($commentRight as $key=>$v): ?><li class="shadow timeline_content">
+        <div class="timeline_text">
+            <div class="timeline_desc"> 
+                <p><?php echo ($v['content']); ?></p>
+                <div class="line"></div>
+                <p class="reply">管理员: <?php if($v['reply']): echo ($v['reply']); else: ?>未回复<?php endif; ?></p>
+                
+                <div class="timeline_tips"><span class="timeline_time"><?php echo timeFormat($v['addtime']);?> 来自轻博客(SoftBlog)</span><span class="timeline_ready"><a href="<?php echo U('Index/detail',array('id'=>$v['article_id']));?>"><i class="icon_timeline" title="查看"></i>查看文章</a></span></div>
             </div>
-            <span class="arrow_bg"></span>
-            <span class="icon_timeline arrow_dot"></span>
-
-    </li>  
-
+        </div>
+        <span class="arrow_bg"></span>
+        <span class="icon_timeline arrow_dot"></span>
+    </li><?php endforeach; endif; ?>
 
     
 </ul>
@@ -105,7 +78,9 @@
 
 
 <div class="box_index shadow xufooter">
-
+	<div class="pages">
+	<?php echo ($page); ?>
+	</div>
 
         <div class="bottomMsg">
        

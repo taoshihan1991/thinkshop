@@ -119,9 +119,9 @@ class ArticleController extends BaseController {
     // 缩略图上传
     public function uploadLogo($_FILES){
         $upload = new \Think\Upload();
-        $upload->maxSize=3145728 ;
-        $upload->exts =array('jpg', 'gif', 'png', 'jpeg');
-        $upload->rootPath = './Uploads/';
+        $upload->maxSize=C('UPLOAD_MAX_SIZE');
+        $upload->exts =C('UPLOAD_EXTS');
+        $upload->rootPath = C('UPLOAD_PATH');
         $upload->savePath = '';
         $info = $upload->uploadOne($_FILES['thumb']);
         if(!$info){

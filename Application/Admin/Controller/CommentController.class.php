@@ -24,6 +24,23 @@ class CommentController extends BaseController {
     public function update(){
         $message_model=D('message');
         $condition=array('id'=>I('get.id'));
+        if(IS_POST){
+            $data=array(
+                'id'=>I('post.id','intval'),
+                'name'=>I('post.name'),
+                'email'=>I('post.email'),
+                'content'=>I('post.content'),
+                'reply'=>I('post.reply'),
+            );
+            $res=$message_model->where(array('id'=>$data['id']))->save($data);
+            if($res){
+                $this->success('操作成功');
+            }else{
+                $this->error('操作失败');
+            }
+            exit;
+        }
+
         $info=$message_model->getInfo($condition);
 
         if($info['article_id']){

@@ -27,7 +27,7 @@
         </ul>
     </div>
     <div class="title-header">阅读信息</div>
-    <form method="post" class="hd-form" >
+    <form method="post" class="hd-form" action="<?php echo U('Comment/update');?>">
     <input type="hidden" name="id" value="<?php echo ($info["id"]); ?>" />
         <table class="table1">
             <tr>
@@ -45,7 +45,7 @@
             <tr>
                 <th class="w100">邮箱</th>
                 <td>
-                    <input type="text" name="name" class="w300" value="<?php echo ($info["email"]); ?>" />
+                    <input type="text" name="email" class="w300" value="<?php echo ($info["email"]); ?>" />
                 </td>
             </tr>
             <tr>
@@ -54,8 +54,17 @@
                     <textarea name="content" id="content" class="w650 h100"><?php echo ($info["content"]); ?></textarea>
                 </td>
             </tr>
+            <tr>
+                <th class="w100">回复</th>
+                <td>
+                    <textarea name="reply"  class="w650 h100"><?php echo ($info["reply"]); ?></textarea>
+                </td>
+            </tr>
             
         </table>
+        <div class="position-bottom">
+            <input type="submit" value="确定" class="hd-success"/>
+        </div>
 
     </form>
 </div>

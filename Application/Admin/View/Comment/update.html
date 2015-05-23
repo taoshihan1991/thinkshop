@@ -16,7 +16,7 @@
         </ul>
     </div>
     <div class="title-header">阅读信息</div>
-    <form method="post" class="hd-form" >
+    <form method="post" class="hd-form" action="{:U('Comment/update')}">
     <input type="hidden" name="id" value="{$info.id}" />
         <table class="table1">
             <tr>
@@ -34,7 +34,7 @@
             <tr>
                 <th class="w100">邮箱</th>
                 <td>
-                    <input type="text" name="name" class="w300" value="{$info.email}" />
+                    <input type="text" name="email" class="w300" value="{$info.email}" />
                 </td>
             </tr>
             <tr>
@@ -43,8 +43,17 @@
                     <textarea name="content" id="content" class="w650 h100">{$info.content}</textarea>
                 </td>
             </tr>
+            <tr>
+                <th class="w100">回复</th>
+                <td>
+                    <textarea name="reply"  class="w650 h100">{$info.reply}</textarea>
+                </td>
+            </tr>
             
         </table>
+        <div class="position-bottom">
+            <input type="submit" value="确定" class="hd-success"/>
+        </div>
 
     </form>
 </div>
