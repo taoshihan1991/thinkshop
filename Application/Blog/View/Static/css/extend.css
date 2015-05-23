@@ -46,6 +46,7 @@ media="all" @media screen and (max-width: 640px)
 	height: 20px;
 	line-height: 20px;
 	padding: 0 10px;
+	text-decoration: none;
 }
 .pages .current{
 	display: block;
@@ -72,4 +73,102 @@ content: '轻博客';
 @media screen and (max-width: 640px)
 .xunav {
 	display: block;
+}
+.timeline_content .timeline_text{
+	padding: 15px 10px;
+}
+.timeline_right .timeline_desc p{
+	margin-bottom: 5px;
+}
+.timeline_desc div a, .timeline_desc p a{
+	text-decoration: none;
+}
+/*评论框*/
+.commentBox{
+
+}
+.commentBox .write{
+	width: 100%;
+	height: 240px;
+	overflow: hidden;
+}
+.commentBox .write .avator{
+	display: block;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	float: left;
+}
+.commentBox .write form{
+	width: 500px;
+	float: right;
+	position: relative;
+}
+.commentBox .write form textarea{
+	width: 470px;
+	height: 100px;
+	border: 2px solid #ccd4d9;
+	border-radius: 2px;
+	padding: 4px 0 0 4px;
+	background-color: #fff;
+	display: block;
+}
+.commentBox .write form .sub{
+	border: none;
+	background: #45B6F7;
+	border: 2px solid #45B6F7;
+	color: #fff;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.commentBox .write form .label{
+	width: 315px;
+	margin: 0 auto;
+	color: #777
+}
+.commentBox .write form .label .inp{
+	width: 210px;
+	padding: 3px 5px;
+	border: 2px solid #ccd4d9;
+	margin: 5px 10px 10px 0;
+	
+}
+.commentBox .item{
+	width: 100%;
+	border-bottom: 1px #eee solid;
+}
+.clear{
+	clear: both;
+}
+.commentBox .item .avator{
+	width: 36px;
+	height: 36px;
+	float: left;
+}
+.commentBox .item .avator img{
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+}
+.commentBox .item .content{
+	width: 470px;
+	float: left;
+	margin-left: 10px;
+	color: #888;
+}
+.commentBox .item .content .info{
+	font-size: 12px;
+	color: #bbb;
+}
+.commentBox .item .content .info .reply{
+	color: #bbb;
+	text-decoration: none;
+}
+.commentBox .item .content .info .reply:hover{
+	color: #376A77;
+}
+.commentBox .item .floor{
+	width: 20px;
+	float: right;
+	color: #555;
 }

@@ -37,7 +37,51 @@ class IndexController extends Controller {
     	);
     	$info=$article_model->getInfo($condition);
 
+        $comment=$this->getComment($info['id'],10);
+        $this->assign('comment',$comment);
+        //print_r($comment);
+
     	$this->assign('info',$info);
     	$this->display();
+    }
+    public function getComment($article_id,$size){
+        $comment_model=D('message');
+        $condition=!empty($article_id) ? array('article_id'=>$article_id) : array();
+        $count = $comment_model->where($condition)->count();
+        $page  = new \Think\Page($count,$size);
+        $show  = $page->show();
+        $list=$comment_model->where($condition)->order('addtime desc')->limit($page->firstRow.','.$page->listRows)->select();
+        foreach($list as $k=>$v){
+            $list[$k]['formatTime']=timeFormat($v['addtime']);
+        }
+ 
+        $data['list']=$list;
+        $data['page']=$show;
+        return $data;
+    }
+    public function addComment(){
+        $parent_id=I('post.parent_id','intval');
+        $data=array(
+            'article_id'=>I('post.article_id','intval'),
+            'name'=>I('post.name'),
+            'email'=>I('post.email'),
+            'content'=>I('post.message'),
+            'addtime'=>time(),
+            'parent_id'=>isset($parent_id) ? $parent_id : 0,
+        );
+        if(!$data['name'])
+            $this->error('你的昵称捏?');
+        if(!$data['email'])
+            $this->error('我没验证邮箱,也不能糊弄我吧?');
+        if(!$data['content'])
+            $this->error('你的内容捏?');
+
+        $message_model=M('message');
+        $res=$message_model->add($data);
+        if($res){
+            $this->success('评论成功');
+        }else{
+             $this->error('评论失败');
+        }
     }
 }

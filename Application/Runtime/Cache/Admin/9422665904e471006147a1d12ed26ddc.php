@@ -22,27 +22,27 @@
 <div class="wrap">
     <div class="menu_list">
         <ul>
-            <li><a href="<?php echo U('Type/index');?>" class="action">类型列表</a></li>
-            <li><a href="<?php echo U('Type/add');?>">添加类型</a></li>
+            <li><a href="<?php echo U('Comment/index');?>" class="action">信息列表</a></li>
+        
         </ul>
     </div>
     <table class="table2 hd-form">
         <thead>
         <tr>
             <td class="w30">编号</td>
-            <td class="w200">名称</td>
+            <td class="w200">昵称</td>
+            <td class="w200">时间</td>
             <td class="w150">操作</td>
         </tr>
         </thead>
             <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
                 <td><?php echo ($v["id"]); ?></td>
                 <td><?php echo ($v["name"]); ?></td>
+                <td><?php echo date("Y-m-d H:i:s",$v['addtime']);?></td>
                 <td>
-                    <a href="<?php echo U('Attribute/index',array('type_id'=>$v['id']));?>">属性列表</a> 
+                    <a href="<?php echo U('Comment/update',array('id'=>$v['id']));?>">阅读</a> 
                     <span class="line">|</span> 
-                    <a href="<?php echo U('Type/update',array('id'=>$v['id']));?>">修改</a> 
-                    <span class="line">|</span> 
-                    <a href="<?php echo U('Type/delete',array('id'=>$v['id']));?>">删除</a>
+                    <a href="<?php echo U('Comment/delete',array('id'=>$v['id']));?>">删除</a>
                 </td>
             </tr><?php endforeach; endif; ?>
             </table>

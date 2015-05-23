@@ -77,6 +77,8 @@
 						<dd><a nid="3" href="javascript:;" onclick="get_content(this,3)" url="<?php echo U('Articleclass/index');?>" class="">分类列表</a></dd>
 						<dt>文章管理</dt>
 						<dd><a nid="4" href="javascript:;" onclick="get_content(this,4)" url="<?php echo U('Article/index');?>" class="">文章列表</a></dd>
+						<dt>留言评论</dt>
+						<dd><a nid="5" href="javascript:;" onclick="get_content(this,5)" url="<?php echo U('Comment/index');?>" class="">信息列表</a></dd>
 					</dl>
 				</div>
 				<div class="nid_2">

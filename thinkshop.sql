@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50150
 File Encoding         : 65001
 
-Date: 2015-05-20 22:50:07
+Date: 2015-05-23 11:53:33
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -208,12 +208,19 @@ CREATE TABLE `ts_message` (
   `email` varchar(255) NOT NULL DEFAULT '' COMMENT '邮箱',
   `content` varchar(10000) NOT NULL DEFAULT '' COMMENT '信息内容',
   `article_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '文章id',
+  `addtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `parent_id` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_message
 -- ----------------------------
+INSERT INTO `ts_message` VALUES ('1', '雪狼骑兵', '630892807@qq.com', '哈哈哈哈哈哈', '0', '1432346234', '0');
+INSERT INTO `ts_message` VALUES ('3', '迅雷', '630892807@qq.com', '不知道', '0', '1432346516', '0');
+INSERT INTO `ts_message` VALUES ('4', '你好', '630892807@qq.com', '你我都是神火', '2', '1432346617', '0');
+INSERT INTO `ts_message` VALUES ('5', '雪狼骑兵', '630892807@qq.com', '你这个太高深了', '1', '1432349507', '0');
+INSERT INTO `ts_message` VALUES ('6', '雪狼骑兵', '630892807@qq.com', '牛逼的人不需要解释', '3', '1432352140', '0');
 
 -- ----------------------------
 -- Table structure for `ts_type`
@@ -228,5 +235,4 @@ CREATE TABLE `ts_type` (
 -- ----------------------------
 -- Records of ts_type
 -- ----------------------------
-INSERT INTO `ts_type` VALUES ('2', '手机');
 INSERT INTO `ts_type` VALUES ('3', '衣服');

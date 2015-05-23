@@ -35,7 +35,7 @@
                 <p style="text-align:center"><a href=""><img alt="{$v.title}" src="__ROOT__{:str_replace('./','/',$v['thumb'])}"></a></p>
                 </if>
                 <div class="line"></div>
-                <div class="timeline_tips"><span class="timeline_time">{:date('Y年m月d日',$v['addtime'])} 来自轻博客(SoftBlog)</span><span class="timeline_comment"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="评论"></i>评论</a></span><span class="timeline_ready"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="查看"></i>查看</a></span></div>
+                <div class="timeline_tips"><span class="timeline_time">{:timeFormat($v['addtime'])} 来自轻博客(SoftBlog)</span><span class="timeline_comment"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="评论"></i>评论</a></span><span class="timeline_ready"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="查看"></i>查看</a></span></div>
             </div>
         </div>
         <span class="arrow_bg"></span>
@@ -56,7 +56,7 @@
                 <p style="text-align:center"><a href=""><img alt="{$v.title}" src="__ROOT__{:str_replace('./','/',$v['thumb'])}"></a></p>
                 </if>
                 <div class="line"></div>
-                <div class="timeline_tips"><span class="timeline_time">{:date('Y年m月d日',$v['addtime'])} 来自轻博客(SoftBlog)</span><span class="timeline_comment"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="评论"></i>评论</a></span><span class="timeline_ready"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="查看"></i>查看</a></span></div>
+                <div class="timeline_tips"><span class="timeline_time">{:timeFormat($v['addtime'])} 来自轻博客(SoftBlog)</span><span class="timeline_comment"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="评论"></i>评论</a></span><span class="timeline_ready"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="查看"></i>查看</a></span></div>
             </div>
         </div>
         <span class="arrow_bg"></span>

@@ -39,7 +39,7 @@
             	<p><?php echo ($info['content']); ?></p>
                 <?php if($info['thumb']): ?><p style="text-align:center"><a href=""><img alt="<?php echo ($info["title"]); ?>" src="/thinkshop<?php echo str_replace('./','/',$info['thumb']);?>"></a></p><?php endif; ?>
                 <div class="line"></div>
-                <div class="timeline_tips"><span class="timeline_time"><?php echo date('Y年m月d日',$info['addtime']);?> 来自轻博客(SoftBlog)</span><span class="timeline_ready"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="关注"></i>113次关注</a></span></div>
+                <div class="timeline_tips"><span class="timeline_time"><?php echo date('Y年m月d日',$info['addtime']);?> 来自轻博客(SoftBlog)</span><span class="timeline_ready"><a href="<?php echo U('Index/detail',array('id'=>$v['id']));?>"><i class="icon_timeline" title="关注"></i><?php echo rand(20,1000);?>次关注</a></span></div>
             </div>
         </div>
         <span class="arrow_bg"></span>
@@ -56,21 +56,32 @@
        <h3 class="main_title"><i class="i"></i>一些读后感<i class="switch" title="收缩"></i></h3>
             <div class="timeline_text xu">
                 <div class="timeline_desc" id="thirdComment">
-                    <!-- 多说评论框 start -->
-                    <div class="ds-thread" data-thread-key="112-220" data-title="<?php echo ($info["title"]); ?>" data-url=""></div>
-                    <!-- 多说评论框 end -->
-                    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-                    <script type="text/javascript">
-                    var duoshuoQuery = {short_name:"SoftBlog"};
-                    (function() {
-                    var ds = document.createElement('script');
-                    ds.type = 'text/javascript';ds.async = true;
-                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-                    ds.charset = 'UTF-8';
-                    (document.getElementsByTagName('head')[0] 
-                    || document.getElementsByTagName('body')[0]).appendChild(ds);
-                    })();
-                    </script>
+                    <!-- 评论 -->
+                    <div class="commentBox">
+                        <div class="write">
+                            <img src="/thinkshop/Application/Blog/View/Static/images/avatar-default.png" class="avator"/>
+                            <form action="<?php echo U('index/addComment');?>" method="post">
+                                <input type="hidden" name="article_id" value="<?php echo ($info["id"]); ?>" />
+                                <textarea placeholder="您不想评论一下吗?" name="message"></textarea>
+                                <div class="label"><input type="text" class="inp" placeholder="昵称?" name="name"/>昵称(必填)</div>
+                                <div class="label"><input type="text" class="inp" placeholder="邮箱?" name="email"/>邮箱(必填)</div>
+                                <div class="label"><input type="submit" value="提交评论" class="sub" /></div>
+                            </form>
+                        </div>
+
+                        <?php if(is_array($comment['list'])): foreach($comment['list'] as $k=>$v): ?><div class="item">
+                            <div class="avator"><img src="/thinkshop/Application/Blog/View/Static/images/avatar-default.png"/></div>
+                            <div class="content">
+                                <p class="message"><?php echo ($v["content"]); ?></p>
+                                <p class="info"><?php echo ($v["name"]); ?>&nbsp;&nbsp;<?php echo ($v["formatTime"]); ?>&nbsp;&nbsp;<a href="" class="reply">回复</a></p>
+                            </div>
+                            <div class="floor">#<?php echo ($k+1); ?></div><div class="clear"></div>
+                        </div><?php endforeach; endif; ?>
+                        <?php if($comment['page']): ?><div class="pages"><?php echo ($comment["page"]); ?></div><?php endif; ?>
+                    </div>
+
+                    <!-- //评论 -->
+                    
                 </div>
             </div>
             <span class="arrow_bg"></span>
@@ -127,6 +138,8 @@ target="_blank"></a>
             scrollTop:0,
         },1000);
     });
+
+
 </script>
 </div>
 
