@@ -27,7 +27,7 @@
             <div class="timeline_desc">
             	<p>{$v['content']}</p>
                 <if condition="$v['thumb']">
-                <p style="text-align:center"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><img alt="{$v.title}" src="__ROOT__{:str_replace('./','/',$v['thumb'])}"></a></p>
+                <p style="text-align:center"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><img alt="{$v.title}" src="{:getPicUrl($v['thumb'])}"></a></p>
                 </if>
                 <div class="line"></div>
                 <div class="timeline_tips"><span class="timeline_time">{:timeFormat($v['addtime'])} 来自轻博客(SoftBlog)</span><span class="timeline_comment"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="评论"></i>评论</a></span><span class="timeline_ready"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="查看"></i>查看</a></span></div>
@@ -48,7 +48,7 @@
             <div class="timeline_desc"> 
                 <p>{$v['content']}</p>
                 <if condition="$v['thumb']">
-                <p style="text-align:center"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><img alt="{$v.title}" src="__ROOT__{:str_replace('./','/',$v['thumb'])}"></a></p>
+                <p style="text-align:center"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><img alt="{$v.title}" src="{:getPicUrl($v['thumb'])}"></a></p>
                 </if>
                 <div class="line"></div>
                 <div class="timeline_tips"><span class="timeline_time">{:timeFormat($v['addtime'])} 来自轻博客(SoftBlog)</span><span class="timeline_comment"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="评论"></i>评论</a></span><span class="timeline_ready"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="查看"></i>查看</a></span></div>

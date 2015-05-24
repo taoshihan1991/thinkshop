@@ -6,3 +6,22 @@
 <script type="text/javascript" src="__PUBLIC__/Umeditor/umeditor.config.js"></script>
 <!-- 编辑器源码文件 -->
 <script type="text/javascript" src="__PUBLIC__/Umeditor/umeditor.js"></script>
+<script type="text/javascript">
+         $(function(){
+             window.um = UM.getEditor('content', {
+                 /* 传入配置参数,可配参数列表看umeditor.config.js */
+                 toolbar: [
+            'source | undo redo | bold italic underline strikethrough | superscript subscript | forecolor backcolor | removeformat |',
+            'insertorderedlist insertunorderedlist | selectall cleardoc paragraph | fontfamily fontsize' ,
+            '| justifyleft justifycenter justifyright justifyjustify |',
+            'link unlink | emotion image video  | map',
+            '| horizontal print preview fullscreen', 'drafts', 'formula'
+        ],
+                 imageUrl:"<?php echo U('Base/uploadDetailImg');?>",//php处理脚本
+                 imagePath:'__ROOT__/',
+                 focus: true,
+                 enterTag:'br'
+             });
+         });
+</script>
+<!--//Umeditor编辑器-->

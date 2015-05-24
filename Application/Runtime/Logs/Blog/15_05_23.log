@@ -7675,3 +7675,65 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005465s ]
 INFO: [ app_end ] --END-- [ RunTime:0.005552s ]
 
+[ 2015-05-23T20:18:50+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.165575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.037352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037584s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.4847s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0197s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.1665s ]
+SQL: SELECT * FROM `ts_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.1667s ]
+SQL: SHOW COLUMNS FROM `ts_message` [ RunTime:0.0954s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_message` WHERE `article_id` = 3 LIMIT 1   [ RunTime:0.0364s ]
+SQL: SELECT * FROM `ts_message` WHERE `article_id` = 3 ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] Use of undefined constant reply - assumed 'reply' G:\php\htdocs\thinkshop\Application\Runtime\Cache\Blog\8ba0f3c03345b9aeb2c152a2d19461d7.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.815993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.816226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.057931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.058132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020500s ]
+
+[ 2015-05-23T21:26:49+08:00 ] 127.0.0.1 /thinkshop/index.php/Blog/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030619s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.4519s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0140s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.1008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0379s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0193s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.sort asc,a.id desc LIMIT 0,20   [ RunTime:0.1606s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.403025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.403196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009881s ]
+

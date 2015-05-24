@@ -1,0 +1,30 @@
+[ 2015-05-24T10:43:25+08:00 ] 127.0.0.1 /thinkshop/index.php/blog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005521s ]
+SQL: SHOW COLUMNS FROM `ts_articleclass` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `ts_articleclass`  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [8] Undefined variable: arr G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+NOTIC: [2] Invalid argument supplied for foreach() G:\php\htdocs\thinkshop\Application\Blog\Model\ArticleclassModel.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0214s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ts_article` [ RunTime:0.0143s ]
+SQL: SELECT a.*,b.name cate_name FROM ts_article a INNER JOIN ts_articleclass b on a.category_id=b.id  ORDER BY a.sort asc,a.id desc LIMIT 0,20   [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005704s ]
+

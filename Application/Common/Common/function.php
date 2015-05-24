@@ -32,3 +32,7 @@ function timeFormat($time){
 
 	return $str;
 } 
+// 取图片绝对地址
+function getPicUrl($src){
+	return  'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/'.str_replace('./','',$src);
+}

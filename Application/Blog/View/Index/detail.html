@@ -27,7 +27,7 @@
             <div class="timeline_desc">
             	<p>{$info['content']}</p>
                 <if condition="$info['thumb']">
-                <p style="text-align:center"><a href=""><img alt="{$info.title}" src="__ROOT__{:str_replace('./','/',$info['thumb'])}"></a></p>
+                <p style="text-align:center"><a href=""><img alt="{$info.title}" src="{:getPicUrl($info['thumb'])}"></a></p>
                 </if>
                 <div class="line"></div>
                 <div class="timeline_tips"><span class="timeline_time">{:date('Y年m月d日',$info['addtime'])} 来自轻博客(SoftBlog)</span><span class="timeline_ready"><a href="{:U('Index/detail',array('id'=>$v['id']))}"><i class="icon_timeline" title="关注"></i>{:rand(20,1000)}次关注</a></span></div>

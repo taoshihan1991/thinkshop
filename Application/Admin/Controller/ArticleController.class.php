@@ -121,13 +121,13 @@ class ArticleController extends BaseController {
         $upload = new \Think\Upload();
         $upload->maxSize=C('UPLOAD_MAX_SIZE');
         $upload->exts =C('UPLOAD_EXTS');
-        $upload->rootPath = C('UPLOAD_PATH');
+        $upload->rootPath = BASE_PATH.C('UPLOAD_PATH');
         $upload->savePath = '';
         $info = $upload->uploadOne($_FILES['thumb']);
         if(!$info){
             $this->error($upload->getError());
         }   
-        return $upload->rootPath.$info['savepath'].$info['savename'];
+        return C('UPLOAD_PATH').$info['savename'];
     }
     // 分配分类
     public function getCate(){

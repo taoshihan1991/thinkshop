@@ -39,7 +39,7 @@ class BaseController extends Controller {
         */
         $obj=new \Think\Upload();
         $obj->maxSize = C('UPLOAD_MAX_SIZE');
-        $obj->rootPath = C('UPLOAD_PATH');
+        $obj->rootPath = BASE_PATH.C('UPLOAD_PATH');
         $obj->savePath = '';
         $obj->saveRule = 'uniqid';
         $obj->uploadReplace=true;
@@ -55,7 +55,7 @@ class BaseController extends Controller {
             $res=array(
                 'originalName'=>$info['upfile']['name'],
                 'name'=>$info['upfile']['name'],
-                'url'=>$obj->rootPath.$info['upfile']['savepath'].$info['upfile']['savename'],
+                'url'=>C('UPLOAD_PATH').$info['upfile']['savepath'].$info['upfile']['savename'],
                 'size'=>$info['upfile']['size'],
                 'type'=>'.'.$info['upfile']['ext'],
                 'state'=>"SUCCESS"
@@ -69,32 +69,28 @@ class BaseController extends Controller {
     * uploadify图片上传
     */
     public function uploadify(){
-
         if (!empty($_FILES)) {
             //图片上传设置
             $config = array(   
-                'maxSize'    =>    3145728, 
+                'maxSize'    =>    C('UPLOAD_MAX_SIZE'), 
                 'savePath'   =>    '',  
                 'saveName'   =>    array('uniqid',''), 
-                'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),  
+                'exts'       =>    C('UPLOAD_EXTS'),  
                 'autoSub'    =>    true,   
                 'subName'    =>    array('date','Y-m-d'),
             );
-            
             $upload = new \Think\Upload($config);// 实例化上传类
             $images = $upload->upload();
             //判断是否有图
             if($images){
-
-                $info='Uploads/'.$images['Filedata']['savepath'].$images['Filedata']['savename'];
-                $miinfo='Uploads/'.$images['Filedata']['savepath'].'mi_'.$images['Filedata']['savename']; 
+                $info=C('UPLOAD_PATH').$images['Filedata']['savepath'].$images['Filedata']['savename'];
+                $miinfo=$info.'.mini.'.$images['Filedata']['ext']; 
                 $image = new \Think\Image(); 
                 $image->open('./'.$info)->thumb(150, 150,\Think\Image::IMAGE_THUMB_CENTER)->save('./'.$miinfo);  
                 //添加图片水印                
                 //$image->open('./'.$info)->water('./Data/logo.png',\Think\Image::IMAGE_WATER_NORTHWEST,50)->save('./'.$info);
                 //添加文字水印
                 //$image->open('./'.$info)->text('姜医生','./Data/1.ttf',20,'#000000',\Think\Image::IMAGE_WATER_SOUTHEAST)->save($info);
-
                 $data=array(
                     'status'=>1,
                     'path'=>array(
@@ -103,9 +99,6 @@ class BaseController extends Controller {
                     )
                 );
                 $this->ajaxReturn($data);     
-                
-                
-                
             }
             else{
                 $this->error($upload->getError());//获取失败信息

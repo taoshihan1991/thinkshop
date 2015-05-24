@@ -10,6 +10,6 @@ return array(
     'DB_PREFIX'             =>  'ts_',    // 数据库表前缀
 
     'UPLOAD_MAX_SIZE' => 2000000,//最大上传大小
-	'UPLOAD_PATH' => './Uploads/',//文件上传保存路径
+	'UPLOAD_PATH' => 'Uploads/',//文件上传保存路径
 	'UPLOAD_EXTS' => array('jpg','jpeg','gif','png'),//文件上传保存路径
 );
