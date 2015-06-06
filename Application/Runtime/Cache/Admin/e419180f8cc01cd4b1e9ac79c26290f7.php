@@ -56,7 +56,7 @@
 					更新全站缓存
 				</a>
 				<span>|</span>
-				<a href="__WEB__" target="_blank">
+				<a href="<?php echo U('Home/Index/index');?>" target="_blank">
 					前台首页
 				</a>
 				<span>|</span>
@@ -92,6 +92,8 @@
 						<dd><a nid="11" href="javascript:;" onclick="get_content(this,11)" url="<?php echo U('Attribute/index');?>" class="">属性列表</a></dd>
 						<dt>商品管理</dt>
 						<dd><a nid="12" href="javascript:;" onclick="get_content(this,12)" url="<?php echo U('Goods/index');?>" class="">商品列表</a></dd>
+						<dt>订单管理</dt>
+						<dd><a nid="13" href="javascript:;" onclick="get_content(this,13)" url="<?php echo U('Order/index');?>" class="">订单列表</a></dd>
 					</dl>
 				</div>
 				

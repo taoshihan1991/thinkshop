@@ -19,12 +19,14 @@
     <form method="post" class="hd-form" action="{:U('Comment/update')}">
     <input type="hidden" name="id" value="{$info.id}" />
         <table class="table1">
+            <if condition="$info['article_id']">
             <tr>
                 <th class="w100">评论文章</th>
                 <td>
                     <a href="{:U('Blog/index/detail',array('id'=>$article['id']))}" target="_blank">{$article.title}</a>
                 </td>
             </tr>
+            </if>
             <tr>
                 <th class="w100">昵称</th>
                 <td>

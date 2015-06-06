@@ -115,7 +115,7 @@ class AttributeController extends BaseController {
 
             $str.="<tr><th class='w100'>{$v['name']}</th><td>";
             $str.="<input type='hidden' name='attr_id_list[]' value='{$v['id']}' />";
-            $str.="<input type='hidden' name='attr_price_list[]' value='{$attrValues['attr_price']}' />";
+            
             switch ($v['input_type']) {
                 case 0:
                     $inputTypeStr="<input type='text' name='attr_value_list[]' value='{$attrValues['attr_value']}' />";
@@ -142,6 +142,7 @@ class AttributeController extends BaseController {
                     break;
             }
             $str.=$inputTypeStr;
+            $str.="<input type='text' name='attr_price_list[]' value='{$attrValues['attr_price']}' />";
             $str.="</td></tr>";
         }
         exit($str);

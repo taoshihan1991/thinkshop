@@ -127,7 +127,8 @@ class ArticleController extends BaseController {
         if(!$info){
             $this->error($upload->getError());
         }   
-        return C('UPLOAD_PATH').$info['savename'];
+
+        return C('UPLOAD_PATH').$info['savepath'].$info['savename'];
     }
     // 分配分类
     public function getCate(){

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+		<title>ThinkShop电子商务系统</title>
+		<include file="Common:js"/>
+	</head>
+	<body>
+
+<form action="{:U('Order/update')}" method="post" class="hd-form" >
+    <input type="hidden" name="id" value="{$info.id}"/>
+    <div class="wrap">
+        <div class="menu_list">
+            <ul>
+               <li><a href="{:U('Order/index')}">订单列表</a></li>
+                <li><a href="" class="action">订单详情</a></li>
+            </ul>
+        </div>
+         <div class="title-header">订单状态</div>
+         <table class="table1">
+            <tr>
+                <td class="w300">订单号: {$info.order_sn}</td>
+                <td class="w500">订单状态: {$info.status}<if condition="$info['status']==0">未付款</if></td>
+            </tr>
+            <tr>
+                <td class="w300">订单总额: {$info.fee}元</td>
+                <td class="w500">订单留言: {$info.info}</td>
+            </tr>
+        </table>
+        <div class="title-header">发货信息</div>
+         <table class="table1">
+            <tr>
+                <td class="w300">收件人: {$info.name}</td>
+                <td class="w500">联系电话: {$info.tel}</td>
+            </tr>
+            <tr>
+                <td class="w300">详细地址: {$info.address}元</td>
+                <td class="w500"></td>
+            </tr>
+        </table>
+        <div class="title-header">商品信息</div>
+         <table class="table1">
+            <thead>
+                <th>图片</th>
+                <th>商品名称</th>
+                <th>规格</th>
+                <th>单价</th>
+                <th>数量</th>
+                <th></th>
+            </thead>
+            <foreach name="info.goods" item="v">
+            <tr>
+                <td class="w50"><img src="{:getPicUrl($v['img'])}" class="w50"/></td>
+                <td class="w100">{$v.name}</td>
+                <td class="w100">
+                    <foreach name="v.attr" item="row">
+                    <?php $v['sell_price']+=$row['attr_price']?>
+                    {$row.attr_name}: {$row.attr_value} <if condition="$row['attr_price']">(价格:{$row.attr_price})</if><br/>
+                    </foreach>
+                </td>
+                <td class="w50">
+                    {$v.sell_price}
+
+                </td>
+                <td class="w50">{$v.num}</td>
+                <td class="w300"></td>
+            </tr>
+            </foreach>
+      
+        </table>
+    </div>
+<!--     <div class="position-bottom">
+        <input type="submit" class="hd-success" value="确定"/>
+    </div> -->
+</form>
+	</body>
+</html>
+

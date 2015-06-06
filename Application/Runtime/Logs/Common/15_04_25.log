@@ -1,6 +1,0 @@
-[ 2015-04-25T20:49:30+08:00 ] 127.0.0.1 /thinkshop/index.php/%7B%7CU:'setFavorite'%7D&_=0.5764959156513214
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001926s ]
-ERR: 无法加载模块:{|U:'setFavorite'}&_=0
-

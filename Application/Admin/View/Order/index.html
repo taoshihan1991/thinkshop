@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+		<title>ThinkShop电子商务系统</title>
+		<include file="Common:js"/>
+	</head>
+	<body>
+
+<div class="wrap">
+
+    <div class="menu_list">
+        <ul>
+            <li><a href="{:U('Order/index')}" class="action">订单列表</a></li>
+        </ul>
+    </div>
+    <table class="table2 hd-form">
+        <thead>
+        <tr>
+            <td class="w200">订单编号</td>
+            <td class="w100">收货人</td>
+            <td class="w200">联系电话</td>
+            <td class="w100">订单状态</td>
+            <td class="w150">操作</td>
+        </tr>
+        </thead>
+            <foreach name="list" item="v">
+            <tr>
+                <td>{$v.order_sn}</td>
+                <td>{$v.name}</td>
+                <td>{$v.tel}</td>
+                <td>
+                <if condition="$v['status']==0">未付款</if>
+                </td>
+                <td>
+                    <a href="{:U('Order/update',array('id'=>$v['id']))}">查看</a> 
+                    <span class="line">|</span> 
+                    <a href="{:U('Goods/delete',array('id'=>$v['id']))}">删除</a>
+                </td>
+            </tr>
+            </foreach>
+            </table>
+    <div class="page1">{$page}</div>
+    <div class="h60"></div>
+</div>
+	</body>
+</html>
+<script>
+    $('.searchAttr').change(function(){
+        window.location.href=$(this).val();
+    });
+</script>
