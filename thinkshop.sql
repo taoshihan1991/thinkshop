@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50150
 File Encoding         : 65001
 
-Date: 2015-06-06 12:39:56
+Date: 2015-06-08 21:57:20
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -43,19 +43,14 @@ CREATE TABLE `ts_article` (
   `category_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '分类编号',
   `addtime` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '添加时间',
   `sort` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
+  `link` varchar(255) NOT NULL DEFAULT '' COMMENT '外链',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_article
 -- ----------------------------
-INSERT INTO `ts_article` VALUES ('1', '关于奇点，我用感觉描绘过它', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">关于奇点，我用感觉描绘过它，那是从一个被无限压缩的单元向四周拉伸，形成一个球体。在这里除了最基本的三维构造，还有以实体的形式存在的时间。因此，你从任意一个点，向任何一个方向出发，最终都可以回到那个点。星际穿越，仿佛就是梦的轮回。平行世界里没有他们，全是我们。</span></p>', './Uploads/2015-05-17/55584d0be191f.jpg', '11', '1431843102', '12');
-INSERT INTO `ts_article` VALUES ('2', '生活中遇到许多似曾相识的过客', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">生活中遇到许多似曾相识的过客，让你怦然心动，深觉这么近，却又那么远。就像是一束暖阳，你看到了，感觉到了，但却无法捕捉。而这些，往往在心底慢慢消散，直到下一个循环。</span></p>', '', '11', '1431843102', '0');
-INSERT INTO `ts_article` VALUES ('3', '心愿未了有牵绊。生命不息，折腾未止。', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">心愿未了有牵绊。生命不息，折腾未止。</span></p>', './Uploads/2015-05-17/555851a91651b.jpg', '11', '1431851433', '0');
-INSERT INTO `ts_article` VALUES ('4', '年轻人，请不要局限于小小的胜利', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">年轻人，请不要局限于小小的胜利，不要局限于追求安全与稳定的生活。请不断地挑战人生吧！在成百上千次的挑战中，将书写属于你的人生。即使失败很多，也不要气馁。满载着成功与失败的人生，正是你生命不息的证明。你毫不退缩、勇敢挑战的人生，也为旁人增加了生命的勇气。——尼采</span></p>', './Uploads/2015-05-17/555852a16a37b.jpg', '11', '1431851499', '0');
-INSERT INTO `ts_article` VALUES ('5', '未出生时，人被束缚在母体里', '<p><span style=\"color: rgb(51, 51, 51); font-family: 微软雅黑, Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 23px; white-space: normal;\">未出生时，人被束缚在母体里；上学时，人被束缚在教室里；工作时，人被束缚在生存的无形枷锁里。死时，又把人束缚在棺木或者盒子里。人的一生，无论过程怎样，始终都抵不过这束缚的魔力。这就是人作为一个有思想意识的生命体，所无法挣脱的宿命。</span></p>', '', '11', '1431851562', '0');
-INSERT INTO `ts_article` VALUES ('6', '青果轻博客系统', '<p>青果轻博客框架,最精简的bolg,适合PHP初学者研究练手</p><p>https://github.com/taoshihan1991/thinkshop</p>', './Uploads/2015-05-23/55604bb025ea0.jpg', '12', '1432374192', '0');
-INSERT INTO `ts_article` VALUES ('7', 'fileReader文件管理器', '<p>基于php面向过程的方式实现的web在线文件管理器,前端使用bootstrap框架和Cikonss图标样式库,适合初学者研究练手</p><p>git地址:&nbsp;https://github.com/taoshihan1991/fileReader</p><p><br/></p><p><img src=\"http://localhost/thinkshop/Uploads/2015-05-24/55613aa8eb826.jpg\" _src=\"http://localhost/thinkshop/Uploads/2015-05-24/55613aa8eb826.jpg\"/></p>', './Uploads/2015-05-23/5560524a39708.jpg', '12', '1432374572', '0');
+INSERT INTO `ts_article` VALUES ('1', '小米4手机直降100元', '<p>小米4手机直降100元</p>', 'Uploads/2015-06-06/5572cbd774d5e.jpg', '1', '1433586647', '0', 'http://www.qingguow.cn/');
 
 -- ----------------------------
 -- Table structure for `ts_articleclass`
@@ -67,13 +62,12 @@ CREATE TABLE `ts_articleclass` (
   `parent_id` int(11) NOT NULL DEFAULT '0' COMMENT '父级分类',
   `sort` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_articleclass
 -- ----------------------------
-INSERT INTO `ts_articleclass` VALUES ('12', '开源作品', '0', '0');
-INSERT INTO `ts_articleclass` VALUES ('11', '时光印记', '0', '1');
+INSERT INTO `ts_articleclass` VALUES ('1', '首页banner图轮播', '0', '0');
 
 -- ----------------------------
 -- Table structure for `ts_attribute`
@@ -88,7 +82,7 @@ CREATE TABLE `ts_attribute` (
   `type_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '类型id',
   PRIMARY KEY (`id`),
   KEY `fk_ts_attribute_ts_type1_idx` (`type_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_attribute
@@ -99,6 +93,9 @@ INSERT INTO `ts_attribute` VALUES ('3', '尺寸', '1', '1', '一寸|二寸|三�
 INSERT INTO `ts_attribute` VALUES ('4', '售后保障', '0', '2', '', '2');
 INSERT INTO `ts_attribute` VALUES ('5', '包装', '1', '1', '线装|精装', '4');
 INSERT INTO `ts_attribute` VALUES ('6', '出版社', '1', '1', '人教版|科教版', '4');
+INSERT INTO `ts_attribute` VALUES ('7', '选择颜色', '1', '0', '', '5');
+INSERT INTO `ts_attribute` VALUES ('8', '选择版本', '1', '1', '移动4G|联通4G|电信4G', '5');
+INSERT INTO `ts_attribute` VALUES ('9', '选择内存', '1', '1', '2G|3G', '5');
 
 -- ----------------------------
 -- Table structure for `ts_brand`
@@ -115,7 +112,7 @@ CREATE TABLE `ts_brand` (
 -- ----------------------------
 -- Records of ts_brand
 -- ----------------------------
-INSERT INTO `ts_brand` VALUES ('9', '小米', '', '2');
+INSERT INTO `ts_brand` VALUES ('9', '小米', './Uploads/2015-06-08/55759e970a909.png', '2');
 INSERT INTO `ts_brand` VALUES ('8', '苹果', '', '1');
 
 -- ----------------------------
@@ -128,13 +125,37 @@ CREATE TABLE `ts_category` (
   `parent_id` int(11) NOT NULL DEFAULT '0' COMMENT '父级分类',
   `sort` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_category
 -- ----------------------------
-INSERT INTO `ts_category` VALUES ('10', '精品图书', '0', '0');
-INSERT INTO `ts_category` VALUES ('6', '数码产品', '0', '1');
+INSERT INTO `ts_category` VALUES ('12', '小麦手机', '6', '0');
+INSERT INTO `ts_category` VALUES ('11', '红麦手机', '6', '0');
+INSERT INTO `ts_category` VALUES ('10', '小麦电视', '0', '0');
+INSERT INTO `ts_category` VALUES ('6', '小麦手机', '0', '1');
+INSERT INTO `ts_category` VALUES ('13', '小麦1s', '12', '0');
+INSERT INTO `ts_category` VALUES ('14', '小麦2s', '12', '0');
+INSERT INTO `ts_category` VALUES ('15', '红麦1s', '11', '0');
+INSERT INTO `ts_category` VALUES ('16', '红麦Note', '11', '0');
+INSERT INTO `ts_category` VALUES ('17', '小麦电视2.4英寸', '10', '0');
+INSERT INTO `ts_category` VALUES ('18', '小麦电视2.49英寸', '10', '0');
+INSERT INTO `ts_category` VALUES ('19', '路由器', '0', '0');
+INSERT INTO `ts_category` VALUES ('20', '小麦路由器', '19', '0');
+INSERT INTO `ts_category` VALUES ('21', '小麦路由mini', '19', '0');
+INSERT INTO `ts_category` VALUES ('22', '盒子', '0', '0');
+INSERT INTO `ts_category` VALUES ('23', '小麦盒子', '22', '0');
+INSERT INTO `ts_category` VALUES ('24', '小麦盒子增强', '22', '0');
+INSERT INTO `ts_category` VALUES ('25', '小麦电视2.4', '17', '0');
+INSERT INTO `ts_category` VALUES ('26', '小麦电视2.49', '18', '0');
+INSERT INTO `ts_category` VALUES ('27', '移动电源和电池', '0', '0');
+INSERT INTO `ts_category` VALUES ('28', '耳机音响', '0', '0');
+INSERT INTO `ts_category` VALUES ('29', '小麦周边', '0', '0');
+INSERT INTO `ts_category` VALUES ('30', '个性化配件', '0', '0');
+INSERT INTO `ts_category` VALUES ('31', '移动电源', '27', '0');
+INSERT INTO `ts_category` VALUES ('32', '活塞耳机', '28', '0');
+INSERT INTO `ts_category` VALUES ('33', '手机贴纸', '30', '0');
+INSERT INTO `ts_category` VALUES ('34', '麦兔', '29', '0');
 
 -- ----------------------------
 -- Table structure for `ts_goods`
@@ -247,7 +268,7 @@ CREATE TABLE `ts_order` (
 -- ----------------------------
 -- Records of ts_order
 -- ----------------------------
-INSERT INTO `ts_order` VALUES ('1', 'TS2015531175240555', '1', '0', '请尽快发货', '99.50', '1', '1', '0');
+INSERT INTO `ts_order` VALUES ('1', 'TS2015531175240555', '1', '99', '请尽快发货', '99.50', '1', '1', '0');
 
 -- ----------------------------
 -- Table structure for `ts_order_goods`
@@ -276,13 +297,14 @@ CREATE TABLE `ts_type` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '类型编号',
   `name` varchar(125) NOT NULL DEFAULT '' COMMENT '类型名称',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ts_type
 -- ----------------------------
 INSERT INTO `ts_type` VALUES ('4', '书本');
 INSERT INTO `ts_type` VALUES ('3', '衣服');
+INSERT INTO `ts_type` VALUES ('5', '手机');
 
 -- ----------------------------
 -- Table structure for `ts_user_address`

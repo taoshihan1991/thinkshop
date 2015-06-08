@@ -42,13 +42,19 @@
                 <th class="w100">缩略图</th>
                 <td>
                     <input type="file" name="thumb" class="w300" />
-                    <img src="{$info.thumb}" class="thumbShow" />
+                    <img src="{:getPicUrl($info['thumb'])}" class="thumbShow" />
                 </td>
             </tr>
             <tr>
                 <th class="w100">排序</th>
                 <td>
                     <input type="text" name="sort" class="w300" value="{$info.sort}" />
+                </td>
+            </tr>
+            <tr>
+                <th class="w100">外链</th>
+                <td>
+                    <input type="text" name="link" class="w300" value="{$info.link}" />
                 </td>
             </tr>
             <tr>

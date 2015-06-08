@@ -32,11 +32,12 @@
                 <td>{$v.tel}</td>
                 <td>
                 <if condition="$v['status']==0">未付款</if>
+                <if condition="$v['status']==99">已关闭</if>
                 </td>
                 <td>
                     <a href="{:U('Order/update',array('id'=>$v['id']))}">查看</a> 
                     <span class="line">|</span> 
-                    <a href="{:U('Goods/delete',array('id'=>$v['id']))}">删除</a>
+                    <a href="{:U('Order/delete',array('id'=>$v['id']))}">关闭</a>
                 </td>
             </tr>
             </foreach>

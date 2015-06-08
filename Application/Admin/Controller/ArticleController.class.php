@@ -26,6 +26,7 @@ class ArticleController extends BaseController {
                 'category_id'=>I('post.category_id','intval'),
                 'content'=>stripslashes($_POST['content']),
                 'sort'=>I('post.sort','intval'),
+                'link'=>I('post.link'),
                 'addtime'=>time(),
             );
 
@@ -79,6 +80,7 @@ class ArticleController extends BaseController {
                 'title'=>I('post.title'),
                 'category_id'=>I('post.category_id','intval'),
                 'content'=>stripslashes($_POST['content']),
+                'link'=>I('post.link'),
                 'sort'=>I('post.sort','intval'),
             );
 

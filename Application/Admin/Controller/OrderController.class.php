@@ -15,13 +15,10 @@ class OrderController extends BaseController {
 
     public function delete(){
         $id=I('get.id','intval');
-        $goods_model=D('goods');
-        $condition=array('id'=>$id);
-
-        $res=$goods_model->where($condition)->delete();
+        $order_model=D('order');
+        $res=$order_model->where(array('id'=>$id))->setField('status',99);
         if($res){
-			M('goods_attr')->where(array('goods_id'=>$id))->delete();
-            $this->success('操作成功',U('index'));
+            $this->success('操作成功');
         }else{
             $this->error('操作失败');
         }
@@ -39,33 +36,5 @@ class OrderController extends BaseController {
 
         $this->display();
     }
-    // 验证字段
-    public function checkData($data){
-    	if(empty($data['category_id'])){
-    		$this->errMsg="分类必须选";
-    		return false;
-    	}
-    	return true;
-    }
-    // 属性入库
-    public function addAttribute($attr,$goods_id){
-    	if(!empty($attr['attr_id_list'])){
-    		M('goods_attr')->where(array('goods_id'=>$goods_id))->delete();
-
-    		$data=array();
-    		foreach($attr['attr_id_list'] as $k=>$v){
-    			$temp=array(
-    				'goods_id'=>$goods_id,
-    				'attribute_id'=>$v,
-    				'attr_value'=>$attr['attr_value_list'][$k],
-    				'attr_price'=>$attr['attr_price_list'][$k],
-    			);
-    			$data[]=$temp;
-    		}
-    		
-    		$res=M('goods_attr')->addAll($data);
-    		return $res;
-    	}
-    	return false;
-    }
+ 
 }

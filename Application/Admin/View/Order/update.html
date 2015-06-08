@@ -21,7 +21,10 @@
          <table class="table1">
             <tr>
                 <td class="w300">订单号: {$info.order_sn}</td>
-                <td class="w500">订单状态: {$info.status}<if condition="$info['status']==0">未付款</if></td>
+                <td class="w500">订单状态: {$info.status}
+                <if condition="$info['status']==0">未付款</if>
+                <if condition="$info['status']==99">已关闭</if>
+                </td>
             </tr>
             <tr>
                 <td class="w300">订单总额: {$info.fee}元</td>

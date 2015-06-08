@@ -1,0 +1,103 @@
+<div class="site-header container">
+    <div class="site-logo">
+        <a class="logo" href="" title="小麦官网"><i class="iconfont">&#xe61d;</i></a>
+    </div>
+    <div class="header-info">
+        <div class="search-section">
+            <form id="J_searchForm" class="search-form clearfix" action="http://search.mi.com/search" method="get">
+                <input class="search-text" type="search" name="keyword" autocomplete="off" data-search-config={'defaultWords':["智能硬件","WiFi","自拍杆","移动电源","随身风扇","个性配件","充电线材","存储卡","配件优惠套装"]} placeholder="搜索您需要的商品" />
+                <input type="submit" class="search-btn iconfont" value="&#xe630;" />
+                <!--[if IE 6]><div class="ie6-fix"></div><![endif]-->
+                <div class="hot-words">
+                    <a href=http://search.mi.com/search_%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF>小麦手环</a><a href=http://search.mi.com/search_%E8%80%B3%E6%9C%BA>耳机</a><a href=http://search.mi.com/search_%E6%8F%92%E7%BA%BF%E6%9D%BF>插线板</a>                </div>
+            </form>
+        </div>
+        <div class="cart-section">
+            <a id="J_miniCart" class="mini-cart" href="http://static.mi.com/cart/"><i class="iconfont">&#xe609;</i>购物车<span class="mini-cart-num J_cartNum"></span></a>
+            <div id="J_miniCartList" class="mini-cart-list">
+                <p class="loading">数据加载中，请稍后...</p>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav clearfix">
+        <div id="J_categoryContainer" class="nav-category">
+            <a class="btn-category-list" href="http://list.mi.com/">全部商品分类</a>
+            <div class="nav-category-section">
+                <ul class="nav-category-list">
+                    <foreach name="cateTreeData" item="rows">
+                    <li class="nav-category-item nav-category-item-first">
+                        <div class="nav-category-content">
+                        <a class="title" href="">{$rows.name}</a>
+                        <div class="links">
+                            <foreach name="rows.child" item="r">
+                            <a href="">{$r.name}</a>
+                            </foreach>
+                        </div>
+                        <div class="nav-category-children">
+                            <ul class="children-list">
+                                <foreach name="rows.child" item="r">
+                                <if condition="$r['child']">
+                                <foreach name="r.child" item="v">
+                                <li>
+                                    <a href=""><img src="http://c1.mifile.cn/f/i/2014/cn/nav/icons/minote.jpg" width="40" height="40" alt="" class="img-loaded"><span class="text">{$v.name}</span></a>
+                                </li>
+                                </foreach>
+                                <else/>
+                                <li>
+                                    <a href=""><img src="http://c1.mifile.cn/f/i/2014/cn/nav/icons/minote.jpg" width="40" height="40" alt="" class="img-loaded"><span class="text">{$r.name}</span></a>
+                                </li>
+                                </if>
+                                </foreach>
+                            </ul>
+                        </div>
+                        </div>
+                    </li>
+                    </foreach>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-main">
+            <ul class="nav-main-list J_menuNavMain clearfix">
+                <li class="nav-main-item">
+                    <a href=""><span class="text">首页</span></a>
+                </li>
+                <php>$i=0;</php>
+                <foreach name="navigator" item="v"><php>$i++;if($i>=8) break;</php>
+                <li class="nav-main-item">
+                    <a href="{:U('Category/index',array('cid'=>$v['id']))}"><span class="text">{$v.name}</span><span class="arrow"></span></a>
+                    <div class="nav-main-children">
+                        <ul class="children-list clearfix">
+                            <li class="first">
+                             <a class="item-detail" href="http://www.mi.com/minote/">
+                                    <span class="title" style="font-size:20px;">小麦Note</span>
+                                    <span class="desc">大屏旗舰，HiFi 双卡双待</span>
+                                    <span class="price"><b>2299</b>元起</span>
+                                    <span class="thumb">
+                                        <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-minote.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-minote_2x.jpg 2x" alt="小麦Note" width="160" height="160"/>
+                                    </span>
+                                </a>
+                            </li>
+                             <li>
+                            <a class="item-detail" href="http://www.mi.com/mi4/">
+                                    <span class="title" style="font-size:20px;">小麦手机4</span>
+                                    <span class="desc">工艺和手感，超乎想象</span>
+                                    <span class="price"><b>1499</b>元</span>
+                                    <span class="thumb">
+                                        <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mi4.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mi4_2x.jpg 2x" alt="小麦手机4" width="160" height="160"/>
+                                    </span>
+                                    <span class="desc">旗舰特价直降200</span>
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    </div>
+                </li>
+                </foreach>
+                </ul>
+        </div>
+    </div>
+    <div class="open-buy-info">
+        <a href="http://hd.mi.com/f/buy/open/cn/index.html">6月9日开放购买</a>
+    </div>
+</div>
+<!-- .site-header END -->

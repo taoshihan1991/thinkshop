@@ -36,3 +36,14 @@ function timeFormat($time){
 function getPicUrl($src){
 	return  'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/'.str_replace('./','',$src);
 }
+//无限极分类(二维转多维)
+function generateTree($m, $name = 'child', $f_id = 0) {
+    $arr = array();
+    foreach ($m as $v) {
+        if ($v['parent_id'] == $f_id) {
+            $v[$name] = generateTree($m, $name, $v['id']);
+            $arr[] = $v;
+        }
+    }
+    return $arr;
+}
