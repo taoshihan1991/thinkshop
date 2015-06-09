@@ -67,27 +67,22 @@
                     <a href="{:U('Category/index',array('cid'=>$v['id']))}"><span class="text">{$v.name}</span><span class="arrow"></span></a>
                     <div class="nav-main-children">
                         <ul class="children-list clearfix">
+                            <php>
+                                    $goods_model=D('goods');
+                                    $goodsList=$goods_model->where(array('category_id'=>array('in',$v['child'])))->field('name,goods_ad,id,img,sell_price')->order('id desc')->limit(2)->select();
+                            </php>
+                            <foreach name="goodsList" item="row">
                             <li class="first">
-                             <a class="item-detail" href="http://www.mi.com/minote/">
-                                    <span class="title" style="font-size:20px;">小麦Note</span>
-                                    <span class="desc">大屏旗舰，HiFi 双卡双待</span>
-                                    <span class="price"><b>2299</b>元起</span>
+                             <a class="item-detail" href="">
+                                    <span class="title" style="font-size:20px;">{$row.name}</span>
+                                    <span class="desc">{$row.goods_ad}</span>
+                                    <span class="price"><b>{$row.sell_price}</b>元起</span>
                                     <span class="thumb">
-                                        <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-minote.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-minote_2x.jpg 2x" alt="小麦Note" width="160" height="160"/>
+                                        <img src="{:getPicUrl($row['img'])}" width="160" height="160"/>
                                     </span>
                                 </a>
                             </li>
-                             <li>
-                            <a class="item-detail" href="http://www.mi.com/mi4/">
-                                    <span class="title" style="font-size:20px;">小麦手机4</span>
-                                    <span class="desc">工艺和手感，超乎想象</span>
-                                    <span class="price"><b>1499</b>元</span>
-                                    <span class="thumb">
-                                        <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mi4.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mi4_2x.jpg 2x" alt="小麦手机4" width="160" height="160"/>
-                                    </span>
-                                    <span class="desc">旗舰特价直降200</span>
-                                </a>
-                            </li>
+                            </foreach>
                         
                     </ul>
                     </div>

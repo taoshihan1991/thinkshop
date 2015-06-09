@@ -16,7 +16,7 @@
         </ul>
     </div>
     <div class="title-header">添加分类</div>
-    <form method="post" class="hd-form" action="{:U('Category/add')}">
+    <form method="post" class="hd-form" action="{:U('Category/add')}" enctype="multipart/form-data">
         <table class="table1">
             <tr>
                 <th class="w100">上级</th>
@@ -33,6 +33,12 @@
                 <th class="w100">名称</th>
                 <td>
                     <input type="text" name="name" class="w300" />
+                </td>
+            </tr>
+            <tr>
+                <th class="w100">栏目图标</th>
+                <td>
+                    <input type="file" name="logo" class="w300" />
                 </td>
             </tr>
             <tr>

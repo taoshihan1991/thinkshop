@@ -36,6 +36,10 @@ function timeFormat($time){
 function getPicUrl($src){
 	return  'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/'.str_replace('./','',$src);
 }
+// 取图片物理地址
+function getPicPath($src){
+	return  BASE_PATH.str_replace('./','',$src);
+}
 //无限极分类(二维转多维)
 function generateTree($m, $name = 'child', $f_id = 0) {
     $arr = array();
@@ -46,4 +50,16 @@ function generateTree($m, $name = 'child', $f_id = 0) {
         }
     }
     return $arr;
+}
+//传父级，找子集 二维数组
+function findSon($cate,$id){
+	$arr=array();
+ 	foreach($cate as $v){
+	  	if($v['parent_id']==$id){
+	   		$arr[]=$v;
+	   		$arr=array_merge(findSon($cate,$v['id']),$arr);
+	  	}
+ 	}
+
+ 	return $arr;
 }

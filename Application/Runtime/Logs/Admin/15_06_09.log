@@ -1,0 +1,40 @@
+[ 2015-06-09T21:23:20+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=clearAllCache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005146s ]
+
+[ 2015-06-09T21:23:43+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Category&a=index&_=0.4021504183765501
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005787s ]
+SQL: SHOW COLUMNS FROM `ts_category` [ RunTime:0.0278s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_category` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ts_category` ORDER BY sort asc LIMIT 0,100   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006762s ]
+

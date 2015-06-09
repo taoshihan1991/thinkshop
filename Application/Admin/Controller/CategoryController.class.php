@@ -19,6 +19,11 @@ class CategoryController extends BaseController {
                 'parent_id'=>I('post.parent_id','intval'),
             );
 
+            // 文件上传
+            if(!empty($_FILES['logo']['tmp_name'])){
+                $data['logo']=$this->uploadLogo($_FILES['logo']);
+            }
+
             // 自动验证
             if(!$category_model->create()){
                 $this->error($category_model->getError());
@@ -65,7 +70,10 @@ class CategoryController extends BaseController {
                 'sort'=>I('post.sort'),
                 'parent_id'=>I('post.parent_id','intval'),
             );
-
+            // 文件上传
+            if(!empty($_FILES['logo']['tmp_name'])){
+                $data['logo']=$this->uploadLogo($_FILES['logo']);
+            }
             // 自动验证
             if(!$category_model->create()){
                 $this->error($category_model->getError());

@@ -24,6 +24,15 @@ class CommonController extends Controller {
     			$nav[]=$v;
     		}
     	}
+        foreach($nav as $key=>$v){
+            $allSonCate=findSon($cate,$v['id']);
+            $temp=array();
+            foreach($allSonCate as $r){
+                $temp[]=$r['id'];
+            }
+            $temp[]=$v['id'];
+            $nav[$key]['child']=$temp;            
+        }
     	$this->assign('navigator',$nav);
     }
     // 缓存分类数据

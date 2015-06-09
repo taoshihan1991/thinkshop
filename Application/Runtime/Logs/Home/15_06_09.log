@@ -1,0 +1,30 @@
+[ 2015-06-09T21:23:25+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011205s ]
+SQL: SHOW COLUMNS FROM `ts_category` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `ts_category`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000456s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0127s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0004s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0004s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0004s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0004s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005640s ]
+

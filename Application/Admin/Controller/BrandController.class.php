@@ -18,7 +18,7 @@ class BrandController extends BaseController {
 
             // 文件上传
             if(!empty($_FILES['logo']['tmp_name'])){
-                $data['logo']=$this->uploadLogo($_FILES);
+                $data['logo']=$this->uploadLogo($_FILES['logo']);
             }
  
 
@@ -61,7 +61,7 @@ class BrandController extends BaseController {
             );
             // 文件上传
             if(!empty($_FILES['logo']['tmp_name'])){
-                $data['logo']=$this->uploadLogo($_FILES);
+                $data['logo']=$this->uploadLogo($_FILES['logo']);
             }
             $brand_model=D('brand');
             // 自动验证
@@ -83,17 +83,5 @@ class BrandController extends BaseController {
         $this->assign('info',$info);
         $this->display();
     }
-    // logo上传
-    public function uploadLogo($_FILES){
-        $upload = new \Think\Upload();
-        $upload->maxSize=3145728 ;
-        $upload->exts =array('jpg', 'gif', 'png', 'jpeg');
-        $upload->rootPath = './Uploads/';
-        $upload->savePath = '';
-        $info = $upload->uploadOne($_FILES['logo']);
-        if(!$info){
-            $this->error($upload->getError());
-        }   
-        return $upload->rootPath.$info['savepath'].$info['savename'];
-    }
+
 }

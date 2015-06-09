@@ -85,6 +85,8 @@ class GoodsController extends BaseController {
         $id=I('get.id','intval');
         $goods_model=D('goods');
         $condition=array('id'=>$id);
+        $info=$goods_model->getInfo($condition);
+        $this->delSiteImgs($info['imgs']);
 
         $res=$goods_model->where($condition)->delete();
         if($res){
@@ -94,7 +96,16 @@ class GoodsController extends BaseController {
             $this->error('操作失败');
         }
     }
-
+    public function delSiteImgs($imgs){
+        if(empty($imgs)) return;
+        $imgArray=explode('|',$imgs);
+        foreach($imgArray as $v){
+            $url=getPicPath($v);
+            if(!is_file($url)) continue;
+            @unlink($url);
+            @unlink($url.'.mini.jpg');
+        }
+    }
     public function update(){
         $goods_model=D('goods');
         if(IS_POST){

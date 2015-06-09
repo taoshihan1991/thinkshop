@@ -105,5 +105,17 @@ class BaseController extends Controller {
             }
         }
     }
-
+    // logo上传
+    public function uploadLogo($file){
+        $upload = new \Think\Upload();
+        $upload->maxSize=C('UPLOAD_MAX_SIZE') ;
+        $upload->exts =C('UPLOAD_EXTS');
+        $upload->rootPath = C('UPLOAD_PATH');
+        $upload->savePath = '';
+        $info = $upload->uploadOne($file);
+        if(!$info){
+            $this->error($upload->getError());
+        }   
+        return $upload->rootPath.$info['savepath'].$info['savename'];
+    }
 }
