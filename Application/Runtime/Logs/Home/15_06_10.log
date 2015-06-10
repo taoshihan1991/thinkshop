@@ -1,0 +1,538 @@
+[ 2015-06-10T20:46:39+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016652s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000588s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.3664s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0764s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0018s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0016s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0016s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0016s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0015s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.747269s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.747496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.069266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.069509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015775s ]
+
+[ 2015-06-10T20:59:15+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005947s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000654s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0269s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.175292s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.175396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007478s ]
+
+[ 2015-06-10T21:00:07+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005649s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000364s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0319s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0023s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0019s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.155815s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.155918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008373s ]
+
+[ 2015-06-10T21:01:34+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005587s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000553s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0163s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.144709s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.144830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005770s ]
+
+[ 2015-06-10T21:07:02+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005418s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0269s ]
+ERR: Think\Model:getAll方法不存在！
+
+[ 2015-06-10T21:07:20+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005520s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0304s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` = 38 LIMIT 4   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000411s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005988s ]
+
+[ 2015-06-10T21:10:34+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006124s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0262s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` = 38 LIMIT 4   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0015s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: goods_ad G:\php\htdocs\thinkshop\Application\Runtime\Cache\Home\b75ecef06d4e3e5864d8145c3cff29ea.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006050s ]
+
+[ 2015-06-10T21:10:53+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005564s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0244s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` = 38 LIMIT 4   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000374s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006125s ]
+
+[ 2015-06-10T21:12:03+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006062s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0145s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` = 38 LIMIT 4   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000378s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0012s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006436s ]
+
+[ 2015-06-10T21:12:07+08:00 ] 127.0.0.1 /thinkshop/index.php/Home/Goods/view/id/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005371s ]
+ERR: 无法加载控制器:Goods
+
+[ 2015-06-10T21:12:58+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005518s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0325s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` = 38 LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000395s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000489s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005658s ]
+
+[ 2015-06-10T21:21:59+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006056s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0268s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` = 38 LIMIT 4   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000386s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000479s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006146s ]
+
+[ 2015-06-10T21:23:52+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006325s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0243s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` = 38 LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` = 38 LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000382s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006380s ]
+
+[ 2015-06-10T21:24:36+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006070s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0325s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed G:\php\htdocs\thinkshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 567 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 4' at line 1
+
+[ 2015-06-10T21:25:24+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006122s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0267s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed G:\php\htdocs\thinkshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 567 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 4' at line 1
+
+[ 2015-06-10T21:26:54+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005957s ]
+NOTIC: [8] Undefined variable: starList G:\php\htdocs\thinkshop\Application\Home\Controller\IndexController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0345s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005596s ]
+
+[ 2015-06-10T21:28:44+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005770s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0263s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` IN (38) LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000475s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0011s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006977s ]
+
+[ 2015-06-10T21:29:51+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005418s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0332s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` IN (38) LIMIT 4   [ RunTime:0.0018s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) LIMIT 4   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000379s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005653s ]
+
+[ 2015-06-10T21:30:21+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005870s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0260s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` IN (38) LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) LIMIT 4   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000335s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000442s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005685s ]
+
+[ 2015-06-10T21:30:41+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005346s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0290s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` IN (38) LIMIT 4   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) LIMIT 4   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000701s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005586s ]
+
+[ 2015-06-10T21:31:26+08:00 ] 127.0.0.1 /thinkshop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005941s ]
+SQL: SHOW COLUMNS FROM `ts_goods` [ RunTime:0.0274s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` IN (38) LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `name`,`id`,`img`,`sell_price`,`goods_ad` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) LIMIT 4   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000444s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (26,25,17,18,10) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (15,16,13,14,36,37,12,11,6) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (20,21,19) ORDER BY id desc LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (23,24,22) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (31,27) ORDER BY id desc LIMIT 2   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (32,35,28) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`goods_ad`,`id`,`img`,`sell_price` FROM `ts_goods` WHERE `category_id` IN (34,29) ORDER BY id desc LIMIT 2   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005691s ]
+

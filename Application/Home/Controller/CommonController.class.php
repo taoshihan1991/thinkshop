@@ -25,15 +25,20 @@ class CommonController extends Controller {
     		}
     	}
         foreach($nav as $key=>$v){
-            $allSonCate=findSon($cate,$v['id']);
-            $temp=array();
-            foreach($allSonCate as $r){
-                $temp[]=$r['id'];
-            }
-            $temp[]=$v['id'];
+            $temp=$this->getAllSonCate($cate,$v['id']);
             $nav[$key]['child']=$temp;            
         }
     	$this->assign('navigator',$nav);
+    }
+    // 获取所有子分类
+    public function getAllSonCate($cate,$id){
+        $allSonCate=findSon($cate,$id);
+        $temp=array();
+        foreach($allSonCate as $r){
+            $temp[]=$r['id'];
+        }
+        $temp[]=$id;
+        return $temp;  
     }
     // 缓存分类数据
     public function mkCateData(){
