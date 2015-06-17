@@ -1,0 +1,17 @@
+[ 2015-06-17T21:31:36+08:00 ] 127.0.0.1 /thinkshop/index.php?m=Admin&c=Index&a=clearAllCache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005582s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005198s ]
+

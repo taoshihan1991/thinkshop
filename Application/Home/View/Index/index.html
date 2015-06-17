@@ -119,55 +119,22 @@
             <div class="box-bd">
                 <div class="home-saleoff-goods-list-wrap">
                     <div class="home-saleoff-goods-list clearfix">
-                                                <div class="home-saleoff-goods-item">
+					<foreach name="phoneList" item="v">
+                          <div class="home-saleoff-goods-item">
                             <div class="item-content">
-                                <span class="item-title"><a href="http://item.mi.com/1150900002.html" >红麦必备套装</a></span>
-                                <span class="item-price"><i>79</i>元 <del>117元</del></span>
+                                <span class="item-title"><a href="{:U('Goods/view',array('id'=>$v['id']))}" >{$v.name}</a></span>
+                                <span class="item-price"><i>{$v.sell_price}</i>元 <del>{$v.sell_price}元</del></span>
                                 <span class="item-thumb">
-                                    <a href="http://item.mi.com/1150900002.html"  data-stat-aid='AA136' data-stat-pid='1_8_1_47'><img src="http://i1.mifile.cn/a1/T1F9ZTBbxT1RXrhCrK!220x220.jpg" alt="红麦必备套装" srcset="http://i1.mifile.cn/a1/T1F9ZTBbxT1RXrhCrK!440x440.jpg 2x"  /></a>
+                                    <a href="{:U('Goods/view',array('id'=>$v['id']))}"  ><img src="{:getPicUrl($v['img'])}" alt="{$v.name}"  /></a>
                                 </span>
                                                                 <div class="item-flag">
-                                    <span class="icon-flag">省38元</span>
+                                    <span class="icon-flag">省{$v.sell_price}元</span>
                                 </div>
                                                                                                                             </div>
                         </div>
-                                                <div class="home-saleoff-goods-item">
-                            <div class="item-content">
-                                <span class="item-title"><a href="http://item.mi.com/1152100010.html" >出行全能套装</a></span>
-                                <span class="item-price"><i>108</i>元 <del>128.7元</del></span>
-                                <span class="item-thumb">
-                                    <a href="http://item.mi.com/1152100010.html"  data-stat-aid='AA10208' data-stat-pid='1_8_2_48'><img src="http://i3.mifile.cn/a4/T1lbxgB7LT1RXrhCrK.jpg" alt="出行全能套装" srcset="http://i3.mifile.cn/a4/T15nJgB7JT1RXrhCrK.jpg 2x"  /></a>
-                                </span>
-                                                                <div class="item-flag">
-                                    <span class="icon-flag">省20.7元</span>
-                                </div>
-                                                                                                                            </div>
-                        </div>
-                                                <div class="home-saleoff-goods-item">
-                            <div class="item-content">
-                                <span class="item-title"><a href="http://item.mi.com/1134900032.html" >小麦2S原装电池（送座充）</a></span>
-                                <span class="item-price"><i>59</i>元 </span>
-                                <span class="item-thumb">
-                                    <a href="http://item.mi.com/1134900032.html"  data-stat-aid='AA443' data-stat-pid='1_8_3_49'><img src="http://i1.mifile.cn/a1/T1vRhTBTET1RXrhCrK!220x220.jpg" alt="小麦2S原装电池（送座充）" srcset="http://i1.mifile.cn/a1/T1vRhTBTET1RXrhCrK!440x440.jpg 2x"  /></a>
-                                </span>
-                                                                                                                                <span class="item-flag">
-                                    <span class="icon-flag">买赠</span>
-                                </span>
-                                                            </div>
-                        </div>
-                                                <div class="home-saleoff-goods-item">
-                            <div class="item-content">
-                                <span class="item-title"><a href="http://item.mi.com/1150600003.html" >小麦快充套装</a></span>
-                                <span class="item-price"><i>59</i>元 <del>79元</del></span>
-                                <span class="item-thumb">
-                                    <a href="http://item.mi.com/1150600003.html"  data-stat-aid='AA409' data-stat-pid='1_8_4_50'><img src="http://i1.mifile.cn/a1/T1ipAvB_ZT1RXrhCrK!220x220.jpg" alt="小麦快充套装" srcset="http://i1.mifile.cn/a1/T1ipAvB_ZT1RXrhCrK!440x440.jpg 2x"  /></a>
-                                </span>
-                                                                <div class="item-flag">
-                                    <span class="icon-flag">省20元</span>
-                                </div>
-                                                                                                                            </div>
-                        </div>
-                                                    
+                        </foreach>                     
+												
+			          
                     </div>
                 </div>
             </div>
@@ -175,141 +142,22 @@
     </div>
     <!-- .home-saleoff-goods END -->
 
-    <div class="home-commented-goods home-duokan-goods">
-        <div class="xm-plain-box">
-            <div class="box-hd">
-                <h3 class="title">多看图书</h3>
-                <div class="more">
-                    <a class="more-link" href="http://www.duokan.com/list/1-1?from=xiaomi" target="_blank" onclick="_hmt.push(['_trackEvent','PC','首页_E1_更多_http://www.duokan.com/list/1-1?from=xiaomi']);">更多<i class="iconfont">&#xe605;</i></a>
-                </div>
-            </div>
-            <div class="box-bd">
-                <div class="xm-commented-goods-list-wrap">
-                    <div class="xm-commented-goods-list clearfix">
-                                                <div class="xm-commented-goods-item">
-                            <div class="item-content">
-                                <span class="item-info">
-                                    <span class="item-title"><a href="http://www.duokan.com/book/90842"   target="_blank">阿狸·呓语</a></span>
-                                     <span class="item-author">Hans</span>                                    
-                                    <span class="item-price">10.99元</span>
-                                </span>
-                                <span class="item-thumb">
-                                    <a href="http://www.duokan.com/book/90842"  data-stat-aid='AA10167' data-stat-pid='1_9_1_51' target="_blank"><img src="http://i3.mifile.cn/a4/T1C___BKVT1RXrhCrK.jpg" alt="阿狸·呓语" srcset="http://i3.mifile.cn/a4/T1IjV_B5VT1RXrhCrK.jpg 2x"  /></a>
-                                </span>
-                                <span class="item-comment">小阿狸触动每个人内心深处的柔软与坚强，感动你、治愈你</span>
-                            </div>
-                        </div>
-                                                <div class="xm-commented-goods-item">
-                            <div class="item-content">
-                                <span class="item-info">
-                                    <span class="item-title"><a href="http://www.duokan.com/book/90100?ch=MiCom"   target="_blank">心理医生在吗</a></span>
-                                     <span class="item-author">严歌苓</span>                                    
-                                    <span class="item-price">8.99元</span>
-                                </span>
-                                <span class="item-thumb">
-                                    <a href="http://www.duokan.com/book/90100?ch=MiCom"  data-stat-aid='AA10011' data-stat-pid='1_9_2_52' target="_blank"><img src="http://i3.mifile.cn/a4/T1OwLjB4YT1RXrhCrK.jpg" alt="心理医生在吗" srcset="http://i3.mifile.cn/a4/T1vIZjB4WT1RXrhCrK.jpg 2x"  /></a>
-                                </span>
-                                <span class="item-comment">严歌苓长篇小说，原名《人寰》，获台湾时报百万小说大奖。</span>
-                            </div>
-                        </div>
-                                                <div class="xm-commented-goods-item">
-                            <div class="item-content">
-                                <span class="item-info">
-                                    <span class="item-title"><a href="http://www.duokan.com/book/90137?ch=MiCom"   target="_blank">人在风里</a></span>
-                                     <span class="item-author">一鸣</span>                                    
-                                    <span class="item-price">免费</span>
-                                </span>
-                                <span class="item-thumb">
-                                    <a href="http://www.duokan.com/book/90137?ch=MiCom"  data-stat-aid='AA10010' data-stat-pid='1_9_3_53' target="_blank"><img src="http://i3.mifile.cn/a4/T1Y2xvB4Dv1RXrhCrK.jpg" alt="人在风里" srcset="http://i3.mifile.cn/a4/T1yrhjBXbT1RXrhCrK.jpg 2x"  /></a>
-                                </span>
-                                <span class="item-comment">简书小说，随风而逝的，是我们无法留住的青春。</span>
-                            </div>
-                        </div>
-                                                <div class="xm-commented-goods-item">
-                            <div class="item-content">
-                                <span class="item-info">
-                                    <span class="item-title"><a href="http://www.duokan.com/book/89848?ch=MiCom"   target="_blank">读者（2015年第10期）</a></span>
-                                     <span class="item-author">《读者》编辑部</span>                                    
-                                    <span class="item-price">3元</span>
-                                </span>
-                                <span class="item-thumb">
-                                    <a href="http://www.duokan.com/book/89848?ch=MiCom"  data-stat-aid='AA10012' data-stat-pid='1_9_4_54' target="_blank"><img src="http://i3.mifile.cn/a4/T1yeVjBCDT1RXrhCrK.jpg" alt="读者（2015年第10期）" srcset="http://i3.mifile.cn/a4/T1FOZjBCCT1RXrhCrK.jpg 2x"  /></a>
-                                </span>
-                                <span class="item-comment">重症病房里的圣诞节&“人”是怎么教没的&父亲最高兴的一天。</span>
-                            </div>
-                        </div>
-                                                
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- .home-duokan-goods END -->
-
-    <div class="home-commented-goods home-miui-goods">
-        <div class="xm-plain-box">
-            <div class="box-hd">
-                <h3 class="title">MIUI 主题</h3>
-                <div class="more">
-                    <a class="more-link" href="http://zhuti.xiaomi.com/?from=mi" target="_blank" onclick="_hmt.push(['_trackEvent','PC','首页_E2_更多_http://zhuti.xiaomi.com/?from=mi']);">更多<i class="iconfont">&#xe605;</i></a>
-                </div>
-            </div>
-            <div class="box-bd">
-                <div class="xm-commented-goods-list-wrap">
-                    <div class="xm-commented-goods-list clearfix">
-                                               <div class="xm-commented-goods-item">
-                            <div class="item-content">
-                                <span class="item-info">
-                                    <span class="item-title"><a href="http://zhuti.xiaomi.com/detail/8e935324-0bdf-411d-9d47-4766b6e886d8"   target="_blank">iOS Color</a></span>                                   
-                                    <span class="item-price">6麦币</span>
-                                </span>
-                                <span class="item-thumb">
-                                    <a href="http://zhuti.xiaomi.com/detail/8e935324-0bdf-411d-9d47-4766b6e886d8"  data-stat-aid='AA10173' data-stat-pid='1_10_1_55' target="_blank"><img src="http://i3.mifile.cn/a4/T1wZdgBy_v1RXrhCrK.jpg" alt="iOS Color" srcset="http://i3.mifile.cn/a4/T186dgB7YT1RXrhCrK.jpg 2x"  /></a>
-                                </span>
-                            </div>
-                        </div>
-                                                <div class="xm-commented-goods-item">
-                            <div class="item-content">
-                                <span class="item-info">
-                                    <span class="item-title"><a href="http://zhuti.xiaomi.com/detail/4df62481-00c4-45f8-8135-6a2433a8bdfb"   target="_blank">小薇之向来缘浅，奈何情深</a></span>                                   
-                                    <span class="item-price">免费 <del>6麦币</del></span>
-                                </span>
-                                <span class="item-thumb">
-                                    <a href="http://zhuti.xiaomi.com/detail/4df62481-00c4-45f8-8135-6a2433a8bdfb"  data-stat-aid='AA10174' data-stat-pid='1_10_2_56' target="_blank"><img src="http://i3.mifile.cn/a4/T1J5KgBgZT1RXrhCrK.jpg" alt="小薇之向来缘浅，奈何情深" srcset="http://i3.mifile.cn/a4/T1oHEgBKWT1RXrhCrK.jpg 2x"  /></a>
-                                </span>
-                            </div>
-                        </div>
-                                                <div class="xm-commented-goods-item">
-                            <div class="item-content">
-                                <span class="item-info">
-                                    <span class="item-title"><a href="http://zhuti.xiaomi.com/detail/8e0da6e6-b07c-4479-9bd0-486b0baddcd8"   target="_blank">iOS雅黑版</a></span>                                   
-                                    <span class="item-price">6麦币</span>
-                                </span>
-                                <span class="item-thumb">
-                                    <a href="http://zhuti.xiaomi.com/detail/8e0da6e6-b07c-4479-9bd0-486b0baddcd8"  data-stat-aid='AA10175' data-stat-pid='1_10_3_57' target="_blank"><img src="http://i3.mifile.cn/a4/T1aFEgBKAT1RXrhCrK.jpg" alt="iOS雅黑版" srcset="http://i3.mifile.cn/a4/T104YgB7AT1RXrhCrK.jpg 2x"  /></a>
-                                </span>
-                            </div>
-                        </div>
-                                                <div class="xm-commented-goods-item">
-                            <div class="item-content">
-                                <span class="item-info">
-                                    <span class="item-title"><a href="http://zhuti.xiaomi.com/detail/3575a5da-a2a8-417f-84b4-09e24020fbca"   target="_blank">绝色</a></span>                                   
-                                    <span class="item-price">6麦币</span>
-                                </span>
-                                <span class="item-thumb">
-                                    <a href="http://zhuti.xiaomi.com/detail/3575a5da-a2a8-417f-84b4-09e24020fbca"  data-stat-aid='AA10176' data-stat-pid='1_10_4_58' target="_blank"><img src="http://i3.mifile.cn/a4/T1t4ZgBjxT1R4cSCrK.png" alt="绝色" srcset="http://i3.mifile.cn/a4/T1B5YgB7KT1RXrhCrK.jpg 2x"  /></a>
-                                </span>
-                            </div>
-                        </div>
-                                                
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- .home-miui-goods END -->
+ 
+ 
 </div>
 <!-- Main Content END -->
 <include file="Common:footer"/>
+<script>
+$(function(){
+	//导航分类树显示
+	$('#J_categoryContainer').hover(function(){
+		$(this).find('.nav-category-section').show();
+	},function(){
+		$(this).find('.nav-category-section').show();
+	});
+	$('#J_categoryContainer').find('.nav-category-section').show();
+})
+
+</script>
 </body>
 </html>

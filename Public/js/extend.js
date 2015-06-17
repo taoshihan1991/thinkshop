@@ -11,4 +11,11 @@ $(function(){
 	},function(){
 		$(this).removeClass('current').find('.nav-main-children').stop().slideUp();
 	})
+	
+	//导航条分类折叠
+	$('#J_categoryContainer').hover(function(){
+		$(this).find('.nav-category-section').show();
+	},function(){
+		$(this).find('.nav-category-section').hide();
+	});
 })

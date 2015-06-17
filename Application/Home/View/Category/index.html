@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="UTF-8" />
+        <title>小麦官网</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        
+        <include file="Common:static"/>
+</head>
+<body>
+<include file="Common:topbar"/>
+
+<include file="Common:siteheader"/>
+
+<!--[面包屑导航]-->
+<div class="container breadcrumbs">
+    <a href='http://www.mi.com/index.html'>首页</a><span class="sep">/</span><a href="http://list.mi.com/0">所有配件</a><span class="sep">/</span><span>耳机音箱与存储卡</span></div>
+<!--[//面包屑导航]-->
+
+<div class="container">
+            <div class="xm-line-box filter-box">
+        <div class="box-hd">
+            <h3 class="title">{$info.name}</h3>
+        </div>
+        <div class="box-bd">
+            <div class="filter-lists">
+                    <dl class="xm-filter-list xm-filter-list-first category-filter-list clearfix">
+                    <dt>分类：</dt>
+                     <dd>
+                        <ul id="typeCat" class="clearfix">
+                            <li class="first current"><a href="{:U('Category/index',array('cid'=>$info['parent_id']))}">全部</a></li>
+							<foreach name="attrCate" item="v">
+                                  <li ><a href="{:U('Category/index',array('cid'=>$v['id']))}">{$v.name}</a></li>
+							</foreach>
+                          </ul>
+                    </dd>
+                      </dl>
+					
+					<foreach name="attrList" item="rows">
+                    <dl class="xm-filter-list xm-filter-list-first category-filter-list clearfix">
+                    <dt>{$rows.filter_attr_name}：</dt>
+                     <dd>
+                        <ul id="typeCat" class="clearfix">
+							<foreach name="rows.attr_list" item="v">
+                                  <li <if condition="$v['selected']==1">class="current"</if>>
+								  <a href="{$v.url}">{$v.attr_value}</a></li>
+							</foreach>
+                          </ul>
+                    </dd>
+                      </dl>
+					</foreach>
+
+
+                                            </div>
+        </div>
+    </div>
+        <div class="xm-line-box goods-list-box">
+        <div class="box-hd">
+            <div class="filter-lists">
+                <dl class="xm-filter-list xm-filter-list-first category-filter-list clearfix">
+                    <dd>
+                        <ul id="typeOrder" class="clearfix">
+                            <li class="current first"><a href="http://list.mi.com/17-0-0-0-1-0" rel="nofollow">推荐</a></li>
+                            <li ><a href="http://list.mi.com/17-0-1-0-1-0" rel="nofollow">最新</a></li>
+                            <li ><a href="http://list.mi.com/17-0-10-0-1-0" rel="nofollow">价格从高到低</a></li>
+                            <li ><a href="http://list.mi.com/17-0-8-0-1-0" rel="nofollow">价格从低到高</a></li>
+                            <li ><a href="http://list.mi.com/17-0-3-0-1-0" rel="nofollow">关注度</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+
+            </div>
+            <div class="more">
+                <div class="filter-stock">
+                                        <a href="http://list.mi.com/17-0-0-0-1-1"><i class="icon-check iconfont ">&#xe626;</i>仅显示特惠商品</a>&nbsp;&nbsp;
+                                        <a href="http://list.mi.com/17-0-0-1-1-0"><i class="icon-check iconfont ">&#xe626;</i>仅显示有货商品</a>
+                </div>
+            </div>
+        </div>
+                <div class="box-bd">
+            <div class="goods-list-section">
+                <div class="xm-goods-list-wrap xm-goods-list-wrap-col20">
+                    <ul class="xm-goods-list clearfix">
+					<foreach name="searchGoods.list" item="v">
+                                                <li >
+                            <div class="xm-goods-item">
+                                <div class="item-thumb">
+                                    <a href="">
+                                        <img src="{:getPicUrl($v['img'])}" alt="{$v.name}" />
+                                    </a>
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-title">
+                                        <a href="">{$v.name}</a>
+                                    </h3>
+                                    <div class="item-price">
+                                       {$v.sell_price}元                                    </div>
+                                                                                                            <div class="item-star">
+                                        <span class="icon-stat icon-stat-5"></span>
+                                                                                <span class="item-comments">1757人评价</span>
+                                                                            </div>
+                                                                        <div class="item-actions">
+                                                                                <a class="btn btn-small btn-primary J_addCart" href="http://cart.mi.com/cart/add/2150300027-0-1" data-gid="2150300027" data-disabled="false" data-package="false" rel="nofollow"><i class="iconfont">&#xe624;</i>购物车</a>
+                                                                                <a class="btn btn-dake btn-small J_addFav" href="javascript: void(0);" data-cid="1150300028"><i class="iconfont">&#xe60a;</i>收藏</a>
+                                    </div>
+                                    <div class="item-flag">
+                                                                            </div>
+                                </div>
+                            </div>
+                        </li>
+						</foreach>
+                         </ul>
+                </div>
+                                <div class="xm-pagenavi">
+                    <span class="numbers first iconfont">&#xe604;</span><span class="numbers current">1</span><a class="numbers" href="http://list.mi.com/17-0-0-0-2-0">2</a><a class="numbers" href="http://list.mi.com/17-0-0-0-3-0">3</a><a class="numbers" href="http://list.mi.com/17-0-0-0-4-0">4</a><a class="numbers" href="http://list.mi.com/17-0-0-0-5-0">5</a><a class="numbers" href="http://list.mi.com/17-0-0-0-6-0">6</a><a class="numbers" href="http://list.mi.com/17-0-0-0-7-0">7</a><a class="numbers" href="http://list.mi.com/17-0-0-0-8-0">8</a><a class="numbers last iconfont" href="http://list.mi.com/17-0-0-0-2-0">&#xe605;</a>                </div>
+                            </div>
+        </div>
+            </div>
+</div>
+
+<script type="text/javascript">
+    var USER_INIT_PAGE=1;
+    var USER_INIT_URL="http://list.mi.com/accessories/ajaxView/17-0-0-0-";
+    var USER_INIT_URL_APEND="-0";
+    var USER_INIT_MORE=true;
+</script>
+
+
+
+<script type="text/javascript">
+    jQuery(function($) {
+        var $goodsList = $('.xm-goods-list');
+
+        $goodsList.on({
+            'mouseenter': function() {
+                $(this).addClass('active');
+            },
+            'mouseleave': function() {
+                $(this).removeClass('active');
+            }
+        }, 'li');
+
+        $goodsList.on('click', '.J_addFav', function(e) {
+            var $this = $(this),
+                cid = $this.attr('data-cid');
+
+            e.preventDefault();
+
+            if ($this.hasClass('disable')) {
+                return false;
+            }
+
+            $this.addClass('disable');
+
+            function changeFav(action) {
+                var url;
+
+                if (action === 'add') {
+                    url = XIAOMI.GLOBAL_CONFIG.orderSite + '/favorite/add/id/' + cid;
+                }
+                else if (action === 'drop') {
+                    url = XIAOMI.GLOBAL_CONFIG.orderSite + '/favorite/drop/id/' + cid;
+                }
+                else {
+                    return false;
+                }
+
+                $.ajax({
+                    type: 'GET',
+                    url: url,
+                    dataType: 'jsonp',
+                    jsonp: 'jsonpcallback',
+                    success: function(data) {
+
+                        $this.removeClass('disable');
+
+                        if (data.code === 1) {
+                            if (action === 'add') {
+                                $this.addClass('btn-yellow is-fav').removeClass('btn-dake');
+                            }
+                            else {
+                                $this.removeClass('btn-yellow is-fav').addClass('btn-dake');
+                            }
+                        }
+                        else {
+                            alert(data.message);
+                        }
+                    }
+                });
+            }
+
+            if (!$(this).hasClass('is-fav')) {
+                changeFav('add');
+            }
+            else {
+                changeFav('drop');
+            }
+        });
+
+        XIAOMI.app.addShopCartEvent({
+            obj: ".J_addCart",
+            callback: function(data, obj) {
+                obj.attr("data-disabled", "false");
+
+                if (data.code === 1) {
+                    var elmSuccess,
+                        timeoutSuccess;
+
+                    elmSuccess = $('<div class="item-action-state">已成功加入购物车</div>');
+                    obj.closest('.item-actions').append(elmSuccess);
+                    elmSuccess
+                        .animate({'bottom': '0'}, 200, 'swing', function() {
+                            var $this = $(this);
+
+                            timeoutSuccess = window.setTimeout(function() {
+                                $this.animate({'bottom': '-30px'}, 200, 'swing', function() {
+                                    $this.remove();
+                                });
+                            }, 1000);
+                        })
+                        .on('click', function() {
+                            var $this = $(this);
+
+                            window.clearTimeout(timeoutSuccess);
+                            $this.stop(true, true).animate({'bottom': '-30px'}, 200, 'swing', function() {
+                                $this.remove();
+                            })
+                        });
+                }
+                else {
+                    alert(data.message);
+                }
+            }
+        });
+
+        XIAOMI.goodsList.ajaxItemLoader.init($goodsList, {
+            currentPage : USER_INIT_PAGE,
+            requestUrl : USER_INIT_URL,
+            requestUrlApend: USER_INIT_URL_APEND,
+            morePage : USER_INIT_MORE,
+            callback: function() {
+                XIAOMI.app.footer.retinizer();
+            }
+        });
+    });
+</script>
+
+
+<include file="Common:footer"/>
+</body>
+</html>

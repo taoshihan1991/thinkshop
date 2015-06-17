@@ -50,6 +50,17 @@
                     <input type="text" name="sort" class="w300" value="{$info.sort}"/>
                 </td>
             </tr>
+			<tr>
+                <th class="w100">筛选属性</th>
+                <td>
+                    <select name="type" class="w200">
+                                <option value="0">请选择</option>
+                                    <foreach name="typeList" item="v">
+                                    <option value="{$v.id}" <if condition="$info['type']==$v['id']">selected="selected"</if> >{$v.name}</option>
+                                    </foreach>
+                    </select>
+                </td>
+            </tr>
         </table>
         <div class="position-bottom">
             <input type="submit" value="确定" class="hd-success"/>

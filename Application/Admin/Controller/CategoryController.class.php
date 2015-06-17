@@ -17,6 +17,7 @@ class CategoryController extends BaseController {
                 'name'=>I('post.name'),
                 'sort'=>I('post.sort'),
                 'parent_id'=>I('post.parent_id','intval'),
+				'type'=>I('post.type','intval'),
             );
 
             // 文件上传
@@ -39,6 +40,10 @@ class CategoryController extends BaseController {
             $cate=$category_model->getAll();
             $cateTree=$category_model->getTree($cate);
             $this->assign('cate',$cateTree);
+
+            $typeList=D('type')->select();
+            $this->assign('typeList',$typeList);
+
             $this->display(); 
         }
         
@@ -69,6 +74,7 @@ class CategoryController extends BaseController {
                 'name'=>I('post.name'),
                 'sort'=>I('post.sort'),
                 'parent_id'=>I('post.parent_id','intval'),
+				'type'=>I('post.type','intval'),
             );
             // 文件上传
             if(!empty($_FILES['logo']['tmp_name'])){
@@ -101,6 +107,9 @@ class CategoryController extends BaseController {
 
         $cateTree=$category_model->getTree($cate);
         $this->assign('cate',$cateTree);
+
+        $typeList=D('type')->select();
+        $this->assign('typeList',$typeList);
         $this->display();
     }
 }

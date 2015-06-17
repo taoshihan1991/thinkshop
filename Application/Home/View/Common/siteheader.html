@@ -21,16 +21,16 @@
     </div>
     <div class="header-nav clearfix">
         <div id="J_categoryContainer" class="nav-category">
-            <a class="btn-category-list" href="http://list.mi.com/">全部商品分类</a>
+            <a class="btn-category-list" href="">全部商品分类</a>
             <div class="nav-category-section">
                 <ul class="nav-category-list">
                     <foreach name="cateTreeData" item="rows">
                     <li class="nav-category-item nav-category-item-first">
                         <div class="nav-category-content">
-                        <a class="title" href="">{$rows.name}</a>
+                        <a class="title" href="{:U('Category/index',array('cid'=>$rows['id']))}">{$rows.name}</a>
                         <div class="links">
                             <foreach name="rows.child" item="r">
-                            <a href="">{$r.name}</a>
+                            <a href="{:U('Category/index',array('cid'=>$r['id']))}">{$r.name}</a>
                             </foreach>
                         </div>
                         <div class="nav-category-children">
@@ -39,12 +39,12 @@
                                 <if condition="$r['child']">
                                 <foreach name="r.child" item="v">
                                 <li>
-                                    <a href=""><img src="http://c1.mifile.cn/f/i/2014/cn/nav/icons/minote.jpg" width="40" height="40" alt="" class="img-loaded"><span class="text">{$v.name}</span></a>
+                                    <a href="{:U('Category/index',array('cid'=>$v['id']))}"><img src="http://c1.mifile.cn/f/i/2014/cn/nav/icons/minote.jpg" width="40" height="40" alt="" class="img-loaded"><span class="text">{$v.name}</span></a>
                                 </li>
                                 </foreach>
                                 <else/>
                                 <li>
-                                    <a href=""><img src="http://c1.mifile.cn/f/i/2014/cn/nav/icons/minote.jpg" width="40" height="40" alt="" class="img-loaded"><span class="text">{$r.name}</span></a>
+                                    <a href="{:U('Category/index',array('cid'=>$v['id']))}"><img src="http://c1.mifile.cn/f/i/2014/cn/nav/icons/minote.jpg" width="40" height="40" alt="" class="img-loaded"><span class="text">{$r.name}</span></a>
                                 </li>
                                 </if>
                                 </foreach>
@@ -59,7 +59,7 @@
         <div class="nav-main">
             <ul class="nav-main-list J_menuNavMain clearfix">
                 <li class="nav-main-item">
-                    <a href=""><span class="text">首页</span></a>
+                    <a href="{:U('Index/index')}"><span class="text">首页</span></a>
                 </li>
                 <php>$i=0;</php>
                 <foreach name="navigator" item="v"><php>$i++;if($i>=8) break;</php>
