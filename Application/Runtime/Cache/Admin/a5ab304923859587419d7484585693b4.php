@@ -1,11 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 		<title>ThinkShop电子商务系统</title>
-		<include file="Common:js"/>
-		<link href='__PUBLIC__index/css/welcome.css' rel='stylesheet' media='screen'>
+		<script type='text/javascript' src='/thinkshop/Application/Admin/View/Static/js/jquery.min.js'></script>
+<link href='/thinkshop/Application/Admin/View/Static/hdjs/css/hdjs.css' rel='stylesheet' media='screen'>
+<link href='/thinkshop/Application/Admin/View/Static/css/extend.css' rel='stylesheet' media='screen'>
+<script src='/thinkshop/Application/Admin/View/Static/hdjs/js/hdjs.js'></script>
+<script src='/thinkshop/Application/Admin/View/Static/hdjs/js/slide.js'></script>
+<script src='/thinkshop/Application/Admin/View/Static/hdjs/org/cal/lhgcalendar.min.js'></script>
+<script type='text/javascript'>
+		HOST = '/thinkshop/';
+		ROOT = '/thinkshop/';
+		WEB = '/thinkshop/';
+		URL = 'http://localhost/hdcms/index.php?a=Admin';
+</script>
+		<link href='/thinkshop/Application/Admin/View/Static/index/css/welcome.css' rel='stylesheet' media='screen'>
 	</head>
 	<body>
 		<div class="wrap">
@@ -30,7 +41,7 @@
 			</table>
 			<!-- [图表测试] -->
 			<div id="hignchart" style="min-width:800px;height:400px"></div>
-			<script type="text/javascript" src="__PUBLIC__js/highcharts.js"></script>
+			<script type="text/javascript" src="/thinkshop/Application/Admin/View/Static/js/highcharts.js"></script>
 			<script type="text/javascript">
 			$(function () { 
 				var statDataJson=<?php echo $statDataJson?>;

@@ -6,6 +6,16 @@ class IndexController extends BaseController {
     	$this->display();
     }
     public function welcome(){
+		$now=strtotime(date('Y-m-d',time()));
+        $daySecond=24*60*60;
+
+        $statData=array();
+        for($i=10;$i>=1;$i--){
+            $statData['xAxis']['categories'][]=date('m-d',$now-$i*$daySecond);
+            $statData['series']['data'][]=rand(1,20);
+        }
+        $statDataJson=json_encode($statData);
+		$this->assign('statDataJson',$statDataJson);
     	$this->display();
     }
     // 更新全站缓存
